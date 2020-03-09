@@ -1,0 +1,45 @@
+\begin{thebibliography}{1}
+
+\bibitem{Aad:2012tfa}
+Georges Aad et~al.
+\newblock {Observation of a new particle in the search for the Standard Model
+  Higgs boson with the detector at the LHC}.
+\newblock {\em Phys. Lett. B}, 716:1, 2012.
+
+\bibitem{why_care_top_yukawa}
+Fedor Bezrukov and Mikhail Shaposhnikov.
+\newblock {Why should we care about the top quark Yukawa coupling?}
+\newblock {\em J. Exp. Theor. Phys.}, 120:335--343, 2015.
+\newblock [Zh. Eksp. Teor. Fiz.147,389(2015)].
+
+\bibitem{Chatrchyan:2012xdj}
+Serguei Chatrchyan et~al.
+\newblock {Observation of a new boson at a mass of 125 GeV with the CMS
+  experiment at the LHC}.
+\newblock {\em Phys. Lett. B}, 716:30, 2012.
+
+\bibitem{Chatrchyan:2013dga}
+Serguei Chatrchyan et~al.
+\newblock {Energy Calibration and Resolution of the CMS Electromagnetic
+  Calorimeter in $pp$ Collisions at $\sqrt{s} = 7$ TeV}.
+\newblock {\em JINST}, 8:P09009, 2013.
+\newblock [JINST8,9009(2013)].
+
+\bibitem{Chatrchyan:2013lba}
+Serguei Chatrchyan et~al.
+\newblock {Observation of a new boson with mass near 125 GeV in pp collisions
+  at $\sqrt{s}$ = 7 and 8 TeV}.
+\newblock {\em JHEP}, 06:081, 2013.
+
+\bibitem{Hbb_obs}
+A.~M. Sirunyan et~al.
+\newblock {Observation of Higgs boson decay to bottom quarks}.
+\newblock {\em Phys. Rev. Lett.}, 121(12):121801, 2018.
+
+\bibitem{particle_flow}
+A.M. Sirunyan et~al.
+\newblock Particle-flow reconstruction and global event description with the
+  cms detector.
+\newblock {\em Journal of Instrumentation}, 12(10):P10003, Oct 2017.
+
+\end{thebibliography}
