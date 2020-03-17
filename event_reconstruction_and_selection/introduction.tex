@@ -1,4 +1,7 @@
 The raw data recorded by the CMS detector for a single bunch crossing is typically not yet suitable for high-level physics analysis.
 Several layers of abstraction transform the data from the raw detector readout into high-level physics objects.
-The first layer of abstraction uses the particle flow (PF) algorithm \cite{particle_flow}, which combines information from each of the CMS subdetectors (the tracker, ECAL, HCAL, and muon system) in an attempt to reconstruct every particle in the event (PF candidates).
+The first layer of abstraction uses the particle flow (PF) algorithm~\cite{particle_flow}, which combines information from each of the CMS subdetectors (the tracker, ECAL, HCAL, and muon system) in an attempt to reconstruct every particle in the event (PF candidates).
+This first step is common to most physics analyses performed within the CMS experiment and is described in Section~\ref{sec:evt_pf}.
 Physics objects are then refined further by placing quality requirements on the PF candidates.
+This second step is often analysis-specific and the details are dictated by the individual needs of the given analysis.
+The details of physics object definition specific to the \ttH analysis are described in Sections~\ref{sec:evt_photon}--\ref{sec:evt_met}.
