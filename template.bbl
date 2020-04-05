@@ -1,10 +1,16 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Aad:2012tfa}
 Georges Aad et~al.
 \newblock {Observation of a new particle in the search for the Standard Model
   Higgs boson with the detector at the LHC}.
 \newblock {\em Phys. Lett. B}, 716:1, 2012.
+
+\bibitem{beaudette2014:Brient:2013hsa}
+Florian Beaudette.
+\newblock The cms particle flow algorithm.
+\newblock In Jean-Claude Brient, Roberto Salerno, and Yves Sirois, editors,
+  {\em Proceedings of the CHEF2013 Conference}. LLR, April 2014.
 
 \bibitem{why_care_top_yukawa}
 Fedor Bezrukov and Mikhail Shaposhnikov.
@@ -31,6 +37,21 @@ Serguei Chatrchyan et~al.
   at $\sqrt{s}$ = 7 and 8 TeV}.
 \newblock {\em JHEP}, 06:081, 2013.
 
+\bibitem{Contardo:2020886}
+D~Contardo, M~Klute, J~Mans, L~Silvestris, and J~Butler.
+\newblock {Technical Proposal for the Phase-II Upgrade of the CMS Detector}.
+\newblock Technical Report CERN-LHCC-2015-010. LHCC-P-008. CMS-TDR-15-02,
+  Geneva, Jun 2015.
+\newblock Upgrade Project Leader Deputies: Lucia Silvestris (INFN-Bari), Jeremy
+  Mans (University of Minnesota) Additional contacts: Lucia.Silvestris@cern.ch,
+  Jeremy.Mans@cern.ch.
+
+\bibitem{Khachatryan:2015iwa}
+Vardan Khachatryan et~al.
+\newblock {Performance of Photon Reconstruction and Identification with the CMS
+  Detector in Proton-Proton Collisions at sqrt(s) = 8 TeV}.
+\newblock {\em JINST}, 10(08):P08010, 2015.
+
 \bibitem{Hbb_obs}
 A.~M. Sirunyan et~al.
 \newblock {Observation of Higgs boson decay to bottom quarks}.
@@ -41,5 +62,11 @@ A.M. Sirunyan et~al.
 \newblock Particle-flow reconstruction and global event description with the
   cms detector.
 \newblock {\em Journal of Instrumentation}, 12(10):P10003, Oct 2017.
+
+\bibitem{DBLP:journals/corr/abs-1211-6581}
+Eleftherios~Spyromitros Xioufis, William Groves, Grigorios Tsoumakas, and
+  Ioannis~P. Vlahavas.
+\newblock {M}ulti-label classification methods for multi-target regression.
+\newblock {\em CoRR}, abs/1211.6581, 2012.
 
 \end{thebibliography}

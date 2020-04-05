@@ -1,0 +1,36 @@
+The PF algorithm forms the basis of event reconstruction for almost all physics analyses in CMS.
+It attempts to individually reconstruct every particle in a given event, doing so by combining information from each of the CMS subdetectors.
+The fundamental inputs to the PF algorithm are tracks, originating from the tracker and muon system, and calorimeter clusters, obtained from the ECAL and HCAL.
+Combining each of these pieces of information results in more accurate reconstruction of individual particles (and by extension, hadronic jets).
+Notably, jets built from PF candidates contain 95--97\% of the jet energy, compared 60--80\% for jets built solely from calorimeter clusters.
+The angular resolution of jets is also improved by a factor of 2--3~\cite{beaudette2014:Brient:2013hsa}.
+
+Tracks are reconstructed in three stages using a procedure based on Kalman-Filtering.
+First, seeds are generated using a small number of hits compatible with a track.
+Second, compatible hits in other tracker layers along the trajectory of this track are identified.
+Finally, a fit is performed with each of the hits in order to determine the properties associated with the candidate particle: origin, transverse momentum, and direction.
+In order to prevent the identification of fictitious tracks, a set of strict quality criteria are imposed upon the candidate tracks.
+Tracks are required to have a minimum amount of transverse energy ($\pT > 0.9$ GeV), must be seeded from hits in at least two consecutive layers in the pixel detector, must have at least 8 total hits, and may be missing hits in at most 1 layer.
+While these requirements allow the tracking algorithm to maintain a low misidentification rate, they also exclude around 20-30\% of charged hadron tracks with $\pT > 1$ GeV.
+Charged hadron tracks frequently do not pass the track requirements because of their high probability to undergo nuclear interactions with the beam pipe or detector material before reaching the outer tracker.
+Muons with $\pT > 1$ GeV, on the other hand, have a negligible probability of interacting before reaching the outer tracker and consequently have a much higher tracking efficiency of 99\%.
+
+Clusters in the ECAL and HCAL are built by first identifying a seed, a cell with energy larger than a certain seed threshold and also larger than the energy of neighboring cells.
+The ECAL and HCAL cells are of a size such that a typical particle interacting with either calorimeter will leave its energy distributed across multiple neighboring cells.
+If two particles enter a calorimeter close to each other, some cells may receive energy contributions from both particles.
+To address scenarios like this, topological clusters are formed by joining cells that are ``once-removed'' from the seed (i.e. they share at least one neighbor with a seed) with an energy larger than a certain threshold, not necessarily the same as the seed threshold.
+The energy of each cluster within a topological cluster is then determined by a maximum-likelihood fit to a sum of Gaussians.
+The number of Gaussians is the number of seeds in the topological cluster and the parameters to fit are the energy of each cluster (the amplitude of each Gaussian), $A_i$, and the position ($\eta_i, \phi_i$) of each cluster.
+The initial values for the energy and position of each cluster are chosen as the energy and position of the corresponding seed.
+The width for each Gaussian is fixed and depends on the specific calorimeter.
+
+A link algorithm then combines compatible tracks and clusters, using the full set of information to reconstruct five different types of particles:
+\begin{itemize}
+    \item \textbf{Muons:} reconstruction based on tracks from both the inner tracker and the muon system.
+    \item \textbf{Electrons:} tracks for electrons are reconstructed with a Gaussian-sum filter (GSF) that allows for sudden loss of energy due to bremsstrahlung. GSF tracks linked to an ECAL supercluster are then chosen as electron candidates.
+    \item \textbf{Photons:} reconstruction based on ECAL superclusters which are \emph{not} linked to GSF tracks.
+    \item \textbf{Charged hadrons:} reconstruction based on tracks that are linked to both ECAL and HCAL clusters.
+    \item \textbf{Neutral hadrons:} reconstruction based on HCAL clusters which are \emph{not} linked to tracks or ECAL superclusters.
+\end{itemize}
+
+The PF algorithm does not attempt to distinguish between different types of charged or neutral hadrons.
