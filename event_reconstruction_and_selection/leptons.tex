@@ -1,0 +1,17 @@
+Muons and electrons identified by the PF algorithm form the starting point for the leptons to be used in analysis.
+\subsubsection*{Muons}
+Muons are required to have $\pT > 5$ GeV and $|\eta| < 2.4$.
+Next, a requirement is made on the mini-isolation of the muon, defined as
+\begin{equation}
+\mathcal I_{\text{mini}} = \frac{\mathcal I}{\pT},
+\end{equation}
+where the isolation $\mathcal I$ is taken as the sum of all other PF candidate energies in a cone of size $R=0.4$ around the muon.
+The isolation is corrected for contributions from pileup.
+The \ttH analysis requires $\mathcal I_{\text{mini}} < 0.25$ to mitigate the contribution of hadronic jets misidentified as muons.
+\subsubsection*{Electrons}
+Electrons are required to have $\pT > 10$ GeV, $|\eta| < 2.5$, and additionally must not be in the ECAL barrel-endcap gap of $|\eta| = [1.4442, 1.566]$.
+A BDT-based electron ID criteria is also employed.
+The BDT is trained to distinguish prompt electrons from hadronic jets misidentified as electrons, and is trained with a variety of variables describing the electron's isolation, impact parameter, and kinematics.
+The invariant mass of electrons with each photon in the event is required to have a difference of greater than 5 GeV with the mass of the \PZ, in order to reject \Zee events in which one of the electrons is reconstructed as a photon.
+
+Finally, all leptons are required to not be overlapping with the photons in the event, requiring $\Delta R(\text{lepton}, \text{photon}) > 0.2$.

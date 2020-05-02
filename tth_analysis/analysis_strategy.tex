@@ -26,13 +26,36 @@ The CMS observation of the $\text{H} \to \text{b}\bar{\text{b}}$ decay mode, for
 The excellent mass resolution of the diphoton channel contributes to its competitive sensitivity -- the SM background follows a steeply falling distribution as a function of increasing diphoton invariant mass, while \Hgg events are clustered around \mH with a resolution of 1-2\%.
 The narrow peak around \mH allows for greater discrimination against the SM background processes.
 
-
 The second advantage of the diphoton decay channel is the relatively small SM background.
 At the LHC, final states with photons or leptons are significantly rarer than final states with hadrons.
 Each photon or lepton in a final state introduces another factor of the fine structure constant, $\alpha \approx 1/137$, in the cross section times branching ratio for a given process. 
 A crude back of the envelope estimation suggests that final states with $N$ leptons plus photons have characteristic cross sections times branching ratios a factor of $\alpha^{-N}$ times smaller than characteristic cross sections times branching ratios for all-hadronic final states.
 
-
 Finally, the diphoton decay channel has low systematic uncertainties in comparison to other Higgs decay modes.
 Recent \ttH cross section measurements in multilepton and $\text{b}\bar{\text{b}}$ final states reported total systematic uncertainties of FIXME and CITE, while this result reports a systematic uncertainty of FIXME.
 The fact that the uncertainty on measurements in the \Hgg channel are dominated by statistical uncertainties casts it as the ``golden channel'' for future Higgs studies in Run 3 of the LHC; the statistical uncertainty on measurements scales roughly with the inverse square root of the luminosity, while the systematic uncertainty remains roughly constant as a function of luminosity.
+
+\subsection{Estimates of Expected Sensitvity} \label{sec:tth_za}
+In developing the \ttH analysis, the following question frequently arises: will method A or method B give a better result?
+``Method'' may refer to a machine learning algorithm, a description of the SM background, etc.
+``Better'' is a subjective matter, but the primary measurement of the \ttH analysis is that of $\mu_{\ttH}$, defined as the ratio of the observed cross section times branching fraction of \ttH (\Hgg) and the predicted cross section times branching fraction:
+\begin{equation}
+    \mu_{\ttH} = \frac{(\sigma_{\ttH} \times \mathcal B (\Hgg))_{\text{obs}}}{(\sigma_{\ttH} \times \mathcal B (\Hgg))_{\text{SM}}}.
+\end{equation}
+Therefore, ``better'' is taken to mean ``giving a smaller expected uncertainty on the measurement of $\mu_{\ttH}$''.
+The superlative is framed in terms of the expected uncertainty, rather than the observed uncertainty, as the analysis is developed in a blinded fashion to avoid introducing bias.
+The full calculation of $\mu_{\ttH}$ involves extensive computing (and human) time, so a simplified measure of the expected uncertainty is used.
+For these purposes, we use $Z_A$~\cite{cowan_za}, defined as
+\begin{equation}
+    Z_A(s,b) = \sqrt{2 \bigg((s+b)\ln(1 + \frac{s}{b})-s\bigg)},
+\end{equation}
+where $s$ is the number of signal events and $b$ is the number of background events.
+In the limit $s<<b$, the Taylor expansion of $Z_A$ gives the familiar $s/\sqrt{b}$:
+\begin{equation}
+    Z_A(s,b) = \frac{s}{\sqrt{b}}\bigg[1 + \mathcal O \bigg(\frac{s}{b}\bigg) \Bigg].
+\end{equation}
+The signal yield $s$ is estimated by fitting a Gaussian function to the \mgg distribution of signal MC events and integrating the fitted function over the signal mass window.
+The background yield $b$ is estimated by counting the yield of all events in the \mgg sidebands (100 GeV $< \mgg < 120$ GeV, 130 GeV $< \mgg < 180$ GeV) and scaling to the size of the signal mass window.
+The signal mass window is taken to be $\mH \pm 1.645 \times \sigma_{\text{eff}}$, with $\sigma_{\text{eff}}$ taken from the fitted Gaussian.
+It is not necessary to employ more sophisticated estimates of the signal and background yields (as is done in Sec.~\ref{sec:sig_bkg_models}) because $Z_A$ is only used in comparing the performance of two strategies; the absolute value of $Z_A$ is not relevant.
+When quoting an improvement obtained by using a specific method, the value is taken as the percentage difference between the maximum $Z_A$ values obtained by the two methods.
