@@ -1,0 +1,63 @@
+As the background is estimated from data (and not simulation), the uncertainties associated with the background yield are either statistical in nature or associated with the details of the fitting procedure.
+The latter uncertainties, which are systematic in nature, are those associated with estimating the background through a fit to events in the \mgg sidebands and are treated through the discrete profiling method mentioned in Sec.~\ref{sec:tth_bkg_models}.
+
+In contrast to the relatively simple uncertainties associated with the background model, there are many sources of uncertainty may affect either the yield or \mgg shape of the Standard Model Higgs boson production modes (often both).
+
+Those affecting only the yield are modeled with log-normal pdfs, which approximate the behavior of a Gaussian pdf in most cases but have one distinct advantage.
+A Gaussian pdf is unbounded, meaning the quantity modeled by the pdf could, in principle, take on any value with non-zero probability.
+When modeling the uncertainty of positive definite quantities like cross sections, luminosities, and efficiencies, the possibility of a negative value is unphysical.
+A log-normal pdf is defined for a parameter $\theta$ as
+\begin{equation}
+    p(\theta) = \frac{1}{\sqrt{2\pi} \ln(\kappa)} \exp \bigg[ -\frac{1}{2} \bigg(\frac{\ln(\theta/\hat{\theta})}{ \ln\kappa} \bigg)^2 \bigg] \frac{1}{\theta},
+\end{equation}
+where $\hat{\theta}$ is the most probable value and $\kappa$ is analogous to the width $\sigma$ of a Gaussian.
+
+%On the other hand, those affecting the shape of the \mgg distribution (and likely also the yield) are incorporated directly into the signal model, manifesting as uncertainties in the fitted parameters of the Gaussian and Double Crystal Ball functions used to model each Higgs boson production mode. 
+
+The sources are divided into theoretical uncertainties, those relating to imperfect knowledge of Higgs boson production in the Standard Model, and experimental uncertainties, those related specifically to the CMS detector and the methods used to reconstuct each event.
+
+\subsection{Theoretical Uncertainties}
+Each theoretical uncertainty described below is calculated separately for each Higgs boson production mode.
+Generally, the uncertainty for \ttH has the largest effect on the measurement of $\mu_{\ttH}$, though the uncertainties for other production modes can be significant as well.
+Uncertainties are either calculated as an overall uncertainty on the normalization, a ``flat uncertainty'', or as individual variations on a per-event basis.
+The flat uncertainties affect only normalization, while the individual uncertainties may also modify kinematics and result in event migration between signal regions.
+%The following theoretical uncertainties are taken into consideration in the measurement of $\mu_{\ttH}$:
+\begin{itemize}
+    \item \emph{Strong coupling constant $(\alpha_s)$}: flat uncertainty in the value of the coupling constant of the strong force, $\alpha_s$. The magnitude is taken following the PDF4LHC prescription~\cite{pdf4lhc}, and is about 2\% for \ttH. 
+    \item \emph{PDF (parton density function)}: uncertainty due to imperfect knowledge of the structure of the proton. Two distinct PDF uncertainties are considered: a flat uncertainty, computed following the PDF4LHC prescription~\cite{pdf4lhc,higgs_handbook}, and per-event PDF weight variations, taken from the NNPDF3.0 PDF set~\cite{ball_pdf} with the \texttt{MC2Hessian} procedure~\cite{mc2hessian}. The flat uncertainty is about 3\% for \ttH and the per-event PDF weight uncertainties are typically $\leq1\%$.
+    \item \emph{QCD scale}: the uncertainty in the renormalization and factorization scales. Values are taken following the recommendations of~\cite{florian2016handbook} and is nearly 10\% for \ttH, making it the single largest systematic uncertainty.
+    \item \emph{\Hgg branching fraction}: estimated to be around 2\%~\cite{florian2016handbook}.
+    \item \emph{\ggH contamination}: the standard model predictions of Higgs boson production via gluon fusion (\ggH) are not reliable in the \ttH regime with a high number of jets. Three distinct sources contribute to this uncertainty:
+    \begin{enumerate}
+        \item \emph{Parton shower}: the uncertainty in the gluon fusion yield at a high number of jets (i.e. the uncertainty in the parton shower modeling) is taken from the difference between the jet multiplicity in simulation and that observed in data for fully leptonic \ttbar events, where the dominant production mode is via gluon fusion. 
+        \item \emph{Gluon splitting modeling}: the uncertainty in gluon splitting to b quarks is taken from the difference between data and simulation in the ratio $\sigma (\ttb\bb) / \sigma (\ttb\jj)$.
+        \item \emph{Statistical}: uncertainty in the \ggH estimate due to limited number of simulated events in the high-jet regime.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Experimental Uncertainties}
+Like the theoretical uncertainties, experimental uncertainties may either be described globally as a flat uncertainty or on a per-event basis.
+Additionally, the per-event uncertainties may either modify the central weight of the event (i.e. normalization) or the shape of the \mgg distribution.
+The uncertainties which affect the shape of the \mgg distribution are accounted for by performing separate fits of the signal models for the up and down variations of each uncertainty source.
+These then manifest themselves as uncertainties in the fitted parameters of the Gaussian and Double Crystal Ball functions used to model each Higgs boson production mode.
+
+The uncertainty sources affecting the shape of the \mgg distribution are:
+\begin{itemize}
+    \item \emph{Photon energy scale \& resolution}: the uncertainty associated with the corrections derived for the photon energy scales and resolution, described in Sec.~\ref{sec:evt_photon_energy}, is estimated by varying the shower shape variable $R_9$, the electron ID criteria, and the preselection $E_{\text{T}}$ requirement. The variations from each of these sources are added in quadrature with the statistical uncertainty to give the total uncertainty. Separate uncertainties are considered for both the scale and the resolution and each source is additionally split into contributions from {low $R_9$, high $R_9$} $\odot$ {barrel, endcap}.
+    \item \emph{Residual \pT dependence of scale corrections}: photon energy scale corrections are derived in \Zee events with $\pT \sim 45$ GeV but applied in \Hgg events with $\pT \sim 60$ GeV, which may introduce error. This uncertainty is conservatively estimated as the magnitude of the correction itself, translating to a 0.1\% uncertainty in the overall photon energy scale.
+    \item \emph{Differences between electrons and photons}: nearly all corrections, smearings, scale factors, etc. are derived on electrons in \Zee events, but applied on photons. Several differences between electrons and photons (and their reconstruction in the CMS detector) are used to estimate the uncertainty:
+    \begin{enumerate}
+        \item \emph{Modeling of the material budget}: in general, electrons shower earlier than photons when passing through the CMS detector. The uncertainty in the material between the interaction point and the ECAL then translates to an additional source of uncertainty.
+        \item \emph{Non-uniformity of light collection}: differences in the light collection efficiency (LCE) along the length of ECAL crystals result in a different response to electrons and photons (again due to the fact that electrons shower earlier than photons). This uncertainty is estimated using the LCE model described in~\cite{Adams:2016viv}, derived from optical simulation~\cite{Gentit:2001ky}.
+    \end{enumerate}
+    \item \emph{Shower shape corrections}: the shower shape corrections described in Sec~\ref{sec:evt_photon_ss} may effect the photon energy scale. The uncertainty is estimated by comparing the energy scale before and after the application of corrections. 
+\end{itemize}
+
+The remaining sources of uncertainty affect only the overall normalization of a given process, and include:
+\begin{itemize}
+    \item \emph{Shape of the b-tagging discriminant}: the b-tagging discriminant is corrected in simulation by a continuous reshaping factor (derived as a function of \pT, $\eta$, and jet flavor) such that the distributions between data and simulation agree. The uncertainty in the reshape factor for a given event is calculated as described in ~\cite{Sirunyan_2018_deepcsv} and has an impact of about 4\% on the \ttH signal strength measurement.
+    \item \emph{Integrated luminosity}: the total uncertainty in the integrated luminosity is estimated to be about 2\%~\cite{CMS-PAS-LUM-17-001,CMS-PAS-LUM-17-004,CMS-PAS-LUM-18-002}.
+    \item \emph{Trigger Scale Factor}: the efficiency of the HLT triggers used for this analysis are calculated using the tag and probe method (FIXME cite?). Simulation is then corrected for this trigger efficiency, with the uncertainty in the efficiency taken as a systematic uncertainty.
+\end{itemize}
+
+%The~\cite{florian2016handbook}

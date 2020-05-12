@@ -145,7 +145,7 @@ Qualitatively, the term of the numerator of Eqn.~\ref{eqn:impute_weight} increas
 The term in the denominator is simply an overall normalization factor.
 After applying the per-event weight, the overall normalization of the data-driven sample is determined with a simultaneous fit to data of the minimum and maximum photon ID distributions in the preselection.
 The normalization of \dipho is also allowed to float in this fit, while the normalization of all other background processes are taken to be fixed.
-\begin{figure} [h!]
+\begin{figure} [htbp!]
     \centering
     \begin{tabular}{c c}
         \includegraphics[width=0.48\linewidth,page=42]{{figures/tth/ttHHadronic_RunII_MVA_Presel_v4.11_7Apr2020_impute_no_scale_histogramsRunIIstd_linear}.pdf} &
@@ -170,7 +170,7 @@ The normalization of \dipho is also allowed to float in this fit, while the norm
 The minimum and maximum photon ID distributions are shown pre-/post-fit in Fig.~\ref{fig:tth_phoID_fits} and the results of the fit are shown in Table~\ref{tab:tth_phoID_fits}.
 The agreement with data is significantly improved when using the data-driven description of multi-jet and \gjets in place of the MC description, as can be seen by comparing Fig.~\ref{fig:tth_phoID_presel_datamc} and Fig.~\ref{fig:tth_phoID_fits}.
 This improvement is consistently seen in other distributions as well, including the jet and b-jet multiplicities shown in Fig.~\ref{fig:tth_impute_compare}.
-\begin{figure} [h!]
+\begin{figure} [htbp!]
     \centering
     \begin{tabular}{c c}
         \includegraphics[width=0.48\linewidth,page=5]{{figures/tth/ttHHadronic_RunII_MVA_Presel_v4.11_7Apr2020_no_scale_histogramsRunIIstd}.pdf} &
@@ -191,7 +191,7 @@ This improvement is consistently seen in other distributions as well, including 
 As the MC description of the background is used only for designing and optimizing the cuts on the BDT-bkg algorithms, the bottom-line test of the merit of the data-driven description is BDT-bkg performance.
 To this end, we compare the performance of the BDT-bkg algorithm trained with the MC description of \gjets (including the MC description of multi-jet events was found to degrade performance because of the extremely few number of events from the multi-jet simulation samples) with the performance of the BDT-bkg algorithm trained with the data-driven description of multi-jet and \gjets, using $Z_A$ (defined in Sec.~\ref{sec:tth_za}) as an estimate of the expected signifiance obtained when using either BDT.
 $Z_A$ is shown for each BDT as a function of the number of \ttH events in Fig.~\ref{fig:tth_imputing_za}.
-The improvement obtained by replacing the MC description of \gjets with the data-driven description of multi-jet and \gjets, taken as the percentage difference between the maximum $Z_A$ values obtained with either method, is 8\%.
+The improvement obtained by replacing the MC description of \gjets with the data-driven description of multi-jet and \gjets, taken as the percentage difference between the maximum $Z_A$ values obtained with either method, is about 8\%.
 \begin{figure} [h!]
     \centering
     \includegraphics[width=0.75\linewidth]{{figures/tth/za_comparison_data_imputing_vs_scale_mc_12Apr2020.pdf}}

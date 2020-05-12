@@ -1,0 +1,23 @@
+The scores of the BDT-bkg algorithms, shown in Fig.~\ref{fig:tth_bdt-bkg}, are used to define the signal regions in which the \ttH cross section measurement is performed.
+The signal region boundaries are chosen such that the expected signifiance of the measurement is maximized.
+They are determined with the following iterative procedure:
+\begin{enumerate}
+    \item Determine the $N$ cut values of BDT-bkg score that correspond to $N+1$ intervals evenly spaced in \ttH efficiency. $N$ is chosen as 100.
+    \item For each BDT-bkg cut value $x$, divide events into two regions: [$x_{\text{min}}$, $x$] and [$x$, $x_{\text{max}}$].
+    \item Within each region, create parametric models of the signal and background distributions as a function of \mgg.
+    \begin{itemize}
+        \item The \ttH signal model is estimated from simulation by fitting a Double Crystal Ball function~\cite{CrystalBallRef} to the \mgg distribution.
+        \item The background model is estimated from the MC description of the background by fitting an exponential function to the \mgg distribution.
+        \item Other standard model Higgs boson production modes are included in the background model, and as the signal, are estimated by fitting a Double Crystal Ball function.
+        \item Likelihood functions are then constructed for (1) signal + background scenario and (2) background-only scenario. The expected significance $\sigma$ is calculated as
+        \begin{equation} \label{eqn:tth_significance}
+            \sigma = \sqrt{-2 \bigg(\log[L_{\text{S+B}}(\mgg)] - \log[L_{\text{B}}(\mgg)] \bigg)}
+        \end{equation} 
+    \end{itemize}
+    \item If the splitting at $x$ into two signal regions improves the expected significance by more than 2\%, the procedure is then repeated iteratively within each signal region. The procedure is terminated when an additional splitting fails to improve the expected significance by at least 2\%. 
+\end{enumerate}
+The optimization procedure results in four signal regions for each channel, with the values of BDT-bkg defining each region shown with the thinly dotted lines in Fig.~\ref{fig:tth_bdt-bkg}.
+The signal and background modeling in the signal region optimization procedure is similar to what is done in the final statistical analysis, described in Sec.~\ref{sec:tth_sig_bkg_models}, but does not use the same level of rigor in selecting functional forms.
+This simplified method is chosen for the optimization for the sake of computing speed and is expected to influence the final boundary selection negligibly.
+
+In order to avoid introducing bias in the result, the \ttH signal yields are estimated using separate simulation samples from those used in the final analysis and the background yields are estimated using the MC description of the background, rather than events from data.

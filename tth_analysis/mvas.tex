@@ -177,6 +177,103 @@ In addition, dropout~\cite{dropout} is applied between the fully-connected layer
 Between layers which apply both batch normalization and dropout, batch normalization is applied first and dropout is applied second.
 
 \subsubsection{Performance}
+Three separate DNNs are trained:
+\begin{itemize}
+    \item Hadronic channel: \ttH vs. \dipho
+    \item Hadronic channel: \ttH vs. \ttgg
+    \item Leptonic channel: \ttH vs. \ttgg
+\end{itemize}
+The output of each DNN is shown for both data and simulation in Fig.~\ref{fig:tth_dnn_datamc}.
+\begin{figure} [htbp!]
+    \centering
+    \begin{tabular}{c c}
+        \includegraphics[width=0.48\linewidth,page=58]{{figures/tth/ttHHadronic_RunII_MVA_Presel_v4.11_7Apr2020_impute_histogramsRunIIstd}.pdf} &
+        \includegraphics[width=0.48\linewidth,page=59]{{figures/tth/ttHHadronic_RunII_MVA_Presel_v4.11_7Apr2020_impute_histogramsRunIIstd}.pdf} \\
+        \includegraphics[width=0.48\linewidth,page=69]{{figures/tth/ttHLeptonic_RunII_MVA_Presel_v4.11_7Apr2020_histogramsRunIIstd}.pdf} &
+    \end{tabular}
+    \caption{Agreement between data and MC description of background for the various DNNs used as input features to BDT-bkg, for the hadronic channel (top) and the leptonic channel (bottom).}
+    \label{fig:tth_dnn_datamc}
+\end{figure}
+The DNNs are used as inputs to the BDT-bkg, rather than in place of the BDT-bkg because superior performance from DNNs was only observed in the case of a high number of events available for training.
+The simulation samples describing \ttH, \dipho, and \ttgg processes each have a high number of individual events ($\geq 10^5$) passing the preselection requirements, so DNNs are trained to distinguish between these processes.
+The improvement brought to each channel by the DNNs is shown in Fig.~\ref{fig:tth_dnn_za}.
+\begin{figure} [htbp!]
+    \centering
+    \begin{tabular}{c c}
+        \includegraphics[width=0.48\linewidth]{figures/tth/za_comparison_data_Hadronic_DNN_2May2020.pdf} &
+        \includegraphics[width=0.48\linewidth]{figures/tth/za_comparison_data_Leptonic_DNN_2May2020.pdf}
+    \end{tabular}
+    \caption{Expected significance ($Z_A$) shown as a function of the number of \ttH events passing a given cut on BDT-bkg for versions of BDT-bkg trained with (red) and without (black) the DNN scores as training features. Shaded bands show the $\pm 1\sigma$ statistical uncertainty in $Z_A$. The background yield is estimated from events in data in the \mgg sidebands.}
+    \label{fig:tth_dnn_za}
+\end{figure}
+The improvement in expected sensitivity in the hadronic channel is about 10\%.
+The improvement in the leptonic channel is significantly smaller than the statistical uncertainty in $Z_A$.
+The fact that the improvement is greater in the hadronic channel is likely attributed to the fact that it benefits from the DNN trained against the \dipho background.
+Not only is this the largest background in the \ttH hadronic channel signal regions, but the simulation sample has the largest number of events entering the preselection, allowing for aggressive DNN training with lower risk of overfitting.
 
 \subsection{Top Tagger BDT} \label{sec:tth_top_tagger_bdt}
+The dominant backgrounds in the hadronic channel at both preselection level and signal region level are the multi-jet, \gjets, and \dipho processes.
+An obvious difference between these processes and \ttH is the fact that there are two top (anti-)quarks in the latter, while there are none in the former.
+This motivates the use of methods which can identify the presence of top quarks as a tool for further rejecting the multi-jet, \gjets, and \dipho backgrounds.
+
+The chosen method is a top tagger BDT, originally developed in a search for supersymmetric partners of the top quark~\cite{stop_search} and later updated for \ttH.
+The BDT is trained using \textsc{xgboost}~\cite{xgboost}.
+The BDT takes jet triplets as inputs, with triplets that are matched as coming from a top quark (using generator truth-level information) designated as signal and all other triplets designated as background.
+Jets are required to have $p_T > 25$ GeV and $|\eta| < 2.4$.
+In addition, the jets are cleaned such that they are not overlapping with leptons.
+The truth matching enforces the following additional requirements:
+\begin{itemize}
+    \item $|m_{jjj} - m_t| < 80$ GeV
+    \item All three reco jets are matched to generator-level quarks from a hadronically decaying top ($\Delta R(\text{jet, quark}) < 0.4$).
+\end{itemize}
+The training features are shown in Table \ref{tab:tth_top_tagger_features}.
+\begin{table}
+	\centering
+	\begin{tabular}{c |c c c c} \hline \hline
+		Category & \multicolumn{4}{c}{Features} \\ \hline
+		\multirow{3}{*}{Single Jet Quantities} & $p_T$ & mass & & \\
+		& DeepCSV b & DeepCSV c vs. light & DeepCSV c vs. b & \\
+		& ptD & axis1 & multiplicity & \\ \hline
+		\multirow{1}{*}{Di-Jet Quantities} & $\Delta R(\text{j,j})$ & $m_{\text{jj}}$ & & \\
+		\multirow{1}{*}{Tri-Jet Quantities} & $\Delta R(\text{b,W})$ & $m_{\text{jjj}}$ & &  \\ \hline \hline
+	\end{tabular}
+    \caption{Input features used in training the Top Tagger BDT.}
+    \label{tab:tth_top_tagger_features}
+\end{table}
+The training features are defined as follows:
+\begin{itemize}
+    \item DeepCSV scores: for each jet, three DeepCSV quantities are provided: the b-tag score, and the c-tag score, given in terms of c vs. light and c vs. b.
+    \item ptD, axis1, multiplicity: standard quark-gluon discrimination variables. The fragmentation function is defined as $\text{ptD} \equiv \frac{\sqrt{\sum p_{\text{T}_i}^2}}{\sum p_{\text{T}_i}}$, axis1 is the jet shape variable describing the jet's long axis, and multiplicity provides the number of constituents in the jet.
+\end{itemize}
+The jet in the triplet with the highest DeepCSV b score is labeled as the b-jet, while the other two jets are labeled as $\PW$-jet 1 and 2, with $\pT(\PW_{j1}) > \pT(\PW_{j2})$.
+
+The ouput of the top tagger BDT is shown for both data and simulation in Fig.~\ref{fig:tth_top_tagger_datamc}.
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[width=0.48\linewidth,page=48]{{figures/tth/ttHHadronic_RunII_MVA_Presel_v4.11_7Apr2020_impute_histogramsRunIIstd}.pdf}
+    \caption{Agreement between data and MC description of background for the top tagger BDT score.}
+    \label{fig:tth_top_tagger_datamc}
+\end{figure}
+Similar to the DNN scores, the top tagger BDT is given as an additional training feature to BDT-bkg.
+The improvement in expected sensitivity gained by adding the top tagger to BDT-bkg is shown in Fig.~\ref{fig:tth_top_tagger_za} and is about 5\%.
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{{figures/tth/za_comparison_data_Hadronic_TopTagger_2May2020}.pdf}
+    \caption{Expected significance ($Z_A$) shown as a function of the number of \ttH events passing a given cut on BDT-bkg for versions of BDT-bkg trained with (red) and without (black) the DNN scores as training features. Shaded bands show the $\pm 1\sigma$ statistical uncertainty in $Z_A$. The background yield is estimated from events in data in the \mgg sidebands.}
+    \label{fig:tth_top_tagger_za}
+\end{figure}
+
+\subsection{BDT-bkg}
+The final BDT-bkg algorithms for each channel use the high-level features listed in Table~\ref{tab:tth_hlf}, the DNN scores described in Sec.~\ref{sec:tth_dnns}, and the top tagger BDT score described in Sec.~\ref{sec:tth_top_tagger_bdt} as the training features.
+The outputs of the BDT-bkg algorithms are shown in Fig.~\ref{fig:tth_bdt-bkg}, where agreement between data and simulation is observed within statistical and systematic uncertainties.
+\begin{figure} [htbp!]
+    \centering
+    \begin{tabular}{c c}
+        \includegraphics[width=0.48\linewidth]{figures/tth/CMS-HIG-19-013_Figure_001-a.png} &
+        \includegraphics[width=0.48\linewidth]{figures/tth/CMS-HIG-19-013_Figure_001-b.png}
+    \end{tabular}
+    \caption{Output of the BDT-bkg algorithm for the hadronic channel (left) and the leptonic channel (right). Events from the \mgg sidebands are shown for both data and simulation. The statistical (statistical $\oplus$ systematic) uncertainties in simulation are shown with black (red) shaded bands. The thinly dashed lines show the boundaries of each signal region used for the cross section measurement, while the thickly dashed lines show the boundaries of signal regions used for a measurement of the CP structure. Events in the gray shaded region are discarded.}
+    \label{fig:tth_bdt-bkg}
+\end{figure}
+
 

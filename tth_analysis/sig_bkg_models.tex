@@ -1,0 +1,74 @@
+The \ttH cross section measurement is extracted by performing a maximum likelihood fit of the signal and background models to the diphoton invariant mass distribution (\mgg) observed in data.
+This fit, described in full detail in Sec.~\ref{sec:tth_results}, relies on the construction of reliable models of the signal and background processes, described in this section.
+
+\subsection{Signal Models} \label{sec:tth_sig_models}
+Models of signal (\ttH) and other standard model Higgs boson production modes (which are considered as backgrounds for the \ttH cross section measurement) are built as a function of \mgg, using a Double Crystal Ball plus Gaussian function.
+A separate fit is performed for each signal region in each channel.
+Additionally, the fits are performed independently for each year of data-taking: 2016, 2017, and 2018, with the final signal model taken as the sum of the signal models for each of the three years, scaling the normalization of the signal model for each year by the appropriate luminosity.
+Signal fits are performed separately by year in order to capture the changes in \mgg resolution in each year, due to the evolving CMS ECAL.
+As the mass of the Higgs boson, \mH, is not precisely known, the fit parameters of the signal models are modeled as linear functions of \mH.
+The \mH dependence is determined by fitting signal models with simulation samples corresponding to three different values of \mH: 120, 125, and 130 GeV.
+With three years, two channels and four signal regions per channel, this results in 24 signal models per Higgs boson production mode.
+Some representative signal models are shown for \ttH in Fig.~\ref{fig:tth_sig_model}.
+\begin{figure} [h!]
+    \centering
+    \begin{tabular}{c c}
+        \includegraphics[width=0.48\linewidth]{figures/tth/TTHLeptonicTag_2016_1.pdf} &
+        \includegraphics[width=0.48\linewidth]{figures/tth/TTHHadronicTag_2018_0.pdf}
+    \end{tabular}
+    \caption{Fitted signal models for simulation of \ttH production, shown for leptonic tag 1 in 2016 (left) and hadronic tag 0 in 2018 (right).}
+    \label{fig:tth_sig_model}
+\end{figure}
+
+
+\subsection{Background Models} \label{sec:tth_bkg_models}
+The background model in each category represents the smoothly falling spectrum of events in \mgg arising from processes other than Higgs boson production.
+The exact shape of this spectrum is not known, so a variety of functional forms are used to fit the \mgg distribution.
+Moreover, different choices for the functional form will generally result in different predictions for the background yield under the \mH peak.
+For this reason, the choice of functional form used to describe the smoothly falling background is treated as a discrete nuisance parameter.
+This strategy is known as the ``discrete profiling method'', first decribed in Ref.~\cite{envelope}.
+
+There are four families of functions considered for the background fits:
+\begin{enumerate}
+    \item Exponential 
+    \begin{equation}
+        f_N(x) = \sum_{i=0}^N a_i \exp{(-b_i x)}
+    \end{equation}
+    \item Power Law
+    \begin{equation}
+        f_N(x) = \sum_{i=0}^N a_i x^{-b_i}
+    \end{equation}
+    \item Bernstein polynomial
+    \begin{equation}
+        f_N(x) = \sum_{i=0}^N a_i \binom{N}{i} x^i (1-x)^{N-i}
+    \end{equation}
+    \item Laurent series
+    \begin{equation}
+        f_N(x) = \sum_{i=0}^N a_i x^{-4 + \sum_{j=0}^i (-1)^j j}
+    \end{equation}
+\end{enumerate}
+The $a_i$ and $b_i$ are the parameters to be fitted in each case.
+In general, as the order $N$ of each family of function is increased, the function gains more tunable parameters and can better fit any arbitrary distribution.
+In order to determine the optimal order $N$ of each function that is considered, an F-test~\cite{fisher_1922} is employed to assess the improvement in goodness-of-fit brought by using a higher-order function in the context of the increase in function complexity; a higher-order function is selected only if the improvement is greater than some threshold, chosen to penalize more complex functions.
+The final set of functions and their respective orders considered for the background models are shown for a few representative signal regions in Fig.~\ref{fig:tth_bkg_functions}.
+\begin{figure} [h!]
+    \centering
+    \begin{tabular}{c c}
+        \includegraphics[width=0.48\linewidth]{figures/tth/multipdf_TTHLeptonicTag_1.pdf}
+        \includegraphics[width=0.48\linewidth]{figures/tth/multipdf_TTHHadronicTag_2.pdf}
+    \end{tabular}
+    \caption{Families of functions considered for the background model, shown for leptonic tag 1 (left) and hadronic tag 2 (right).}
+    \label{fig:tth_bkg_functions}
+\end{figure}
+Unlike the fits for the signal models, the fits for the background models are performed inclusively for all three years of data-taking.
+The best-fit function for each signal region is taken as the nominal value of the background.
+The final background models, along with uncertainties, are shown in Fig.~\ref{fig:tth_bkg_models} for the same signal regions as shown in Fig.~\ref{fig:tth_bkg_functions}.
+\begin{figure} [h!]
+    \centering
+    \begin{tabular}{c c}
+        \includegraphics[width=0.48\linewidth]{figures/tth/bkgplot_TTHLeptonicTag_1.pdf}
+        \includegraphics[width=0.48\linewidth]{figures/tth/bkgplot_TTHHadronicTag_2.pdf}
+    \end{tabular}
+    \caption{Families of functions considered for the background model, shown for leptonic tag 1 (left) and hadronic tag 2 (right).}
+    \label{fig:tth_bkg_models}
+\end{figure}

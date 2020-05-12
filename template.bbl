@@ -1,10 +1,35 @@
 \begin{thebibliography}{10}
 
+\bibitem{CMS-PAS-LUM-17-001}
+{CMS Luminosity Measurements for the 2016 Data Taking Period}.
+\newblock Technical Report CMS-PAS-LUM-17-001, CERN, Geneva, 2017.
+
+\bibitem{CMS-PAS-LUM-17-004}
+{CMS luminosity measurement for the 2017 data-taking period at $\sqrt{s} =
+  13~\mathrm{TeV}$}.
+\newblock Technical Report CMS-PAS-LUM-17-004, CERN, Geneva, 2018.
+
+\bibitem{CMS-PAS-LUM-18-002}
+{CMS luminosity measurement for the 2018 data-taking period at $\sqrt{s} =
+  13~\mathrm{TeV}$}.
+\newblock Technical Report CMS-PAS-LUM-18-002, CERN, Geneva, 2019.
+
 \bibitem{Aad:2012tfa}
 Georges Aad et~al.
 \newblock {Observation of a new particle in the search for the Standard Model
   Higgs boson with the detector at the LHC}.
 \newblock {\em Phys. Lett. B}, 716:1, 2012.
+
+\bibitem{Adams:2016viv}
+T.~Adams et~al.
+\newblock {Beam test evaluation of electromagnetic calorimeter modules made
+  from proton-damaged PbWO$_4$ crystals}.
+\newblock {\em JINST}, 11(04):P04012, 2016.
+
+\bibitem{ball_pdf}
+Richard~D. Ball et~al.
+\newblock {Parton distributions for the LHC Run II}.
+\newblock {\em JHEP}, 04:040, 2015.
 
 \bibitem{beaudette2014:Brient:2013hsa}
 Florian Beaudette.
@@ -17,6 +42,27 @@ Fedor Bezrukov and Mikhail Shaposhnikov.
 \newblock {Why should we care about the top quark Yukawa coupling?}
 \newblock {\em J. Exp. Theor. Phys.}, 120:335--343, 2015.
 \newblock [Zh. Eksp. Teor. Fiz.147,389(2015)].
+
+\bibitem{pdf4lhc}
+Jon Butterworth et~al.
+\newblock {PDF4LHC recommendations for LHC Run II}.
+\newblock {\em J. Phys. G}, 43:023001, 2016.
+
+\bibitem{Cacciari:2008gp}
+Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
+\newblock {The anti-$k_{\text{T}}$ jet clustering algorithm}.
+\newblock {\em JHEP}, 04:063, 2008.
+
+\bibitem{Cacciari:2011ma}
+Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
+\newblock {FastJet} user manual.
+\newblock {\em Eur. Phys. J. C}, 72:1896, 2012.
+
+\bibitem{mc2hessian}
+Stefano Carrazza, Stefano Forte, Zahari Kassabov, Jose~Ignacio Latorre, and
+  Juan Rojo.
+\newblock {An Unbiased Hessian Representation for Monte Carlo PDFs}.
+\newblock {\em Eur. Phys. J. C}, 75(8):369, 2015.
 
 \bibitem{Chatrchyan:2012xdj}
 Serguei Chatrchyan et~al.
@@ -37,6 +83,25 @@ Serguei Chatrchyan et~al.
   at $\sqrt{s}$ = 7 and 8 TeV}.
 \newblock {\em JHEP}, 06:081, 2013.
 
+\bibitem{xgboost}
+Tianqi Chen and Carlos Guestrin.
+\newblock {XGBoost}: A scalable tree boosting system.
+\newblock In {\em Proceedings of the 22nd ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '16, pages 785--794, New York,
+  NY, USA, 2016. ACM.
+
+\bibitem{keras}
+Fran\c{c}ois Chollet et~al.
+\newblock Keras.
+\newblock \url{https://keras.io}, 2015.
+
+\bibitem{stop_search}
+{CMS Collaboration}.
+\newblock Search for direct production of supersymmetric partners of the top
+  quark in the all-jets final state in proton-proton collisions at sqrt(s) = 13
+  {T}e{V}.
+\newblock 2017.
+
 \bibitem{Contardo:2020886}
 D~Contardo, M~Klute, J~Mans, L~Silvestris, and J~Butler.
 \newblock {Technical Proposal for the Phase-II Upgrade of the CMS Detector}.
@@ -46,11 +111,90 @@ D~Contardo, M~Klute, J~Mans, L~Silvestris, and J~Butler.
   Mans (University of Minnesota) Additional contacts: Lucia.Silvestris@cern.ch,
   Jeremy.Mans@cern.ch.
 
+\bibitem{cowan_za}
+G.~Cowan.
+\newblock Discovery sensitivity for a counting experiment with background
+  uncertainty.
+\newblock Technical report, Royal Holloway, London, 2012.
+
+\bibitem{envelope}
+P.~D. Dauncey, M.~Kenzie, N.~Wardle, and G.~J. Davies.
+\newblock Handling uncertainties in background shapes: the discrete profiling
+  method.
+\newblock 2014.
+
+\bibitem{florian2016handbook}
+D.~de~Florian~et al.
+\newblock Handbook of lhc higgs cross sections: 4. deciphering the nature of
+  the higgs sector.
+
+\bibitem{tensorflow}
+Mart\'{\i}n~Abadi et~al.
+\newblock {TensorFlow}: Large-scale machine learning on heterogeneous systems.
+\newblock Software available from tensorflow.org.
+
+\bibitem{higgs_handbook}
+S.~Heinemeyer et~al.
+\newblock Handbook of lhc higgs cross sections: 3. higgs properties.
+\newblock 2013.
+
+\bibitem{fisher_1922}
+R.~Fisher.
+\newblock On the interpretation of $\chi^2$ from contingency tables, and the
+  calculation of p.
+\newblock {\em Journal of the Royal Statistical Society}, 85(1):87--94, 1922.
+
+\bibitem{Gentit:2001ky}
+F.X. Gentit.
+\newblock {Litrani: A General purpose Monte Carlo program simulating light
+  propagation in isotropic or anisotropic media}.
+\newblock {\em Nucl. Instrum. Meth. A}, 486:35--39, 2002.
+
+\bibitem{Guest_2016}
+Daniel Guest, Julian Collado, Pierre Baldi, Shih-Chieh Hsu, Gregor Urban, and
+  Daniel Whiteson.
+\newblock Jet flavor classification in high-energy physics with deep neural
+  networks.
+\newblock {\em Physical Review D}, 94(11), Dec 2016.
+
+\bibitem{lstm}
+Sepp Hochreiter and J{\"u}rgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock {\em Neural computation}, 9(8):1735--1780, 1997.
+
+\bibitem{ioffe2015batch}
+Sergey Ioffe and Christian Szegedy.
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift, 2015.
+
+\bibitem{Khachatryan_2017_jets}
+V.~Khachatryan et~al.
+\newblock Jet energy scale and resolution in the cms experiment in pp
+  collisions at 8 tev.
+\newblock {\em Journal of Instrumentation}, 12(02).
+
 \bibitem{Khachatryan:2015iwa}
 Vardan Khachatryan et~al.
 \newblock {Performance of Photon Reconstruction and Identification with the CMS
   Detector in Proton-Proton Collisions at sqrt(s) = 8 TeV}.
 \newblock {\em JINST}, 10(08):P08010, 2015.
+
+\bibitem{adam}
+Diederik~P. Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization, 2014.
+
+\bibitem{lecun_efficient_backprop}
+Yann LeCun, L{\'e}on Bottou, Genevieve~B. Orr, and Klaus-Robert M\"{u}ller.
+\newblock Efficient backprop.
+\newblock In {\em Neural Networks: Tricks of the Trade, This Book is an
+  Outgrowth of a 1996 NIPS Workshop}, pages 9--50, London, UK, 1998.
+  Springer-Verlag.
+
+\bibitem{CrystalBallRef}
+Mark~Joseph Oreglia.
+\newblock {\em A study of the reactions $\psi^\prime \to \gamma \gamma \psi$}.
+\newblock PhD thesis, Stanford University, 1980.
+\newblock {SLAC} Report {SLAC-R-236}.
 
 \bibitem{Hbb_obs}
 A.~M. Sirunyan et~al.
@@ -62,6 +206,22 @@ A.M. Sirunyan et~al.
 \newblock Particle-flow reconstruction and global event description with the
   cms detector.
 \newblock {\em Journal of Instrumentation}, 12(10):P10003, Oct 2017.
+
+\bibitem{Sirunyan_2018_deepcsv}
+A.M. Sirunyan et~al.
+\newblock Identification of heavy-flavour jets with the cms detector in pp
+  collisions at 13 tev.
+\newblock {\em Journal of Instrumentation}, 13(05):P05011–P05011, May 2018.
+
+\bibitem{increase_batch}
+Samuel~L. Smith, Pieter-Jan Kindermans, Chris Ying, and Quoc~V. Le.
+\newblock Don't decay the learning rate, increase the batch size, 2017.
+
+\bibitem{dropout}
+Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan
+  Salakhutdinov.
+\newblock Dropout: A simple way to prevent neural networks from overfitting.
+\newblock {\em Journal of Machine Learning Research}, 15:1929--1958, 2014.
 
 \bibitem{DBLP:journals/corr/abs-1211-6581}
 Eleftherios~Spyromitros Xioufis, William Groves, Grigorios Tsoumakas, and
