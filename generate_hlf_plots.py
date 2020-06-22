@@ -51,25 +51,30 @@ info = {
 
 counter = -1
 set_counter = 0
-width = 3
+width = 2
 with open("hlf_plots_auto.tex", "w") as f_out:
     for channel in info.keys():
         for style in [""]:
-            for i in info[channel]["all"]["numbers"]:
-                counter += 1
-                if counter % width == 0:
-                    if set_counter % 3 == 0:
+            for title, group in info[channel].items():
+                if title == "all":
+                    continue
+                for i in group["numbers"]:
+                    counter += 1
+                    if counter % (width*2) == 0:
                         f_out.write("\\clearpage\n")
-                    f_out.write("\\begin{figure}\n")
-                    f_out.write("   \\centering\n")
-                    f_out.write("   \\hspace*{-0.25cm}\n")
-                    f_out.write("   \\begin{tabular}{c c c}\n")
-                suffix = "&" if (counter + 1) % width != 0 else ""
-                f_out.write("       \includegraphics[width=0.29\linewidth,page=%d]{{figures/tth/%s%s}.pdf} %s\n" % (i, files[channel], style, suffix))
-                if (counter + 1) % width == 0:
-                    f_out.write("   \\end{tabular}\n")
-                    caption = "Data/MC agreement" if style == "" else "Comparison of signal and background shapes"
-                    f_out.write("   \\caption{%s for the high-level input features to the BDT in the t$\\bar{\\text{t}}$H %s channel.}\n" % (caption, channel))
-                    f_out.write("   \\label{fig:appA_%s_%s_%d}\n" % (channel, style, i))
-                    f_out.write("\\end{figure}\n\n")
-                    set_counter += 1
+                    if counter % width == 0:
+                        #if set_counter % 3 == 0:
+                        #    f_out.write("\\clearpage\n")
+                        f_out.write("\\begin{figure} [htbp!] \n")
+                        f_out.write("   \\centering\n")
+                        #f_out.write("   \\hspace*{-0.25cm}\n")
+                        f_out.write("   \\begin{tabular}{c c}\n")
+                    suffix = "&" if (counter + 1) % width != 0 else ""
+                    f_out.write("       \includegraphics[width=0.43\linewidth,page=%d]{{figures/tth/%s%s}.pdf} %s\n" % (i, files[channel], style, suffix))
+                    if (counter + 1) % width == 0:
+                        f_out.write("   \\end{tabular}\n")
+                        caption = "Agreement between data and simulation" if style == "" else "Comparison of signal and background shapes"
+                        f_out.write("   \\caption{%s for the %s input features to the BDT-bkg algorithm in the t$\\bar{\\text{t}}$H %s channel.}\n" % (caption, group["label"].lower(), channel.lower()))
+                        f_out.write("   \\label{fig:appA_%s_%s_%d}\n" % (channel, style, i))
+                        f_out.write("\\end{figure}\n\n")
+                        set_counter += 1

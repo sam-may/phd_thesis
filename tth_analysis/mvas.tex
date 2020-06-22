@@ -276,4 +276,39 @@ The outputs of the BDT-bkg algorithms are shown in Fig.~\ref{fig:tth_bdt-bkg}, w
     \label{fig:tth_bdt-bkg}
 \end{figure}
 
+\subsubsection{Validation in \ttZ Events}
+As an additional check of the agreement between data and simulation in the output of the BDT-bkg algorithms, a validation in a control region targeting \ttZ (\Zee) events is performed.
+The rationale for using \ttZ events is the following: \ttZ and \ttH should have very similar kinematic distributions for most components.
+Therefore, BDT-bkg should similarly assign high scores to \ttZ events as it does for \ttH events and a region of high \ttZ purity should be present at high scores.
+Because the cross section times branching fraction of \ttZ (\Zee) is much higher than that of \ttH (\Hgg), this control region provides a test of the agreement between data and simulation for high scores of BDT-bkg with much smaller statistical uncertainty than obtained in the \mgg sidebands.
+Lastly, it is important to emphasize that this check is qualitative in nature; no formal estimate of the compatibility between the distributions in data and simulation is performed.
 
+The selection for the \ttZ control region is the same as the preselection, with the exception that the cut on the conversion-safe electron veto is inverted to select for \Zee events.
+The reconstructed ``diphoton pairs'' in these events are then primarily composed of electrons that were reconstructed as photons.
+
+Additional cuts are next applied on top of the preselection in order to increase the \ttZ purity:
+\begin{itemize}
+    \item $|m_{\text{Z}} - m_{\gamma \gamma}| < 10$ GeV
+    \item $N_{\text{jets}} \geq 5 (3)$ for hadronic (leptonic)
+    \item $N_{\text{b-jets}} \geq 2$, using the tight (medium) working point for hadronic (leptonic)
+\end{itemize}
+
+One subtlety in validating the BDT-bkg performance in \ttZ events is the fact that BDT-bkg is specifically trained to reject events in which electrons are reconstructed as photons through use of the pixel seed veto (defined in Sec.~\ref{sec:evt_photon_vardef}).
+This challenge is addressed by manually changing the value of the pixel seed veto for these events before evaluating their score with the BDT-bkg algorithm: although most of these events fail the pixel seed veto, BDT-bkg is told that they all pass the pixel seed veto.
+This hard-coding of the pixel seed veto ensures that \ttZ events are not assigned lower scores due to the fact that the typical diphoton pair in these events is suspiciously electron-like.
+
+Comparisons of BDT-bkg between data and simulation are shown for events entering the \ttZ control regions in Fig.~\ref{fig:tth_bdt-bkg_ttz}.
+
+\begin{figure} [htbp!]
+    \centering
+    \begin{tabular}{c c}
+        \includegraphics[width=0.48\linewidth]{figures/tth/ttHHadronic_MVA_ttZ_21Feb2020.pdf}
+        \includegraphics[width=0.48\linewidth]{figures/tth/ttHLeptonic_MVA_ttZ_21Feb2020.pdf}
+    \end{tabular}
+    \caption{Output of the BDT-bkg algorithm for the hadronic channel (left) and the leptonic channel (right) in the \ttZ control region. The statistical (statistical $\oplus$ systematic) uncertainties in simulation are shown with black (red) shaded bands. Events in the gray shaded region are discarded.} 
+    \label{fig:tth_bdt-bkg_ttz}
+\end{figure}
+
+The purity of \ttZ events is much higher in the leptonic channel, where good agreement between data and simulation is observed at high BDT-bkg scores.
+Good agreement is also observed in the hadronic channel of the \ttZ control region, though the purity of \ttZ events is lower.
+Disagreement is present at lower values of BDT-bkg; however, these events do not enter the analysis selection.

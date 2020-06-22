@@ -7,7 +7,7 @@ Those affecting only the yield are modeled with log-normal pdfs, which approxima
 A Gaussian pdf is unbounded, meaning the quantity modeled by the pdf could, in principle, take on any value with non-zero probability.
 When modeling the uncertainty of positive definite quantities like cross sections, luminosities, and efficiencies, the possibility of a negative value is unphysical.
 A log-normal pdf is defined for a parameter $\theta$ as
-\begin{equation}
+\begin{equation} \label{eqn:tth_log_normal}
     p(\theta) = \frac{1}{\sqrt{2\pi} \ln(\kappa)} \exp \bigg[ -\frac{1}{2} \bigg(\frac{\ln(\theta/\hat{\theta})}{ \ln\kappa} \bigg)^2 \bigg] \frac{1}{\theta},
 \end{equation}
 where $\hat{\theta}$ is the most probable value and $\kappa$ is analogous to the width $\sigma$ of a Gaussian.
@@ -57,7 +57,28 @@ The remaining sources of uncertainty affect only the overall normalization of a 
 \begin{itemize}
     \item \emph{Shape of the b-tagging discriminant}: the b-tagging discriminant is corrected in simulation by a continuous reshaping factor (derived as a function of \pT, $\eta$, and jet flavor) such that the distributions between data and simulation agree. The uncertainty in the reshape factor for a given event is calculated as described in ~\cite{Sirunyan_2018_deepcsv} and has an impact of about 4\% on the \ttH signal strength measurement.
     \item \emph{Integrated luminosity}: the total uncertainty in the integrated luminosity is estimated to be about 2\%~\cite{CMS-PAS-LUM-17-001,CMS-PAS-LUM-17-004,CMS-PAS-LUM-18-002}.
-    \item \emph{Trigger Scale Factor}: the efficiency of the HLT triggers used for this analysis are calculated using the tag and probe method (FIXME cite?). Simulation is then corrected for this trigger efficiency, with the uncertainty in the efficiency taken as a systematic uncertainty.
+    \item \emph{Trigger Scale Factor}: the efficiency of the HLT triggers used for this analysis are calculated using the tag-and-probe method (FIXME cite?). Simulation is then corrected for this trigger efficiency, with the uncertainty in the efficiency taken as a systematic uncertainty.
+    \item \emph{Diphoton Preselection Scale Factor}: the efficiency of the diphoton preselection is calculated for both data and simulation with the tag-and-probe method and a scale factor is derived from the ratio between data and simulation. The uncertainty in this scale factor (binned by barrel/endcap and low/high $R_9$) is then used to calculate the associated systematic uncertainty. 
+    \item \emph{Photon Identification BDT Score}: the uncertainty in the photon ID BDT score is assumed to stem from the limited size of the training sample used to derive the corrections for its inputs, the shower shape and isolation variables. The magnitude of this uncertainty is estimated by splitting the original training sample in half and deriving two sets of corrections, taking the uncertainty as the difference between the two trainings.
+    \item \emph{Jet Energy Scale \& Resolution}: the scaling and smearing factors derived for individual jets each have associated uncertainties, which are propagated to the final result by varying all factors up/down by their uncertainty.
+    \item \emph{\met }: there are four individual uncertainty sources associated with the calculation of the \met:
+    \begin{itemize}
+        \item Jet energy scale: as described above.
+        \item Jet energy resolution: as described above.
+        \item Photon energy scale: the energy scales of pf photons used in the calculation of \met are varied within their uncertainties, with the result propagated through the \met calculation.
+        \item Unclustered pf candidate energy scale: the energy scales of pf candidates not clustered within a jet are varied in the same way. 
+    \end{itemize}
+    \item \emph{Lepton ID and Isolation}: both electrons and muons have scale factors derived with the tag-and-probe method to account for differences in efficiency between data and simulation, with the uncertainty in these scale factors dictating the resulting systematic uncertainty.
 \end{itemize}
 
-%The~\cite{florian2016handbook}
+\subsection{Impact of Systematic Uncertainties}
+By far, the largest systematic uncertainty is the uncertainty in the QCD renormalization and factorization scales, with an impact of about 10\% on $\mu_{\ttH}$.
+Other large uncertainties include those associated with the shape of the b-tagging discriminant, the integrated luminosity, the parton density function, and the \Hgg branching ratio.
+The impacts of the dominant systematic uncertainties on $\mu_{\ttH}$ are shown in Fig.~\ref{fig:tth_impacts}.
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{figures/tth/impacts_mutth_obs_1.pdf}
+    \caption{Impacts of the dominant systematic uncertainties on the measurement of $\mu_{\ttH}$.}
+    \label{fig:tth_impacts}
+\end{figure}
+
