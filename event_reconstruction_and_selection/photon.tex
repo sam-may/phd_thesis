@@ -78,7 +78,7 @@ The sum of probability distribution functions returned by the regressor are comp
         \includegraphics[width=0.48\linewidth]{figures/event_reconstruction_and_selection/figs_recoenergy_Fig-2a.png} &
         \includegraphics[width=0.48\linewidth]{figures/event_reconstruction_and_selection/figs_recoenergy_Fig-2b.png}
     \end{tabular}
-    \caption{Taken from~\cite{Khachatryan:2015iwa}}
+    \caption{Sum of probability distribution functions returned by the regressor (blue) compared with the actual $E_{\text{true}}/E_{\text{raw}}$ distribution in simulation (black). Taken from~\cite{Khachatryan:2015iwa}}
     \label{fig:photon_energy_regression}
 \end{figure}
 
@@ -92,14 +92,18 @@ The scale correction is calculated from the difference in the mass peaks between
 \begin{equation}
     \Delta P = \frac{m_{\text{data}} - m_{\text{MC}}}{\mZ}
 \end{equation}
-While the Z mass peak initially varies by a few percent as a function of $\eta$ and run number, the peak is quite stable after applying the scale corrections to data, as Fig.~\ref{fig:photon_scales} shows.
-Moreover, the reconstructed Z peak is quite consistent between data and simulation.
-\begin{figure} [h!]
-    \centering
-    \caption{Taken from blah.}
-    \label{fig:photon_scales}
-\end{figure}
+While the Z mass peak initially varies by a few percent as a function of $\eta$ and run number, the peak is stable after applying the scale corrections to data. %, as Fig.~\ref{fig:photon_scales} shows.
 
+%Moreover, the reconstructed Z peak is quite consistent between data and simulation.
+%\begin{figure} [h!]
+%    \centering
+%    \begin{tabular}{c c}
+%        \includegraphics[width=0.48\linewidth]{figures/event_reconstruction_and_selection/hig19015_Figure_002-a.pdf} &
+%        \includegraphics[width=0.48\linewidth]{figures/event_reconstruction_and_selection/hig19015_Figure_002-b.pdf}
+%    \end{tabular} 
+%    \caption{Taken from \cite{CMS:2020omd}.}
+%    \label{fig:photon_scales}
+%\end{figure}
 Finally, a smearing procedure is applied to the energy measurements in simulation to ensure that the energy resolution in simulation matches that observed in data.
 The additional smearing applied to simulation is a Gaussian function and its properties are determined by a fit to the Z invariant mass peak.
 The smearings are derived with the same bins as the energy scales.
@@ -108,7 +112,11 @@ The regression, scales, \& smearings are validated by comparing the invariant ma
 Fig.~\ref{fig:photon_energy_validation} shows that excellent agreement between data and simulation is achieved for all three years of data-taking.
 \begin{figure} [h!]
     \centering
-    \caption{Taken from blah.}
+    \begin{tabular}{c c}
+        \includegraphics[width=0.48\linewidth]{figures/event_reconstruction_and_selection/hig19015_Figure_002-a.pdf} &
+        \includegraphics[width=0.48\linewidth]{figures/event_reconstruction_and_selection/hig19015_Figure_002-b.pdf}
+    \end{tabular}
+    \caption{Validation of photon energy regression, scales, and smearings: comparisons of $m_{ee}$ distributions in \Zee events. Taken from \cite{CMS:2020omd}.}
     \label{fig:photon_energy_validation}
 \end{figure}
 An additional, ``residual'', scale correction is derived simultaneously with the smearings.
@@ -147,10 +155,11 @@ These are overwhelmingly populated by hadronic jets misidentified as photons.
 The BDT is trained with the (previously defined) shower shape and isolation variables.
 The photon ID BDT is validated with two methods, both exploiting the tag and probe FIXME:CITE (and describe tag and probe somewhere leading up to this) method.
 The first uses \Zee events in which electrons are reconstructed as photons and the second uses \Zuug events in which the \PZ decays to two muons and one of the muons radiates a photon.
-Good agreement between data and simulation is found with both methods, as seen in Fig.~\ref{fig:photon_idmva}.
+Good agreement between data and simulation is found with both methods. Fig.~\ref{fig:photon_idmva} shows the agreement in \Zee events.
 \begin{figure} [h!]
     \centering
-    \caption{Taken from blah.}
+    \includegraphics[width=0.7\linewidth]{figures/event_reconstruction_and_selection/hig19015_Figure_003-b.pdf}
+    \caption{Validation of the photon ID BDT in \Zee events: comparison of distributions in data and simulation. Taken from \cite{CMS:2020omd}.}
     \label{fig:photon_idmva}
 \end{figure}
 

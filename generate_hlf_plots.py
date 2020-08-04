@@ -26,7 +26,7 @@ all_lep = pho_kin_lep + jet_kin_lep + dipho_kin_lep + lep_kin_lep + evt_kin_lep
 print(len(all_lep))
 
 
-files = { "Hadronic" : "ttHHadronic_RunII_MVA_Presel_v4.11_7Apr2020_impute_histogramsRunIIstd", "Leptonic" : "ttHLeptonic_RunII_MVA_Presel_v4.11_7Apr2020_histogramsRunIIstd" }
+files = { "Hadronic" : "ttHHadronic_RunII_MVA_Presel_v4.11_9Jun2020_impute_histogramsRunIIstd", "Leptonic" : "ttHLeptonic_RunII_MVA_Presel_v4.11_9Jun2020_histogramsRunIIstd" }
 
 info = { 
         "Hadronic" : 

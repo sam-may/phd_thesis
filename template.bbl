@@ -14,11 +14,29 @@
   13~\mathrm{TeV}$}.
 \newblock Technical Report CMS-PAS-LUM-18-002, CERN, Geneva, 2019.
 
+\bibitem{CMS:2020qzr}
+{Measurement of the top quark Yukawa coupling from $\mathrm{t}\bar{\mathrm{t}}$
+  kinematic distributions in the dilepton final state at
+  $\sqrt{s}=13~\mathrm{TeV}$}.
+\newblock 5 2020.
+
+\bibitem{CMS:2020omd}
+{Measurements of Higgs boson properties in the diphoton decay channel at
+  $\sqrt{s}$ = 13 TeV}.
+\newblock 7 2020.
+
 \bibitem{Aad:2012tfa}
 Georges Aad et~al.
 \newblock {Observation of a new particle in the search for the Standard Model
   Higgs boson with the detector at the LHC}.
 \newblock {\em Phys. Lett. B}, 716:1, 2012.
+
+\bibitem{Aad:2020ivc}
+Georges Aad et~al.
+\newblock {Study of the CP properties of the interaction of the Higgs boson
+  with top quarks using top quark associated production of the Higgs boson and
+  its decay into two photons with the ATLAS detector at the LHC}.
+\newblock 4 2020.
 
 \bibitem{Adams:2016viv}
 T.~Adams et~al.
@@ -102,6 +120,14 @@ Fran\c{c}ois Chollet et~al.
   {T}e{V}.
 \newblock 2017.
 
+\bibitem{tth_observation}
+CMS Collaboration.
+\newblock Measurements of $\mathrm{t\bar{t}}$h production and the cp structure
+  of the yukawa interaction between the higgs boson and top quark in the
+  diphoton decay channel.
+\newblock 2020.
+\newblock Submitted to Physical Review Letters.
+
 \bibitem{Contardo:2020886}
 D~Contardo, M~Klute, J~Mans, L~Silvestris, and J~Butler.
 \newblock {Technical Proposal for the Phase-II Upgrade of the CMS Detector}.
@@ -116,6 +142,12 @@ G.~Cowan.
 \newblock Discovery sensitivity for a counting experiment with background
   uncertainty.
 \newblock Technical report, Royal Holloway, London, 2012.
+
+\bibitem{Cowan:2010js}
+Glen Cowan, Kyle Cranmer, Eilam Gross, and Ofer Vitells.
+\newblock {Asymptotic formulae for likelihood-based tests of new physics}.
+\newblock {\em Eur. Phys. J. C}, 71:1554, 2011.
+\newblock [Erratum: Eur.Phys.J.C 73, 2501 (2013)].
 
 \bibitem{envelope}
 P.~D. Dauncey, M.~Kenzie, N.~Wardle, and G.~J. Davies.
@@ -137,6 +169,11 @@ Mart\'{\i}n~Abadi et~al.
 S.~Heinemeyer et~al.
 \newblock Handbook of lhc higgs cross sections: 3. higgs properties.
 \newblock 2013.
+
+\bibitem{Evans_2008}
+Lyndon Evans and Philip Bryant.
+\newblock {LHC} machine.
+\newblock {\em Journal of Instrumentation}, 3(08):S08001--S08001, aug 2008.
 
 \bibitem{fisher_1922}
 R.~Fisher.
@@ -200,6 +237,11 @@ Mark~Joseph Oreglia.
 A.~M. Sirunyan et~al.
 \newblock {Observation of Higgs boson decay to bottom quarks}.
 \newblock {\em Phys. Rev. Lett.}, 121(12):121801, 2018.
+
+\bibitem{Sirunyan:2018hoz}
+Albert~M Sirunyan et~al.
+\newblock {Observation of $\mathrm{t\overline{t}}$H production}.
+\newblock {\em Phys. Rev. Lett.}, 120(23):231801, 2018.
 
 \bibitem{particle_flow}
 A.M. Sirunyan et~al.

@@ -4,8 +4,33 @@ Physics beyond the Standard Model, such as mechanisms of mass generation other t
 Consequently, precise measurements of the Higgs boson's coupling to elementary particles are of great interest: any deviation from the Standard Model prediction could be indicative of the presence of new physics.
 %
 \subsection{The Top Quark Yukawa Coupling}
-The coupling of the Higgs boson to the top quark, called the top quark Yukawa coupling, is of particular interest from a theoretical standpoint~\cite{why_care_top_yukawa}.
-FIXME: list reasons
-A primary means of constraining the top quark Yukawa coupling is through
+The coupling of the Higgs boson to the top quark, called the top quark Yukawa coupling, is of particular interest from a theoretical standpoint.
+Specifically, the top quark Yukawa coupling can help give an indication about the scale of new physics~\cite{why_care_top_yukawa}.
 
-\subsection{\ttH~Production as a Probe of the Top Quark Yukawa Coupling}
+A primary means of constraining the top quark Yukawa coupling is through the measurement of the \ttH production cross section, which is proportional its square:
+\begin{equation}
+\sigma_{\ttH} \propto y_{\text{t}}^2.
+\end{equation}
+The dominant tree-level diagram for \ttH production is shown in Fig.~\ref{fig:tth_feynman}.
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[width=0.4\linewidth]{figures/tth/tth_feynman.png}
+    \caption{Tree-level production of a Higgs boson in association with a top quark-antiquark pair.}
+    \label{fig:tth_feynman}
+\end{figure} 
+
+This is in fact the best method of \emph{directly} constraining the top quark Yukawa coupling at the LHC.
+Indirect constraints on $y_\text{t}$ come from measurements of Higgs boson production via gluon fusion and \Hgg decay, both of which proceed primarily through a top quark loop, as in Fig. ~\ref{fig:hgg_feynman}.
+However, these constraints are indirect because they make the assumption that no other BSM particles also contribute to the loops. 
+
+Complementary methods of constraining $y_\text{t}$ include extraction from the shapes of kinematic distributions in \ttb events~\cite{CMS:2020qzr}, reporting a measured value of $y_\text{t} = 1.16^{+0.24}_{-0.35}$.
+The uncertainty on $y_\text{t}$ is more than a factor of 2 less than that obtained with a measurement of \ttH (\Hgg)\footnote{One caveat is that the \ttH (\Hgg) result does not quote an actual value of $y_\text{t}$, but rather the \ttH cross section, which is proportional to the square of $y_\text{t}$.}, but does not rely on assumptions about the \Hgg branching ratio.
+
+\subsection{Landscape of \ttH Measurements}
+The first observation of the \ttH process was reported in 2018 by the CMS experiment~\cite{Sirunyan:2018hoz}, using 36 \fbinv of data from pp collisions at $\sqrt{s} = 13$ TeV.
+The first observations of \ttH production in a single H decay channel (\Hgg) were reported by the CMS~\cite{tth_observation} and ATLAS~\cite{Aad:2020ivc} collaborations.
+The CMS observation of \ttH (\Hgg) is detailed in the following sections of this thesis.
+
+
+
+%\subsection{\ttH~Production as a Probe of the Top Quark Yukawa Coupling}
