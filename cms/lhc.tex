@@ -7,5 +7,31 @@ The LHC collides both proton and lead (Pb) ion beams.
 The CMS, ATLAS, and LHCb experiments are designed to study physics from proton-proton collisions, while the ALICE experiment utilizes the Pb-Pb collision data.
 This thesis focuses on results obtained in proton-proton collisions with the CMS detector.
 
-Given that the primary research goal of the LHC is to disover physics beyond the Standard Model, protons are the natural choice for the beam content, rather than electron-positron beams as used in other colliders like the Large Electron Positron (LEP) collider~\cite{Taylor:2017edx}.
-The advantages provided by proton beams as a disovery tool include 
+Given that the primary research goal of the LHC is to disover physics beyond the Standard Model, protons are the natural choice for the beam content, rather than electron-positron beams, as used in other colliders like the Large Electron Positron (LEP) collider~\cite{Taylor:2017edx}.
+Two primary advantages provided by proton beams as a disovery tool are the fact that protons are composite particles, rather than elementary particles like electrons, and the fact that proton beams can more easily be sustained at higher energies.
+
+Protons are primarly composed of up quarks, down quarks, and gluons, with the subcomponents collectively referred to as partons.
+An interaction between two protons is then more precisely an interaction between two partons from each proton.
+The partons each carry some fraction of the proton's energy, effectively providing a range of collision energies.
+Since the energy scale of new physics is not precisely known, it is more desirable to have collisions occuring at a range of energies, as naturally occurs in proton collisions.
+The proton beams at the LHC are accelerated to energies of 6.5 TeV, providing a center of mass energy of 13 TeV.
+New physics which exists at the TeV scale is then accessible, in principle, through the range of energies provided by proton-proton collisions.
+In contrast, in order to achieve sensitivity to possible new physics at a range of energies with electron-positron beams, one would need to manually change the collision energies.
+Broadly speaking, proton-proton colliders are better suited for discovery of particles whose exact mass is not known, while electron-positron colliders are better suited for precision measurements of particles whose mass is precisely known.
+
+Proton beams are more easily sustained at high energies than electron-positron beams due to the fact that protons dissipate less energy through synchrotron radiation.
+The energy emitted per unit time per unit solid angle for an accelerated charged particle is inversely proportional to the particle's mass~\cite{Jackson:100964}:
+\begin{equation}
+    P \propto \frac{1}{m^2}
+    \label{eqn:bremm}
+    %\caption{Mass dependence of the energy radiated per unit time for an accelerated charged particle.}
+\end{equation}
+Given that the mass of an electron is on the order of 1 MeV and the mass of a proton is on the order of 1 GeV, the mass dependence of Eqn~\ref{eqn:bremm} contributes a factor of $\mathcal O(10^6)$ difference in the energy lost to synchrotron radiation between protons and electrons accelerated in a circular trajectory.
+The challenges associated with energy lost to synchrotron radiation in electron beams are reflected in the difference of center-of-mass energies achieved by the LHC (13 TeV) and LEP (209 GeV).
+
+The LHC accelerates protons in groups known as bunches. The probability for any two protons to interact is extremely low; this is counteracted by increasing the number of protons contained in each bunch, $N_b$.
+$N_b$ cannot be increased without bound and is limited by nonlinear beam-beam interactions which occur when two bunches collide with each other.
+At the LHC, the maximum attainable bunch size is $N_b = 1.15 \times 10^{11}$.
+
+Even with billions of protons per bunch, only $\mathcal O(10-100)$ pairs of protons will actually collide with each other in a given bunch crossing. % FIXME: update with reference to pileup histogram
+

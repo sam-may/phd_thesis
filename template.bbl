@@ -224,6 +224,11 @@ Sergey Ioffe and Christian Szegedy.
 \newblock Batch normalization: Accelerating deep network training by reducing
   internal covariate shift, 2015.
 
+\bibitem{Jackson:100964}
+John~David Jackson.
+\newblock {\em {Classical electrodynamics; 2nd ed.}}
+\newblock Wiley, New York, NY, 1975.
+
 \bibitem{Khachatryan_2017_jets}
 V.~Khachatryan et~al.
 \newblock Jet energy scale and resolution in the cms experiment in pp
@@ -284,6 +289,12 @@ Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan
   Salakhutdinov.
 \newblock Dropout: A simple way to prevent neural networks from overfitting.
 \newblock {\em Journal of Machine Learning Research}, 15:1929--1958, 2014.
+
+\bibitem{Taylor:2017edx}
+Thomas Taylor and Daniel Treille.
+\newblock {\em {The Large Electron Positron Collider (LEP): Probing the
+  Standard Model}}, volume~27, pages 217--261.
+\newblock 2017.
 
 \bibitem{DBLP:journals/corr/abs-1211-6581}
 Eleftherios~Spyromitros Xioufis, William Groves, Grigorios Tsoumakas, and
