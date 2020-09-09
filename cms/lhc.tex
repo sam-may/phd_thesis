@@ -33,5 +33,30 @@ The LHC accelerates protons in groups known as bunches. The probability for any 
 $N_b$ cannot be increased without bound and is limited by nonlinear beam-beam interactions which occur when two bunches collide with each other.
 At the LHC, the maximum attainable bunch size is $N_b = 1.15 \times 10^{11}$.
 
-Even with billions of protons per bunch, only $\mathcal O(10-100)$ pairs of protons will actually collide with each other in a given bunch crossing. % FIXME: update with reference to pileup histogram
+Although the large circumference (27 km) of the LHC results in longer and more expensive beam pipes, it provides several advantages for sustaining high energy collisions.
+Proton beams must be constrained to travel in a circular shape through the presence of a large magnetic field.
+The beams at the LHC require a magnetic field of over 8 T to stay on track; however, this requirement would be significantly higher with a smaller circumference collider -- a larger circumference reduces the curvature and allows for higher energy beams at a given magnetic field strength.
+Sustaining such a large magnetic field also presents challenges: an extremely large current (over $10^4$ A) is required to produce the magnetic field.
+For such a high current, superconducting magnets are required: niobium-titanium superconducting electromagnets are used in the LHC, and superconductors stable at higher magnetic fields are extremely expensive. 
 
+Even with billions of protons per bunch, only $\mathcal O(10-100)$ pairs of protons will actually collide with each other in a given bunch crossing. % FIXME: update with reference to pileup histogram
+Fig~\ref{fig:cms_pileup} shows the distribution of the number of proton-proton interactions, informally referred to as the ``pileup'', in the CMS detector during Run 2 of the LHC. 
+The bunches are spaced by a distance corresponding to a time of 25 ns between bunches.
+In general, the more closely bunches are grouped together, the more collisions can be recorded; however, the bunch spacing is limited by considerations like experiments' temporal resolution -- bunches must be sufficiently separated to allow each experiment to distinguish between consecutive collisions.
+
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[width=0.6\linewidth]{figures/cms/pileup_allYears_run2.pdf}
+    \caption{Mean number of interactions per bunch crossing recorded by the CMS detector during Run 2 of the LHC. Taken from~\cite{public_lumi}.}
+    \label{fig:cms_pileup}
+\end{figure}
+
+During Run 2 of the LHC, the CMS detector recorded 150\fbinv of data from proton-proton collisions.
+A subset of that data is verified to have stable detector performance and marked as usable for physics analysis, amounting to 137\fbinv of data used in the analysis discussed in this work.
+
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[width=\linewidth]{figures/cms/int_lumi_allcumulative_pp_run2_cutout.pdf}
+    \caption{Total luminosity delivered by the LHC (blue) and total luminosity recorded by the CMS detector (yellow) during Run 2 of the LHC. Taken from~\cite{public_lumi}.}
+    \label{fig:cms_lumi}
+\end{figure}
