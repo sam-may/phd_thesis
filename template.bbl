@@ -76,6 +76,12 @@ Fedor Bezrukov and Mikhail Shaposhnikov.
 \newblock {\em J. Exp. Theor. Phys.}, 120:335--343, 2015.
 \newblock [Zh. Eksp. Teor. Fiz.147,389(2015)].
 
+\bibitem{Botta:2285433}
+Valeria Botta.
+\newblock {Performance and track-based alignment of the Phase-1 upgraded CMS
+  pixel detector}.
+\newblock Technical Report CMS-CR-2017-256, CERN, Geneva, Sep 2017.
+
 \bibitem{pdf4lhc}
 Jon Butterworth et~al.
 \newblock {PDF4LHC recommendations for LHC Run II}.
@@ -277,6 +283,18 @@ A.M. Sirunyan et~al.
 \newblock Particle-flow reconstruction and global event description with the
   cms detector.
 \newblock {\em Journal of Instrumentation}, 12(10):P10003, Oct 2017.
+
+\bibitem{Sirunyan:2270046}
+A.M. Sirunyan et~al.
+\newblock {Particle-flow reconstruction and global event description with the
+  CMS detector. Particle-flow reconstruction and global event description with
+  the CMS detector}.
+\newblock {\em JINST}, 12(CMS-PRF-14-001. CMS-PRF-14-001-004. 10):P10003. 82 p,
+  Jun 2017.
+\newblock Replaced with the published version. Added the journal reference and
+  DOI. All the figures and tables can be found at
+  http://cms-results.web.cern.ch/cms-results/public-results/publications/PRF-14-001
+  (CMS Public Pages).
 
 \bibitem{Sirunyan_2018_deepcsv}
 A.M. Sirunyan et~al.

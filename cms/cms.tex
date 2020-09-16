@@ -15,7 +15,7 @@ The various components of the CMS detector are shown in Fig.~\ref{fig:cms_schema
 
 As its name suggests, the primary feature of the CMS detector is a superconducting solenoid providing a magnetic field of 4~T.
 The purpose of the magnetic field is to bend the path of charged particles originating from inelastic proton-proton interactions: the precise spatial resolution of the tracker and muon system allows one to determine a particle's radius of curvature, in turn allowing one to determine the particle's momentum.
-Excellent momentum resolution of charged particles supports nearly every physics analysis performed with the CMS detector, but is especialy important for determining the invariant mass of heavy resonances (e.g. studying the properties of the Higgs boson in the H $\to$ ZZ$^{*} \to 4l$ channel), distinguishing between hadronic jets which originate from b quarks from those which originate from gluons or light-flavor quarks (e.g. the H $\to$ bb decay channel and searches for new physics involving final states with b-jets), and for precise resolution of the missing transverse energy (e.g. final states with neutrinos or searches for new physics involving final states with undetected dark matter or supersymmetry candidate particles).
+Excellent momentum resolution of charged particles supports nearly every physics analysis performed with the CMS detector, but is especially important for determining the invariant mass of heavy resonances (e.g. studying the properties of the Higgs boson in the H $\to$ ZZ$^{*} \to 4l$ channel), distinguishing between hadronic jets which originate from b quarks from those which originate from gluons or light-flavor quarks (e.g. the H $\to$ bb decay channel and searches for new physics involving final states with b-jets), and for precise resolution of the missing transverse energy (e.g. final states with neutrinos or searches for new physics involving final states with undetected dark matter or supersymmetry candidate particles).
 
 The other major components of the detector include: 
 \begin{itemize}
@@ -45,15 +45,61 @@ However, at the LHC, the transverse momentum of a given particle is typically su
 Much of the reason for CMS's 20m of length in the direction of the beam axis is motivated by the goal of hermeticity.
 The forward calorimeter (described in greater detail in Sec.~\ref{sec:cms_hcal}) provides coverage up to pseudorapidities of $|\eta| \leq 5.0$.
 Pairing the extensive range in pseudorapidities with the CMS detector's complete coverage in the $\hat{\phi}$-direction, the CMS detector is nearly hermetic, aiding the resolution of missing transverse energy and consequently the ability to infer the presence of undetected particles.
-\subsection{Solenoid}
+The exact coverage of each of the detector subcomponents is discussed in greater detail in the following subsections.
 
-\subsection{Tracker}
+\subsection{Solenoid}
+The solenoid installed in the CMS detector is over 12m in length and 6m in diameter, capable of providing a 4~T magnetic field.
+The purpose of such a strong magnetic field is to bend the trajectories of charged particles (as illustrated in Fig.~\ref{fig:cms_transverse_view}, allowing CMS to measure their momentum, mass, and charge.
+Fig.~\ref{fig:cms_transverse_view} depicts the three major classes of particles which have their trajectories curved by the magnetic field produced by the solenoid: an electron (red), a charged hadron (green), and a muon (blue).
+Measurements of the momenta of electrons are also aided by the ECAL (described in Sec.~\ref{sec:cms_ecal}), those of charged hadrons are also aided by the HCAL (described in Sec.~\ref{sec:cms_hcal}), and those of muons are also aided by the muon system (described in Sec.~\ref{sec:cms_muon_system}).
+
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[width=\linewidth]{figures/cms/cms_transverse_view.png}
+    \caption{Depiction of a transverse slice of the CMS detector, along with trajectories of particles of different types. Taken from~\cite{Sirunyan:2270046}.}
+    \label{fig:cms_transverse_view}
+\end{figure}
+
+The solenoid is installed around the the tracker (Sec.~\ref{sec:cms_tracker}), the ECAL (Sec.~\ref{sec:cms_ecal}), and the HCAL (Sec.~\ref{sec:cms_hcal}) which is why the solenoid must be so large.
+In order to support the massive current (over $10^4$~A) required for the magnetic field, the solenoid is constructed with superconducting Niobium-Titanium (NbTi), and its temperature must be kept sufficiently low to ensure superconductivity of the NbTi. 
+
+\subsection{Tracker} \label{sec:cms_tracker}
+The innermost component of the CMS detector is the silicon tracker, and its primary aim is to provide the precise reconstruction of charged particles and secondary vertices (an inelastic pp collision is deemed a ``primary vertex'' while decays of particles produced from a primary vertex are deemed ``secondary vertices'').
+The tracker is nearly 6~m in length and 2.5m in diameter, composed of an inner pixel detector with three layers ranging from 4-10~cm and an outer silicon strip tracker with ten layers ranging to 1.1~m.
+Both the pixel detector and the silicon strip tracker are accompanied by endcap disks on either end of the barrel, extending the pseudorapidity coverage to $|\eta| \leq 2.5$.
+Between the data-taking periods corresponding to 2016 and 2017, the inner pixel detector was upgraded~\cite{Botta:2285433}, extending the coverage of the tracker up to $|\eta| \leq 3.0$.
+As shown in Fig.~\ref{fig:cms_tracker_upgrade}, the number of fake tracks, the impact parameter resolution, and the vertex resolution are each improved as well, resulting in an approximately 10\% improvement in the b-tagging efficiency for a fixed fake rate.
+
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[width=\linewidth]{figures/cms/cms_pixel_upgrade.png}
+    \caption{Comparison of tracker performance before and after the upgrade to the pixel detector, performed in between the 2016 and 2017 data-taking periods. Taken from~\cite{Botta:2285433}.}
+    \label{fig:cms_tracker_upgrade}
+\end{figure}
+
+The primary design considerations for the tracker include the following:
+\begin{itemize}
+    \item Ability to reconstruct a large number of charged particles in each bunch crossing, with $\mathcal O(1000)$ charged particles expected from a single bunch crossing at the LHC design luminosity of $\mathcal L = 1034$~cm$^{-2}$~s$^{-1}$ (corresponding to about 20 individual pp interactions).
+    \item Ability to reconstruct charged particles with precise temporal resolution, with bunch crossings separated by a distance corresponding to 25~ns.
+    \item Minimal interaction of photons with the tracker material, as precise measurements of photons are vital to studying Higgs physics in the \Hgg decay channel.
+\end{itemize}
+
+The first two considerations are in direct conflict with the third consideration: a tracker with high granularity and fast response implies large power density of electronics, which requires efficient cooling. This increases the material budget of the tracker, increasing the chances of bremsstrahlung and photon conversions, which in turn degrade the ECAl's photon energy resolution. 
+An acceptable compromise providing both execllent tracking and excellent photon resolution was achieved with the tracker design depicted in Fig.~\ref{fig:cms_tracker_schematic}.
+
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/cms/cms_tracker_schematic.png}
+    \caption{Schematic of the CMS tracker from a cross-sectional viewpoint. TIB, TOB, TID, and TEC represent the tracker inner barrel, tracker outer barrel, tracker inner disk, and tracker endcap components, respectively. Taken from~\cite{Chatrchyan:2008aa}.}
+    \label{fig:cms_tracker_schematic}
+\end{figure}
+
 
 \subsection{Electromagnetic Calorimeter} \label{sec:cms_ecal}
 
 \subsection{Hadronic Calorimeter} \label{sec:cms_hcal}
 
-\subsection{Muon System}
+\subsection{Muon System} \label{sec:cms_muon_system}
 
 \subsection{Trigger System} \label{sec:cms_trigger}
 
