@@ -127,6 +127,15 @@ Serguei Chatrchyan et~al.
   at $\sqrt{s}$ = 7 and 8 TeV}.
 \newblock {\em JHEP}, 06:081, 2013.
 
+\bibitem{Chatrchyan:1704291}
+Serguei Chatrchyan et~al.
+\newblock {Description and performance of track and primary-vertex
+  reconstruction with the CMS tracker}.
+\newblock {\em JINST}, 9(CMS-TRK-11-001. CERN-PH-EP-2014-070.
+  CMS-TRK-11-001):P10009. 80 p, May 2014.
+\newblock Comments: Replaced with published version. Added journal reference
+  and DOI.
+
 \bibitem{xgboost}
 Tianqi Chen and Carlos Guestrin.
 \newblock {XGBoost}: A scalable tree boosting system.

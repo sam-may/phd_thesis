@@ -94,12 +94,44 @@ An acceptable compromise providing both execllent tracking and excellent photon 
     \label{fig:cms_tracker_schematic}
 \end{figure}
 
+The material budget for the CMS tracker is shown in Fig.~\ref{fig:cms_tracker_budget}, showing the thickness of the tracker material in terms of the characteristic radiation lengths $X_0$ (for electromagnetic particles, e.g. electrons and photons) and characteristic nuclear interaction lengths $\lambda_I$ (i.e. for hadrons).
+The tracker thickness in terms of both radiation lengths and nuclear interaction lengths is lowest in the most central part of the barrel and increases in the more forward components, accounting for one of the reasons that CMS achieves better energy resolution for very central particles.
+
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[width=\linewidth]{figures/cms/cms_tracker_budget.png}
+    \caption{The material budget for the CMS tracker shown for both the characteristic radiation lengths of electromagnetic interactions (left) and the characteristic nuclear interaction lengths of hadronic interactions (right), with the contributions of each of the tracker subcomponents shown individually. Taken from~\cite{Chatrchyan:1704291}.}
+    \label{fig:cms_tracker_budget}
+\end{figure}
+
+The tracking effieciency achieved by the CMS tracker is shown in Fig.~\ref{fig:cms_tracker_eff}, for muons, pions, and electrons as a function of their transverse momentum.
+In general, the tracker achieves higher efficiency for muons than for electrons or pions, as electrons are more likely to emit radiation via bremsstrahlung and charged pions may undergo nuclear interactions with the tracker material.
+Energy resolution of high \pT ($\mathcal O(TeV)$) muons is assisted by the muon system, as shown in Fig.~\ref{fig:cms_muon_vs_tracker}.
+
+\begin{figure} [htbp!]
+    \centering
+    \begin{tabular}{c c c}
+        \includegraphics[width=0.33\linewidth]{figures/cms/cms_tracker_muon.png} &
+        \includegraphics[width=0.33\linewidth]{figures/cms/cms_tracker_pion.png} &
+        \includegraphics[width=0.33\linewidth]{figures/cms/cms_tracker_electron.png}
+    \end{tabular}
+    \caption{Tracking efficiency as a function of \pT for muons (left), charged pions (middle), and electrons (right), shown separately for the barrel (black), transition region (blue), and endcap (red). Taken from~\cite{Chatrchyan:1704291}.}
+    \label{fig:cms_tracker_eff}
+\end{figure}
+
 
 \subsection{Electromagnetic Calorimeter} \label{sec:cms_ecal}
 
 \subsection{Hadronic Calorimeter} \label{sec:cms_hcal}
 
 \subsection{Muon System} \label{sec:cms_muon_system}
+
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/cms/cms_tracker_vs_muon.png}
+    \caption{Fractional momentum resolution for muons reconstructed by the CMS detector, shown for reconstructions using the inner tracker only (blue), the muon system only (black), and the combination of measurements from both subdetectors (red). The muon system improves significantly the momentum resolution of $\mathcal O$(TeV) muons. Taken from~\cite{Chatrchyan:2008aa}.}
+    \label{fig:cms_muon_vs_tracker}
+\end{figure}
 
 \subsection{Trigger System} \label{sec:cms_trigger}
 
