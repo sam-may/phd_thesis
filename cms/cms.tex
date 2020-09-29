@@ -126,12 +126,41 @@ Along with the tracker, the ECAL also assists in measurements of electrons which
 Other charged particles, like charged pions and muons, interact relatively negligibly with the ECAL, as they emit a much smaller fraction of their energy via bremsstrahlung (due to the fact that they are much more massive than electrons).
 
 The CMS ECAL is composed of over $6 \times 10^4$ lead tungstate (PbWO$_4$) crystals in the barrel and over $7 \times 10^3$ crystals in each of the endcaps, with the barrel component (EB) providing coverage up to $|\eta| \leq 1.479$ and the endcap components providing coverage from $1.479 \leq |\eta| \leq 3.0$~\cite{Chatrchyan:2008aa}.
+
 Lead tungstate is an attractive choice for the ECAL crystals for several reasons, including its high density (8.28~g/cm$^3$), short radiation length (0.89~cm), and small Moliere radius (2.2~cm), defined as the average size of a cylinder containing 90\% of an incident photon or electron's energy.
 The short radiation length allows the CMS ECAL to be compact, and the small Moliere radius allows for better spatial resolution of incident photons and electrons.
 The former is important from a practical and financial point of view, as the ECAL must be placed within the HCAL and solenoid, while the latter is important as better spatial resolution allows for better diphoton and dielectron invariant mass resolution (assisting with idenitfying \Hgg and \Zee events).
 
-Two additional attractive properties of lead tungstate include its 
+Two additional attractive properties of lead tungstate include its short scintillation time and resistance to radiation damage.
+The scintillation time must be on the order of the bunch crossing time at the LHC (25~ns) so that ECAL deposits from consecutive crossings can be distinguished from each other (a short bunch crossing time is desirable as it results in increased integrated luminosity).
+Indeed, about 80\% of light is emitted within 25~ns within the CMS ECAL~\cite{Bayatian:2006nff}, allowing for high temporal resolution in the high luminosity conditions of the LHC.
+Due to the high particle flux, radiation damage to detector components is inevitable; this results in wavelength-dependent loss of light transmission~\cite{Bayatian:2006nff}.
+Although lead tungstate is particularly radiation-hard, the damage must still be tracked and corrected for by injecting laser light and monitoring the transparency of crystals.
+
+Further details of the reconstruction of photons are described in Sec.~\ref{sec:evt_photon}.
+
 \subsection{Hadronic Calorimeter} \label{sec:cms_hcal}
+The CMS Hadronic Calorimeter (HCAL) is particularly important for measuring the momenta of neutral hadrons, the only detector subcomponent which is able to do so.
+It also assists in the momenta measurements of charged hadrons, though the tracker is typically much more effective for this purpose.
+Precisely measuring the momenta of hadrons allows for good energy resolution of hadronic jets -- this is important for constructing a reliable estimate of the missing transverse momentum in a given event.
+Conversely, poor resolution of jet energies would result in poor resolution of the missing transverse momentum, degrading the experiment's ability to identify events in which there is true missing transverse momentum, either from neutrinos or undiscovered particles which do not interact with the CMS detector.
+
+The CMS HCAL is composed of two primary components: barrel (HB), covering $|\eta| \leq 1.4$ and endcap (HE), covering $1.3 \leq |\eta| \leq 3.0$.
+The barrel compoenent also contains a ``tail catcher'' placed outside the solenoid (HO), which covers up to $|\eta| \leq 1.26$.
+Finally, a forward calorimeter (HF) specializes in measuring very forward particles, up to $|\eta| \leq 5$~\cite{Bayatian:2006nff}.
+The various components of the HCAL and their pseudorapidity coverage are depicted in Fig.~\ref{fig:cms_hcal_schematic}.
+
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{figures/cms/hcal_schematic.png}
+    \caption{Schematic of subcomponents of the CMS HCAL, along with their pseudorapidity coverage. Taken from~\cite{Chatrchyan:2008aa}.}
+    \label{fig:cms_hcal_schematic}
+\end{figure}
+
+Conceptually, the HCAL aims to measure hadron energies by placing a high density of atomic nuclei, with which hadrons are likely to undergo nuclear (i.e. strong) interactions.
+The products of these nuclear interactions are then measured with plastic scintillators and the HCAL is then able to reconstruct the energy of the original hadron.
+
+In practice, this is achieved through brass alloy absorber plates with plastic scintillators interspersed between them~\cite{Bayatian:2006nff}. To decrease the probability that hadrons ``punch through'' the HCAL and leave the detector unmeasured, multiple layers of brass and plastic scintillators are utilized, with 17 layers total.
 
 \subsection{Muon System} \label{sec:cms_muon_system}
 

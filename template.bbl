@@ -64,6 +64,12 @@ Richard~D. Ball et~al.
 \newblock {Parton distributions for the LHC Run II}.
 \newblock {\em JHEP}, 04:040, 2015.
 
+\bibitem{Bayatian:2006nff}
+G.~L. Bayatian et~al.
+\newblock {CMS Physics}: {Technical Design Report Volume 1: Detector
+  Performance and Software}.
+\newblock 2006.
+
 \bibitem{beaudette2014:Brient:2013hsa}
 Florian Beaudette.
 \newblock The cms particle flow algorithm.
