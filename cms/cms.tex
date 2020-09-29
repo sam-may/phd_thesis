@@ -164,9 +164,29 @@ The products of these nuclear interactions are then measured with plastic scinti
 In practice, this is achieved through brass alloy absorber plates with plastic scintillators interspersed between them~\cite{Bayatian:2006nff}.
 To decrease the probability that hadrons ``punch through''~\cite{Belotelov:933703} the HCAL and leave the detector unmeasured, multiple layers of brass and plastic scintillators are utilized, with 17 layers total.
 
-
-
 \subsection{Muon System} \label{sec:cms_muon_system}
+The outermost detector subcomponent of the CMS detector is the muon system, placed outside the solenoid.
+The primary goals of the muon system are to identify the presence of muons, measure their momenta, and provide the ability to trigger on events with muons~\cite{Chatrchyan:2008aa}.
+Installing a second tracker outside the solenoid would be ideal, but in practice, this would be far too expensive.
+A more economical solution is a detector using gas-filled chambers, exploiting the fact that muons traversing through the gas will ionize it.
+
+The muon system is made of three components:
+\begin{enumerate} 
+    \item Drift tube (DT) chambers, which cover the region $|\eta| \leq 1.2$.
+    \item Cathode strip chambers (CSC), which cover the region $0.9 \leq |\eta| \leq 2.4$.
+    \item Resitive plate chamber (RPC) system, which is installed in both the barrel and endcap regions, covering $|\eta| \leq 1.6$.
+\end{enumerate}
+
+The DT chambers are well-suited to the barrel, where the muon rate and background rate are lower, while the CSCs, having better radiation resistance~\cite{Chatrchyan:2008aa}, are better suited to the endcaps, where the muon rate and background rate are higher.
+The RPCs specialize in providing the ability to trigger on events with muons: although their position resolution is coarser than that of the DT chambers or CSCs, they provide excellent time resolution, allowing consecutive bunch crossings to be distinguished from one another.
+
+The muon system is especially helpful in assisting in the measurement of high $p_{\text{T}}$ $\mathcal O$(TeV) muons.
+As charged particles' energies are primarily determined through the curvature of their tracks, this presents a challenge for especially high energy particles: higher energy particles curve less and there is greater uncertainty on their respective momentum measurements.
+Fig.~\ref{fig:cms_muon_vs_tracker} shows the momentum resolution for muons as a function of $p_{\text{T}}$.
+While both the tracker and muon system are capable of measuring the momenta of muons of a wide range of energies, the muon system provides the greatest improvement to the overall resolution at very high $p_{\text{T}}$.
+
+Beyond just improving the momentum resolution of high energy muons, the muon system is useful in the measurement of lower energy muons as well.
+As the muon system and the tracker provide independent measurements of muons, this allows for fault-finding and cross-checks of each detector component.
 
 \begin{figure} [htbp!]
     \centering
