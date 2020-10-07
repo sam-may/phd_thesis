@@ -217,5 +217,21 @@ Events which pass the L1 trigger are then evaluated by the high-level trigger sy
     \label{fig:cms_l1_trigger}
 \end{figure}
 
-
 \subsubsection{High-Level Trigger}
+In contrast to the L1 trigger, the high-level trigger (HLT) system accepts events for storage based off a more complete, nearly offline-quality reconstruction of the event.
+Details of event reconstruction, e.g. the particle flow algorithm, are describe in Sec.~\ref{sec:evt_pf}.
+Near offline-quality event reconstruction is achieved in practice through the use of a ``processor farm'', a system of over $10^4$ CPUs working in parallel to efficiently reconstruct each event.
+The HLT takes significantly longer to ``think'' about each event, with an average processing time on the order of 100~ms per event (compare to 4~$\mu$s for L1).
+
+The high-level trigger paths used for the \ttH (\Hgg) analysis are the following:
+\begin{itemize}
+    \item 2016: \texttt{HLT\_Diphoton30\_18\_R9Id\_OR\_IsoCaloId\_AND\_HE\_R9Id\_Mass90*}
+    \item 2017: \texttt{HLT\_Diphoton30\_22\_R9Id\_OR\_IsoCaloId\_AND\_HE\_R9Id\_Mass90*}
+    \item 2018: \texttt{HLT\_Diphoton30\_22\_R9Id\_OR\_IsoCaloId\_AND\_HE\_R9Id\_Mass90*}
+\end{itemize}
+
+Conceptually, each of these triggers requires the presence of two photons with leading (subleading) transverse momenta of 30 (18/22) GeV, imposes requirements on the photons' shower shape variables (described in further detail in Sec.~\ref{sec:evt_photon}), and requires a diphoton invariant mass of at least 90 GeV.
+The photon selection requirements described in Sec.~\ref{sec:evt_photon} are defined to be similar (and slightly stricter) than those of the trigger paths listed here.
+Still, the efficiency of the trigger in simulation does not necessarily match that in data.
+The efficiency is measured in data with \Zee events and the efficiency in simulation is accordingly corrected as a function of the transverse energy, pseudorapditity, and shower shape variable $R_9$ (defined in Sec.~\ref{sec:evt_photon}), with the uncertainty on the scale factor taken as a systematic uncertainty (described in Sec.~\ref{sec:tth_systematic_uncertainties}). 
+
