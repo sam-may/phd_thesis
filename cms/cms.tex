@@ -196,7 +196,26 @@ As the muon system and the tracker provide independent measurements of muons, th
 \end{figure}
 
 \subsection{Trigger System} \label{sec:cms_trigger}
+At the LHC's design luminosity of $10^{34}$~cm$^{-2}$~s$^{-1}$, the pp interaction rate is greater than 1~GHz~\cite{Khachatryan:2016bia}.
+It is neither necessary nor feasible to store the data of each of the more than $10^9$ events per second, as the vast majority of pp interactions are neither interesting nor useful in light of the goals of the CMS physics program.
+It is not feasible in the sense that the CMS readout electronics impose an upper limit on the event rate of about 100~kHz, such that the vast majority of events must be thrown away.
+Is is not necessary in the sense that most physics processes of interest have cross sections many orders of magnitude smaller than the nominal pp interaction cross section.
+
+In order to select only the most interesting events to store for later analysis, a two-tiered trigger system is employed by the CMS detector.
+The first level (L1), is implemented on custom hardware, and reduces the event rate by a factor of about $10^4$, from around 1~GHz to around 100~kHz.
+The second level (HLT), is implemented in software, and further reduces the event rate to a typical rate of 400~Hz.
 
 \subsubsection{L1 Trigger}
+The L1 trigger combines information from the ECAL, HCAL, and muon system to decide with a fixed latency of 4~$\mu$s of a collision if the event should be accepted or not.
+A schematic overview of the trigger system is shown in Fig.~\ref{fig:cms_l1_trigger}.
+Events which pass the L1 trigger are then evaluated by the high-level trigger system to make a final decision on if the full event data will be stored.
 
-\subsubsection{HLT Trigger}
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[width=0.6\linewidth]{figures/cms/cms_l1_trigger.png}
+    \caption{Schematic overview of the CMS L1 trigger system. Information from the calorimeters are first processed regionally and then a global calorimeter decision (GCT) is made. Similarly, information from the various components of the muon system are first processed regionally and then at a global level (GMT). The information from the global calorimeter trigger and global muon trigger are combined in a single global trigger (GT) which performs the final decision on whether to store the event. Taken from~\cite{Khachatryan:2016bia}.}
+    \label{fig:cms_l1_trigger}
+\end{figure}
+
+
+\subsubsection{High-Level Trigger}
