@@ -1,15 +1,18 @@
 The photons selected for use in this analysis are initially taken from the PF photon candidates described in Sec.~\ref{sec:evt_pf}.
 In further reconstruction of photons for \Hgg analyses, there are several challenges to overcome.
+
 First, the energy estimate provided by the PF algorithm generally has inherent bias.
 The bias in the photon energy estimates are corrected for with a regression technique which utilizes \Zee events in which the electrons have been reconstructed as photons.
-The procedure, described in Sec.~\ref{sec:evt_photon_energy} exploits the fact that the mass of the Z boson is known FIXME:CITE to good precision, ensuring that the \mee distribution is centered around \mZ.
+The procedure, described in Sec.~\ref{sec:evt_photon_energy} exploits the fact that the mass of the Z boson is known~\cite{Tanabashi:2018oca} to good precision, ensuring that the \mee distribution is centered around \mZ.
 An additional smearing procedure corrects for the differences in energy resolution between data and simulation.
-This step is vital as simulation, not data, is used to construct the models of SM Higgs boson production modes, including \ttH.
+This step is vital as simulation, rather than actual data, is used to construct the models of SM Higgs boson production modes, including \ttH.
+
 A second challenge in \Hgg analyses is distinguishing between ``prompt'' photons and ``fake'' photons.
 Prompt photons are those produced in the decay of the Higgs boson or from the primary hard inelastic scattering process (FIXME:feynman) and are typically the objects of interest of physics analyses.
-Fake photons are those produced in hadronic jets, usually through the decay \Pigg (FIXME:feynman), and are (typically) of less interest.
+Fake photons are those produced in hadronic jets, usually through the decay \Pigg, and are (typically) of less interest.
 Prompt photons tend to be more isolated in the detector and tend to have different shower shapes in the ECAL.
 These differences are exploited through the used of a BDT trained to distinguish between prompt and fake photons.
+
 The photon ID BDT, described in Sec.~\ref{sec:evt_photon_idmva}, uses a variety of high-level variables describing the photon's kinematics, shower shape, and isolation.
 The shower shape \& isolation variables and the photon ID BDT are used to select photons of interest for the \ttH analysis, rejecting as many fake photons as possible while retaining a high efficiency on prompt photons.
 As simulation is used to construct the models of SM Higgs boson production modes, it is important that the shower shape \& isolation variables and the photon ID BDT are well-described in simulation.
@@ -78,7 +81,7 @@ The sum of probability distribution functions returned by the regressor are comp
         \includegraphics[width=0.48\linewidth]{figures/event_reconstruction_and_selection/figs_recoenergy_Fig-2a.png} &
         \includegraphics[width=0.48\linewidth]{figures/event_reconstruction_and_selection/figs_recoenergy_Fig-2b.png}
     \end{tabular}
-    \caption{Sum of probability distribution functions returned by the regressor (blue) compared with the actual $E_{\text{true}}/E_{\text{raw}}$ distribution in simulation (black). Taken from~\cite{Khachatryan:2015iwa}}
+    \caption{Sum of probability distribution functions returned by the regressor (blue) compared with the actual $E_{\text{true}}/E_{\text{raw}}$ distribution in simulation (black). Taken from~\cite{Khachatryan:2015iwa}}.
     \label{fig:photon_energy_regression}
 \end{figure}
 
@@ -86,8 +89,8 @@ Next, an energy scaling procedure is applied on data to correct any non-uniformi
 Sources of bias include damage to the ECAL due to radiation, for example.
 Since the detector response changes as a function of $\eta$ (radiation damage is not uniform in $\eta$) and as a function of time (damage is ``cumulative''), the scale correction is derived in bins of $\eta$ and run number.
 This procedure exploits the known mass of the Z boson by using an analytic fit to the invariant mass of electrons reconstructed as photons in \Zee events in data and simulation.
-The functional form in the fit is the convolution of a Breit-Wigner FIXME:CITE and a Crystal Ball function, with the Crystal Ball modeling both the calorimeter resolution effects and losses due to bremsstrahlung.
-The parameters of the Breit-Wigner are fixed to the Particle Data Group FIXME:CITE values of \mZ and $\Gamma_{\PZ}$.
+The functional form in the fit is the convolution of a Breit-Wigner~\cite{Breit:1936zzb} and a Crystal Ball function, with the Crystal Ball modeling both the calorimeter resolution effects and losses due to bremsstrahlung.
+The parameters of the Breit-Wigner are fixed to the Particle Data Group values~\cite{Tanabashi:2018oca} of \mZ and $\Gamma_{\PZ}$.
 The scale correction is calculated from the difference in the mass peaks between data and simulation:
 \begin{equation}
     \Delta P = \frac{m_{\text{data}} - m_{\text{MC}}}{\mZ}
@@ -153,7 +156,7 @@ The matching procedure is done by requiring a maximum $\Delta R$ between the rec
 Background events are taken as all other reconstructed photons in the event.
 These are overwhelmingly populated by hadronic jets misidentified as photons.
 The BDT is trained with the (previously defined) shower shape and isolation variables.
-The photon ID BDT is validated with two methods, both exploiting the tag and probe FIXME:CITE (and describe tag and probe somewhere leading up to this) method.
+The photon ID BDT is validated with two methods, both exploiting the tag-and-probe method.
 The first uses \Zee events in which electrons are reconstructed as photons and the second uses \Zuug events in which the \PZ decays to two muons and one of the muons radiates a photon.
 Good agreement between data and simulation is found with both methods. Fig.~\ref{fig:photon_idmva} shows the agreement in \Zee events.
 \begin{figure} [h!]
@@ -165,7 +168,7 @@ Good agreement between data and simulation is found with both methods. Fig.~\ref
 
 \subsection{Selection Criteria} \label{sec:evt_photon_sel}
 As described in Sec.~\ref{sec:cms_trigger}, the data-taking rate imposes a formidable challenge on identifying events of interest.
-Events in data will only enter the analysis provided they pass one of the diphoton triggers used for this analysis FIXME:(how much to talk about triggers?).
+Events in data will only enter the analysis provided they pass one of the HLTdiphoton triggers used for this analysis (described in Sec.~\ref{sec:cms_trigger}).
 The trigger is not applied on simulation, so the preselection requirements are chosen to be slightly more stringent than those of the trigger: events (in data or simulation) passing the preselection requirements are a subset of events passing the HLT trigger.
 
 The photon with the highest transverse momentum (``leading'') is required to have $\pT > 35$ GeV, and the photon with the second highest transverse momentum (``subleading'') is required to have $\pT > 25$ GeV.

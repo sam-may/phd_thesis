@@ -98,6 +98,11 @@ Valeria Botta.
   pixel detector}.
 \newblock Technical Report CMS-CR-2017-256, CERN, Geneva, Sep 2017.
 
+\bibitem{Breit:1936zzb}
+G.~Breit and E.~Wigner.
+\newblock {Capture of Slow Neutrons}.
+\newblock {\em Phys. Rev.}, 49:519--531, 1936.
+
 \bibitem{pdf4lhc}
 Jon Butterworth et~al.
 \newblock {PDF4LHC recommendations for LHC Run II}.
@@ -341,6 +346,11 @@ Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan
   Salakhutdinov.
 \newblock Dropout: A simple way to prevent neural networks from overfitting.
 \newblock {\em Journal of Machine Learning Research}, 15:1929--1958, 2014.
+
+\bibitem{Tanabashi:2018oca}
+M.~Tanabashi et~al.
+\newblock {Review of Particle Physics}.
+\newblock {\em Phys. Rev. D}, 98(3):030001, 2018.
 
 \bibitem{Taylor:2017edx}
 Thomas Taylor and Daniel Treille.

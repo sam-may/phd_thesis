@@ -2,9 +2,9 @@ For data collected by the CMS detector during Run II of the LHC, the mean number
 The primary vertex is taken to be the one with the largest value of the sum of the squares of the transverse momenta of the physics objects~\cite{Contardo:2020886}.
 In other words, it is chosen as:
 \begin{equation}
-    \argmax_{i \in \mathcal I} f(i), \qquad f(i) \equiv \sum_{j=1}^{N_i} (\pT^j)
+    \argmax_{i \in \mathcal I} f(i), \qquad f(i) \equiv \sum_{j=1}^{N_i} (\pT^j)^2
 \end{equation}
 where the sum runs over the $N_i$ physics objects associated with the $i$-th vertex.
 
-For many \Hgg analyses, this prescription of choosing the primary vertex is suboptimal, as it relies on charged tracks linked to the primary vertex.
-For the \ttH analysis, this choice of primary vertex is found to be the correct choice for $>99$\% of \ttH events, so no further vertex selection criteria are employed. % FIXME cite 2017 ttH AN for vertex efficiency?
+For many \Hgg analyses, this prescription of choosing the primary vertex is suboptimal, as it relies on charged tracks linked to the primary vertex and as photons are neutral particles, they do not leave tracks.
+However, for the \ttH analysis in which additional jets and leptons are expected in the final state, this choice of primary vertex is found to be the correct choice for $>99$\% of \ttH events, so no further vertex selection criteria are employed. % FIXME cite 2017 ttH AN for vertex efficiency?
