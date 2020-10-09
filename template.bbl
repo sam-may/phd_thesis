@@ -38,10 +38,10 @@ Georges Aad et~al.
 
 \bibitem{Aad:2020ivc}
 Georges Aad et~al.
-\newblock {Study of the CP properties of the interaction of the Higgs boson
-  with top quarks using top quark associated production of the Higgs boson and
-  its decay into two photons with the ATLAS detector at the LHC}.
-\newblock 4 2020.
+\newblock {$CP$ Properties of Higgs Boson Interactions with Top Quarks in the
+  $t\bar{t}H$ and $tH$ Processes Using $H \rightarrow \gamma\gamma$ with the
+  ATLAS Detector}.
+\newblock {\em Phys. Rev. Lett.}, 125(6):061802, 2020.
 
 \bibitem{Aamodt:2008zz}
 K.~Aamodt et~al.
@@ -53,6 +53,10 @@ T.~Adams et~al.
 \newblock {Beam test evaluation of electromagnetic calorimeter modules made
   from proton-damaged PbWO$_4$ crystals}.
 \newblock {\em JINST}, 11(04):P04012, 2016.
+
+\bibitem{agashe2013snowmass}
+K.~Agashe et~al.
+\newblock Snowmass 2013 top quark working group report, 2013.
 
 \bibitem{Alves:2008zz}
 Jr. Alves, A.Augusto et~al.
@@ -180,14 +184,6 @@ Fran\c{c}ois Chollet et~al.
 CMS Collaboration.
 \newblock {\em CMS Luminosity -- Public Results}.
 
-\bibitem{tth_observation}
-CMS Collaboration.
-\newblock Measurements of $\mathrm{t\bar{t}}$h production and the cp structure
-  of the yukawa interaction between the higgs boson and top quark in the
-  diphoton decay channel.
-\newblock 2020.
-\newblock Submitted to Physical Review Letters.
-
 \bibitem{Contardo:2020886}
 D~Contardo, M~Klute, J~Mans, L~Silvestris, and J~Butler.
 \newblock {Technical Proposal for the Phase-II Upgrade of the CMS Detector}.
@@ -215,10 +211,22 @@ P.~D. Dauncey, M.~Kenzie, N.~Wardle, and G.~J. Davies.
   method.
 \newblock 2014.
 
+\bibitem{Dawson:2013bba}
+Sally Dawson et~al.
+\newblock {Working Group Report: Higgs Boson}.
+\newblock In {\em {Community Summer Study 2013}: {Snowmass on the
+  Mississippi}}, 10 2013.
+
 \bibitem{florian2016handbook}
 D.~de~Florian~et al.
 \newblock Handbook of lhc higgs cross sections: 4. deciphering the nature of
   the higgs sector.
+
+\bibitem{DiVita:2017eyz}
+Stefano Di~Vita, Christophe Grojean, Giuliano Panico, Marc Riembau, and Thibaud
+  Vantalon.
+\newblock {A global view on the Higgs self-coupling}.
+\newblock {\em JHEP}, 09:069, 2017.
 
 \bibitem{Englert:1964et}
 F.~Englert and R.~Brout.
@@ -284,6 +292,11 @@ John~David Jackson.
 \newblock {\em {Classical electrodynamics; 2nd ed.}}
 \newblock Wiley, New York, NY, 1975.
 
+\bibitem{Kanemura:2002vm}
+Shinya Kanemura, Shingo Kiyoura, Yasuhiro Okada, Eibun Senaha, and C.P. Yuan.
+\newblock {New physics effect on the Higgs self-coupling}.
+\newblock {\em Phys. Lett. B}, 558:157--164, 2003.
+
 \bibitem{Khachatryan_2017_jets}
 V.~Khachatryan et~al.
 \newblock Jet energy scale and resolution in the cms experiment in pp
@@ -327,6 +340,13 @@ A.~M. Sirunyan et~al.
 Albert~M Sirunyan et~al.
 \newblock {Observation of $\mathrm{t\overline{t}}$H production}.
 \newblock {\em Phys. Rev. Lett.}, 120(23):231801, 2018.
+
+\bibitem{tth_observation}
+Albert~M Sirunyan et~al.
+\newblock {Measurements of $\mathrm{t\bar{t}}H$ Production and the CP Structure
+  of the Yukawa Interaction between the Higgs Boson and Top Quark in the
+  Diphoton Decay Channel}.
+\newblock {\em Phys. Rev. Lett.}, 125(6):061801, 2020.
 
 \bibitem{particle_flow}
 A.M. Sirunyan et~al.
