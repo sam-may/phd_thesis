@@ -4,12 +4,12 @@ The second estimates the background from individual descriptions of each backgro
 These descriptions are taken primarily from simulations of each process; however, data-driven descriptions of some processes are also utilized: the multi-jet and \gjets backgrounds are described with a sample of events in data from the low photon ID sideband (described in Sec.~\ref{sec:tth_datadriven}).
 The first method is referred to as the ``discrete profiling method'', while the second is referred to as the ``MC description'' of the background.
 
-The discrete profiling method is used to estimate the background in the final statistical analysis and is described in Sec.~\ref{sec:sig_bkg_models}.
+The discrete profiling method is used to estimate the background in the final statistical analysis and is described in Sec.~\ref{sec:tth_bkg_models}.
 The MC description of the background is used only in designing and optimizing the cuts on the BDT-bkg algorithms and is described in this section.
 
 \subsection{Challenges of MC Description} \label{sec:tth_mc_description}
 The events entering the hadronic or leptonic preselection are dominated by Standard Model processes other than \ttH.
-Precise knowledge of exactly which processes enter the preselection and their relative contributions to the overall background is not strictly necessary, as the background is modeled from events in data (described in Sec.~\ref{sec:sig_bkg_models}) when performing the measurement of $\mu_{\ttH}$.
+Precise knowledge of exactly which processes enter the preselection and their relative contributions to the overall background is not strictly necessary, as the background is modeled from events in data (described in Sec.~\ref{sec:tth_bkg_models}) when performing the measurement of $\mu_{\ttH}$.
 However, the BDT-bkg algorithms are designed to distinguish between \ttH and the SM background processes; to this end, an accurate description of the background is desirable.
 Note that events in data cannot be used to both model the background in the measurement of $\mu_{\ttH}$ and in training the BDT-bkg algorithm, as this would bias the measurement.
 The starting point for the background description used in training the BDT-bkg algorithms is simulation of the relevant SM processes.
