@@ -220,6 +220,11 @@ D.~de~Florian~et al.
 \newblock Handbook of lhc higgs cross sections: 4. deciphering the nature of
   the higgs sector.
 
+\bibitem{Englert:1964et}
+F.~Englert and R.~Brout.
+\newblock {Broken Symmetry and the Mass of Gauge Vector Mesons}.
+\newblock {\em Phys. Rev. Lett.}, 13:321--323, 1964.
+
 \bibitem{tensorflow}
 Mart\'{\i}n~Abadi et~al.
 \newblock {TensorFlow}: Large-scale machine learning on heterogeneous systems.
@@ -253,6 +258,16 @@ Daniel Guest, Julian Collado, Pierre Baldi, Shih-Chieh Hsu, Gregor Urban, and
 \newblock Jet flavor classification in high-energy physics with deep neural
   networks.
 \newblock {\em Physical Review D}, 94(11), Dec 2016.
+
+\bibitem{Guralnik:1964eu}
+G.S. Guralnik, C.R. Hagen, and T.W.B. Kibble.
+\newblock {Global Conservation Laws and Massless Particles}.
+\newblock {\em Phys. Rev. Lett.}, 13:585--587, 1964.
+
+\bibitem{Higgs:1964pj}
+Peter~W. Higgs.
+\newblock {Broken Symmetries and the Masses of Gauge Bosons}.
+\newblock {\em Phys. Rev. Lett.}, 13:508--509, 1964.
 
 \bibitem{lstm}
 Sepp Hochreiter and J{\"u}rgen Schmidhuber.
