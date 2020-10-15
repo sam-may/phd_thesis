@@ -1,0 +1,24 @@
+\subsection{Classical Field Theory}
+To begin to understand the Standard Model, a quantum field theory, it is helpful to first understand the classical notion of a field.
+A field is a physical quantity defined as a function of space and time.
+The physical quantity may be as simple as a scalar (e.g. the temperature at each point in space and time) or may be a vector (e.g. the electric field).
+More generally, the physical quantity is a tensor of arbitrary rank.
+
+With the notion of a field defined, we may next ask how to use these fields to describe the behavior of the universe.
+In classical mechanics, this is achieved through constructing a Lagrangian density, $\mathcal L$ (referred to simply as the ``Lagrangian''), as a function of one or more fields, $\phi(x)$, and their derivatives:
+\begin{equation} \label{eqn:lagrangian}
+    \mathcal L = \mathcal L(\phi, \partial_\mu \phi).
+\end{equation}
+One of the fundamental concepts of classical mechanics is the principle of least action, which states that the action, $S$, defined as the time integral of the Lagrangian,
+\begin{equation} \label{eqn:action}
+    S = \int L dt = \int \mathcal L\phi, \partial_\mu \phi) d^4x 
+\end{equation}
+for a given system will be minimized as the system evolves between two points in time~\cite{Peskin:1995ev}:
+\begin{equation} \label{eqn:least_action}
+    \delta S = 0.
+\end{equation}
+Through inserting Eqn.~\ref{eqn:action} into Eqn.~\ref{eqn:least_action} and integrating by parts, one obtains the Euler-Lagrange equations of motion:
+\begin{equation}
+    \partial_\mu \bigg( \frac{\partial \mathcal L}{\partial (\partial_\mu \phi)} \bigg) - \frac{\partial \mathcal L}{\partial \phi} = 0.
+\end{equation}
+Though the SM Lagrangian is vastly more complex than the toy Lagrangian of Eqn.~\ref{eqn:lagrangian}, and is composed of quantum rather than classical fields, the same principle of least action allows us to describe the dynamics and interactions of the fundamental particles of the universe. 
