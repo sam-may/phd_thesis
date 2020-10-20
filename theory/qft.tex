@@ -11,7 +11,7 @@ In classical mechanics, this is achieved through constructing a Lagrangian densi
 \end{equation}
 One of the fundamental concepts of classical mechanics is the principle of least action, which states that the action, $S$, defined as the time integral of the Lagrangian,
 \begin{equation} \label{eqn:action}
-    S = \int L dt = \int \mathcal L\phi, \partial_\mu \phi) d^4x 
+    S = \int L~dt = \int \mathcal L(\phi, \partial_\mu \phi)~d^4x 
 \end{equation}
 for a given system will be minimized as the system evolves between two points in time~\cite{Peskin:1995ev}:
 \begin{equation} \label{eqn:least_action}
@@ -21,4 +21,107 @@ Through inserting Eqn.~\ref{eqn:action} into Eqn.~\ref{eqn:least_action} and int
 \begin{equation}
     \partial_\mu \bigg( \frac{\partial \mathcal L}{\partial (\partial_\mu \phi)} \bigg) - \frac{\partial \mathcal L}{\partial \phi} = 0.
 \end{equation}
-Though the SM Lagrangian is vastly more complex than the toy Lagrangian of Eqn.~\ref{eqn:lagrangian}, and is composed of quantum rather than classical fields, the same principle of least action allows us to describe the dynamics and interactions of the fundamental particles of the universe. 
+Though the SM Lagrangian is vastly more complex than the toy Lagrangian of Eqn.~\ref{eqn:lagrangian}, and is composed of quantum rather than classical fields, the same principle of least action allows us to describe the dynamics and interactions of the fundamental particles of the universe.
+
+\subsection{Quantum Mechanics}
+While classical mechanics provides a good description of our universe in some regimes, namely when we are dealing with large objects which move much more slowly than the speed of light, it cannot explain many of the observed phenomena in nature.
+A standard motivation for the need of quantum theory, is the so-called ``ultraviolet catastrophe''~\cite{Schwartz:2013pla}, in which the classical prediction for the energy radiated by a blackbody, an object of some fixed temperature, diverges: the intensity of light radiated increases without bound as a function of frequency.
+The ultraviolet catastrophe led Planck to propose a solution whose core principle was the idea that light may be radiated only at specific energies -- in other words, that the energy was \emph{quantized}.
+This paved the way for the development of quantum mechanics, which proved very successful for describing blackbody radiation, developing models of the hydrogen atom, and many other applications.
+
+However, one of the major shortcomings of quantum mechanics is the fact that it cannot describe the production or annihilation of particles~\cite{Zee:2003mt}.
+More generally, quantum mechanics is incompatible with the theory of special relativity.
+This fundamental limitation of quantum mechanics motivated the development of theories which could explain the universe at both very small scales (i.e. ``quantum'') and at very high (relativistic) energies.
+Quantum field theory has emerged as the most successful theoretical framework for doing so.
+
+\subsection{The Klein-Gordon Field}
+To describe the universe in terms of quantum fields, it is helpful to examine a toy example: start with a classical field and make the necessary modifications to reinterpret the dynamical variables as quantum mechanical operators which obey the canonical commutation relations of quantum mechanics\footnote{A full description of quantum mechanics is beyond the scope of this thesis. A description of quantum mechanical operators and the derivation of their canonical commutation relations can be found in many textbooks on quantum mechanics, e.g.~\cite{Griffiths:qm}.} (following the treatment in ~\cite{Peskin:1995ev}).
+We then see that the allowed states of the resulting quantum field have a natural physical interpretation as particles.
+
+In choosing a toy example for a quantum field theory, it is helpful to begin with a ``derivation''~\cite{Griffiths:2008zz} of the Schr{\"o}dinger equation, which forms the basis of quantum mechanics.
+Beginning with the classical energy-momentum relation
+\begin{equation}
+    \frac{\bf{p}^2}{2m} + V = E,
+\end{equation}
+one can promote the momentum and energy variables to quantum mechanical operators which act on the wave function $\Psi$, making the substitutions $\bf{p} \to -i\hbar\nabla$ and $E \to i\hbar \partial/\partial t$, and obtain the Schr{\"o}dinger equation
+\begin{equation}
+    - \frac{\hbar^2}{2m} \nabla^2 \Psi + V \Psi = i\hbar \frac{\partial \Psi}{\partial t}.
+\end{equation}
+As one of the primary aims of quantum field theory is to provide a description of particles which is consistent with special relativity, it is natural to start with the relativistic energy-momentum relation
+\begin{equation}
+    E^2 - \bf{p}^2c^2 = m^2 c^4,
+\end{equation}
+and again promote the momentum and energy variables to quantum mechanical operators.
+Doing so leads one to the \emph{Klein-Gordon equation}, originally proposed to describe the behavior of relativistic electrons\footnote{In fact, the Klein-Gordon equation does not provide a satisfactory description of relativistic electrons. It applies only to scalar (spin 0) particles, of which the Higgs boson is the only known example in nature.}~\cite{Klein:kge,Gordon:kge}:
+\begin{equation}
+    -\frac{1}{c^2} \frac{\partial^2 \Psi}{\partial t^2} + \nabla^2 \Psi = \bigg(\frac{mc}{\hbar}\bigg)^2 \Psi.
+\end{equation}
+However, we are still working in the context of the wave function for the dynamics of a single particle -- in this paradyme we are still unable to describe the annihilation and pair production of particles.
+We will see that this is possible working in the field theory framework, so it is natural to next ask: what Lagrangian density will give rise to the Klein-Gordon equation?
+The Lagrangian for the classical Klein-Gordon field is given by
+\begin{equation} \label{eqn:classical_kg}
+    \mathcal L = \frac{1}{2} (\partial_\mu \phi)^2 - \frac{1}{2} m^2 \phi^2.
+\end{equation}
+%The reason for starting with this specific Lagrangian is the fact that its resulting equation of motion is the Klein-Gordon equation, originally proposed to describe the behavior of relativistic electrons~\cite{Klein:kge,Gordon:kge}.
+Rather than the Lagrangian formalism, it is often more convenient to work with the Hamiltonian formalism, in which a conjugate momentum density $\pi \equiv \partial L/\partial \dot{\phi}$ is used instead of the time-derivative of the field variable, $\dot{\phi}$.
+The Hamiltonian density is then defined as
+\begin{equation}
+    \mathcal H \equiv \sum \pi \dot{\phi} - \mathcal L.
+\end{equation}
+See~\cite{Fetter:cm} for a description of the Hamiltonian formalism. 
+
+Returning to the classical Klein-Gordon field, the Hamiltonian density is given by:
+\begin{equation} \label{eqn:classical_kg_ham}
+    \mathcal H = \frac{1}{2} \pi^2 + \frac{1}{2} (\nabla \phi)^2 + \frac{1}{2} m^2 \phi^2.
+\end{equation}
+The variables $\pi$ and $\phi$ can then be promoted to quantum mechanical operators which obey the canonical commutation relations
+\begin{align}
+    [\phi(\bf{x}), \pi(\bf{y})] &= i \delta^{(3)}(\bf{x} - \bf{y}) \\
+    [\phi(\bf{x}), \phi(\bf{y})] &= [\pi(\bf{x}), \pi(\bf{y})] = 0.
+\end{align}
+Next, it is convenient to rewrite $\phi$ and $\pi$ in terms of so-called ladder operators\footnote{The motivation for the use of the ladder operators can be found in any standard quantum mechnics textbook, e.g.~\cite{Griffiths:qm}},  $a_{\bf{p}}$ and $a^{\dagger}_{\bf{p}}$, defined implicitly as
+\begin{align}
+    \phi(x) &= \int \frac{d^3p}{(2\pi)^3} \frac{1}{\sqrt{2\omega_{\bf{p}}}} (a_{\bf{p}} + a^{\dagger}_{-\bf{p}}) e^{i \bf{p}\cdot\bf{x}}, \\
+    \pi(x) &= \int \frac{d^3p}{(2\pi)^3} (-i) \sqrt{\frac{\omega_{\bf{p}}}{2}} (a_{\bf{p}} - a^{\dagger}_{-\bf{p}}) e^{i \bf{p}\cdot\bf{x}},
+\end{align}
+and with $\omega_{\bf{p}} \equiv \sqrt{|\bf{p}|^2 + m^2}$.
+Combining the commutation relations with the definitions of the ladder operators, the Hamiltonian may be written~\cite{Peskin:1995ev} as
+\begin{equation}
+    H = \int \frac{d^3p}{(2\pi)^3} \omega_{\bf{p}} \bigg( a^{\dagger}_{\bf{p}} a_{\bf{p}} + \frac{1}{2} \Big[a_{\bf{p}}, a^{\dagger}_{\bf{p}} \Big] \bigg).
+\end{equation}
+Calculating the commutators of the Hamiltonian and the ladder operators, $[H, a^{\dagger}_{\bf{p}}] = \omega_{\bf{p}} a^{\dagger}_{\bf{p}}$ and $[H, a_{\bf{p}}] = -\omega_{\bf{p}} a_{\bf{p}}$, we obtain a natural physical interpration.
+The operator $a^{\dagger}_{\bf{p}}$ acting on the ground state creates a state with momentum and energy given by $\bf{p}$ and $\omega_{\bf{p}}$, respectively -- in other words, it creates a particle with momentum $\bf{p}$ and energy $\omega_{\bf{p}}$.
+Similarly, acting on this excited state with the operator $a_{\bf{p}}$ returns the system to the ground state -- it annihilates a particle with momentum $\bf{p}$ and energy $\omega_{\bf{p}}$.
+
+Although the fields describing the various particles in the SM are considerably more complex than the the scalar field in this example, the Klein-Gordon field still serves to illustrate a valuable point: the quantum field theory framework allows us to describe the creation and annihilation of particles with an energy-momentum relation that is consistent with special relativity.
+In particular, the Klein-Gordon Lagrangian (Eqn.~\ref{eqn:classical_kg}) describes a field whose excitations are particles of spin-zero and mass $m$.
+More generally, the vast majority of fundamental particles are not spin-zero and we will need more complicated Lagrangians to describe their dynamics.
+
+\subsection{Spinor \& Vector Fields}
+Other than the Higgs boson, all of the currently known fundamental particles are either spin-$\frac{1}{2}$ (fermions) or spin-1 (bosons).
+How can we move beyond the Klein-Gordon Lagrangian and construct Lagrangians for spin-$\frac{1}{2}$ and spin-1 particles?
+In general, the business of constructing Lagrangians in quantum field theory is not as rigorously motivated as in classical field theory, where Lagrangians are derived by the relation $L = T - U$ for a given physical system.
+Lagrangians in quantum field theory are usually motivated by writing down the most general Lagrangian which respects all of the symmetries of the physical system.
+Alternatively, we might choose a Lagrangian which yields the desired equations of motion.
+
+The Lagrangian for spin-$\frac{1}{2}$ particles can be motivated by picking one whose resulting equations of motion are the Dirac equation, which Dirac showed describes the dynamics of spin-$\frac{1}{2}$ particles~\cite{Dirac:1928hu}.
+One such choice is the following, called the Dirac Lagrangian~\cite{Peskin:1995ev}:
+\begin{equation}
+    \mathcal L_{\text{Dirac}} = \bar{\psi}(i \gamma_\mu \partial_\mu - m) \psi,
+\end{equation}
+whose resulting equation of motion is the Dirac equation
+\begin{equation}
+    (i \gamma_\mu \partial_\mu - m) \psi(x) = 0.
+\end{equation}
+In the preceding equations, $\psi$ represents a two-component spinor with its adjoint $\bar{psi} \equiv \psi^\dagger\gamma^0$ and the $\gamma^\mu$ a set of matrices which satisfy the anticommutation relation
+\begin{equation}
+    \{\gamma_\mu, \gamma_\nu\} = 2 g^{\mu\nu},
+\end{equation}
+with $g^{\mu\nu}$ the Minkowski metric. 
+
+The Lagrangian for spin-1 particles can be motivated by selecting a Lagrangian whose equations of motion are consistent with the dynamics with those of the photon, a familiar spin-1 particle.
+Such a Lagrangian is the Proca Lagrangian~\cite{Griffiths:2008zz}, which describes a four-component vector field $A^\mu$
+\begin{equation}
+    \mathcal L_{\text{Proca}} = -\frac{1}{4} F_{\mu \nu}F^{\mu \nu} + \frac{1}{2} m^2 A_\mu A^\mu.
+\end{equation}
+%In attempting to construct Lagrangians to describe the dynamics of spin-$\frac{1}{2}$ and spin-1 particles, there are several considerations

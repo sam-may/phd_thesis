@@ -228,6 +228,11 @@ Stefano Di~Vita, Christophe Grojean, Giuliano Panico, Marc Riembau, and Thibaud
 \newblock {A global view on the Higgs self-coupling}.
 \newblock {\em JHEP}, 09:069, 2017.
 
+\bibitem{Dirac:1928hu}
+Paul~A.M. Dirac.
+\newblock {The quantum theory of the electron}.
+\newblock {\em Proc. Roy. Soc. Lond. A}, 117:610--624, 1928.
+
 \bibitem{Englert:1964et}
 F.~Englert and R.~Brout.
 \newblock {Broken Symmetry and the Mass of Gauge Vector Mesons}.
@@ -248,6 +253,11 @@ Lyndon Evans and Philip Bryant.
 \newblock {LHC} machine.
 \newblock {\em Journal of Instrumentation}, 3(08):S08001--S08001, aug 2008.
 
+\bibitem{Fetter:cm}
+A.~Fetter and J.~Walecka.
+\newblock {\em {Theoretical Mechanics of Particles and Continua}}.
+\newblock 2003.
+
 \bibitem{fisher_1922}
 R.~Fisher.
 \newblock On the interpretation of $\chi^2$ from contingency tables, and the
@@ -259,6 +269,21 @@ F.X. Gentit.
 \newblock {Litrani: A General purpose Monte Carlo program simulating light
   propagation in isotropic or anisotropic media}.
 \newblock {\em Nucl. Instrum. Meth. A}, 486:35--39, 2002.
+
+\bibitem{Gordon:kge}
+W.~Gordon.
+\newblock {Der Comptoneffekt nach der Schrodingerschen Theorie}.
+\newblock {\em Z. Phys.}, 40:117--133, 1926.
+
+\bibitem{Griffiths:qm}
+David Griffiths.
+\newblock {\em {Introduction to Quantum Mechanics}}.
+\newblock 2005.
+
+\bibitem{Griffiths:2008zz}
+David Griffiths.
+\newblock {\em {Introduction to elementary particles}}.
+\newblock 2008.
 
 \bibitem{Guest_2016}
 Daniel Guest, Julian Collado, Pierre Baldi, Shih-Chieh Hsu, Gregor Urban, and
@@ -318,6 +343,11 @@ Vardan Khachatryan et~al.
 Diederik~P. Kingma and Jimmy Ba.
 \newblock Adam: A method for stochastic optimization, 2014.
 
+\bibitem{Klein:kge}
+O.~Klein.
+\newblock {Quantentheorie und funfdimensionale Relativitatstheorie}.
+\newblock {\em Z. Phys.}, 37:895--906, 1926.
+
 \bibitem{lecun_efficient_backprop}
 Yann LeCun, L{\'e}on Bottou, Genevieve~B. Orr, and Klaus-Robert M\"{u}ller.
 \newblock Efficient backprop.
@@ -335,6 +365,11 @@ Mark~Joseph Oreglia.
 Michael~E. Peskin and Daniel~V. Schroeder.
 \newblock {\em {An Introduction to quantum field theory}}.
 \newblock Addison-Wesley, Reading, USA, 1995.
+
+\bibitem{Schwartz:2013pla}
+Matthew~D. Schwartz.
+\newblock {\em {Quantum Field Theory and the Standard Model}}.
+\newblock Cambridge University Press, 3 2014.
 
 \bibitem{Hbb_obs}
 A.~M. Sirunyan et~al.
@@ -403,5 +438,10 @@ Eleftherios~Spyromitros Xioufis, William Groves, Grigorios Tsoumakas, and
   Ioannis~P. Vlahavas.
 \newblock {M}ulti-label classification methods for multi-target regression.
 \newblock {\em CoRR}, abs/1211.6581, 2012.
+
+\bibitem{Zee:2003mt}
+A.~Zee.
+\newblock {\em {Quantum field theory in a nutshell}}.
+\newblock 11 2003.
 
 \end{thebibliography}
