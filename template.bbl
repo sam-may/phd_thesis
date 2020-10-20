@@ -422,6 +422,11 @@ Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan
 \newblock Dropout: A simple way to prevent neural networks from overfitting.
 \newblock {\em Journal of Machine Learning Research}, 15:1929--1958, 2014.
 
+\bibitem{tHooft:1971qjg}
+Gerard 't~Hooft.
+\newblock {Renormalizable Lagrangians for Massive Yang-Mills Fields}.
+\newblock {\em Nucl. Phys. B}, 35:167--188, 1971.
+
 \bibitem{Tanabashi:2018oca}
 M.~Tanabashi et~al.
 \newblock {Review of Particle Physics}.
