@@ -97,7 +97,7 @@ Although the fields describing the various particles in the SM are considerably 
 In particular, the Klein-Gordon Lagrangian (Eqn.~\ref{eqn:classical_kg}) describes a field whose excitations are particles of spin-zero and mass $m$.
 More generally, the vast majority of fundamental particles are not spin-zero and we will need more complicated Lagrangians to describe their dynamics.
 
-\subsection{Spinor \& Vector Fields}
+\subsection{Spinor \& Vector Fields} \label{sec:theory_sv_fields}
 Other than the Higgs boson, all of the currently known fundamental particles are either spin-$\frac{1}{2}$ (fermions) or spin-1 (bosons).
 How can we move beyond the Klein-Gordon Lagrangian and construct Lagrangians for spin-$\frac{1}{2}$ and spin-1 particles?
 In general, the business of constructing Lagrangians in quantum field theory is not as rigorously motivated as in classical field theory, where Lagrangians are derived by the relation $L = T - U$ for a given physical system.
@@ -106,7 +106,7 @@ Alternatively, we might choose a Lagrangian which yields the desired equations o
 
 The Lagrangian for spin-$\frac{1}{2}$ particles can be motivated by picking one whose resulting equations of motion are the Dirac equation, which Dirac showed describes the dynamics of spin-$\frac{1}{2}$ particles~\cite{Dirac:1928hu}.
 One such choice is the following, called the Dirac Lagrangian~\cite{Peskin:1995ev}:
-\begin{equation}
+\begin{equation} \label{eqn:dirac_lagrangian}
     \mathcal L_{\text{Dirac}} = \bar{\psi}(i \gamma_\mu \partial_\mu - m) \psi,
 \end{equation}
 whose resulting equation of motion is the Dirac equation
@@ -121,7 +121,13 @@ with $g^{\mu\nu}$ the Minkowski metric.
 
 The Lagrangian for spin-1 particles can be motivated by selecting a Lagrangian whose equations of motion are consistent with the dynamics with those of the photon, a familiar spin-1 particle.
 Such a Lagrangian is the Proca Lagrangian~\cite{Griffiths:2008zz}, which describes a four-component vector field $A^\mu$
-\begin{equation}
+\begin{equation} \label{eqn:proca_lagrangian}
     \mathcal L_{\text{Proca}} = -\frac{1}{4} F_{\mu \nu}F^{\mu \nu} + \frac{1}{2} m^2 A_\mu A^\mu.
 \end{equation}
+The resulting field equation is then~\cite{Griffiths:2008zz}
+\begin{equation}
+    \partial_\mu F^{\mu\nu} + m^2A^\nu = 0,
+\end{equation}
+which for the case of the photon (which is massless, $m=0$) restores Maxwell's equations in empty space: $\partial_\mu F^{\mu\nu} = 0$.
+The Klein-Gordon, Dirac, and Proca Lagrangians form the basis from which the SM Lagrangian is constructed.
 %In attempting to construct Lagrangians to describe the dynamics of spin-$\frac{1}{2}$ and spin-1 particles, there are several considerations

@@ -1,0 +1,53 @@
+The standard model of particle physics is a quantum field theory which describes three of the four known fundamental forces and all known elementary particles.
+The SM describes the electromagnetic, strong, and weak interactions, but does not provide a description of gravity.
+
+In particular, the SM is a gauge field theory, meaning its Lagrangian is invariant under certain local transformations.
+Gauge fields are discussed in greater detail in Sec.~\ref{sec:theory_gauge}.
+In Sec.~\ref{sec:theory_qed}, we will see that imposing local gauge invariance on the Dirac Lagrangian gives rise to quantum electrodynamics.
+Sec.~\ref{sec:theory_qcd} describes the strong interaction and Sec.~\ref{sec:theory_ewk} describes the electroweak interaction, the unification of the electromagnetic and weak interactions.
+Finally, in Sec.~\ref{sec:theory_ssbhm} we will see how the Higgs mechanism allows for massive gauge fields and subsequently generates the masses of the gauge bosons and fermions.
+
+\subsection{Gauge Fields} \label{sec:theory_gauge}
+
+
+\subsection{Quantum Electrodynamics} \label{sec:theory_qed}
+Starting with the Dirac Lagrangian (Eqn.~\ref{eqn:dirac_lagrangian}), suppose we impose that its resulting field equations must be invariant under a local phase transformation
+\begin{equation} \label{eqn:local_phase}
+    \psi \to e^{i q \theta(x)} \psi.
+\end{equation}
+This is deemed a ``local'' phase transformation as the phase $\theta$ is be a function of $x^\mu$.
+In the case that $\theta$ is a constant, we deem this a ``global'' phase transformation.
+A Lagrangian that is invariant under the transformation in Eqn.~\ref{eqn:local_phase} is said to be \emph{gauge invariant}.
+%Conceptually, this seems like a reasonable request for the 
+
+Initially, the Dirac Lagrangian is not invariant under the local phase transformation (Eqn.~\ref{eqn:local_phase}), as an extra term from the derivative of $\theta$ appears:
+\begin{equation} \label{eqn:ld_var}
+    \mathcal L \to \mathcal L - q (\partial_\mu \theta)\bar{\psi} \gamma^\mu \psi.
+\end{equation}
+The situation can be remedied with the introduction of a vector field $A_\mu$ which transforms under Eqn.~\ref{eqn:local_phase} as
+\begin{equation} \label{eqn:local_phase_field}
+    A_\mu \to A_\mu + \partial_\mu \theta.
+\end{equation}
+The resulting Lagrangian,
+\begin{equation} \label{eqn:ld_inv}
+    \mathcal L = \mathcal L_{\text{Dirac}} + q \bar{\psi} \gamma^\mu \psi A_\mu
+\end{equation}
+is gauge invariant as the second term in Eqn.~\ref{eqn:ld_inv} cancels exactly with the second term in Eqn.~\ref{eqn:ld_var}.
+
+The vector field $A_\mu$ which has been added to the Lagrangian implies the existence of an associated spin-1 particle.
+In principle, we must also include a free term for the field $A_\mu$: it is natural to start with the Proca Lagrangian (Eqn.~\ref{eqn:proca_lagrangian}) which describes the dynamics of free spin-1 particles.
+It can be shown~\cite{Griffiths:2008zz} that the mass term in the Proca Lagrangian is not invariant under Eqn.~\ref{eqn:local_phase_field}: this can be interpreted as a requirement that this new vector field $A_\mu$ must be massless.
+The full Lagrangian becomes
+\begin{equation}
+    \mathcal L_{\text{QED}} = \bar{\psi}(i \gamma_\mu \partial_\mu - m) \psi - \frac{1}{4} F^{\mu\nu}F_{\mu\nu} + q (\bar{\psi}\gamma^\mu \psi)A_\mu,
+\end{equation}
+which can be identified as the Lagrangian for quantum electrodynamics.
+
+
+
+
+\subsection{Quantum Chromodynamics} \label{sec:theory_qcd}
+
+\subsection{Electroweak Interactions} \label{sec:theory_ewk}
+
+\subsection{Spontaneous Symmetry Breaking \& The Higgs Mechanism} \label{sec:theory_ssbhm} 
