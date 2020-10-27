@@ -96,11 +96,22 @@ Fedor Bezrukov and Mikhail Shaposhnikov.
 \newblock {\em J. Exp. Theor. Phys.}, 120:335--343, 2015.
 \newblock [Zh. Eksp. Teor. Fiz.147,389(2015)].
 
+\bibitem{Bloom:1969kc}
+Elliott~D. Bloom et~al.
+\newblock {High-Energy Inelastic e p Scattering at 6-Degrees and 10-Degrees}.
+\newblock {\em Phys. Rev. Lett.}, 23:930--934, 1969.
+
 \bibitem{Botta:2285433}
 Valeria Botta.
 \newblock {Performance and track-based alignment of the Phase-1 upgraded CMS
   pixel detector}.
 \newblock Technical Report CMS-CR-2017-256, CERN, Geneva, Sep 2017.
+
+\bibitem{Breidenbach:1969kd}
+Martin Breidenbach, Jerome~I. Friedman, Henry~W. Kendall, Elliott~D. Bloom,
+  D.H. Coward, H.C. DeStaebler, J.~Drees, Luke~W. Mo, and Richard~E. Taylor.
+\newblock {Observed behavior of highly inelastic electron-proton scattering}.
+\newblock {\em Phys. Rev. Lett.}, 23:935--939, 1969.
 
 \bibitem{Breit:1936zzb}
 G.~Breit and E.~Wigner.
@@ -264,6 +275,11 @@ R.~Fisher.
   calculation of p.
 \newblock {\em Journal of the Royal Statistical Society}, 85(1):87--94, 1922.
 
+\bibitem{GellMann:1964nj}
+Murray Gell-Mann.
+\newblock {A Schematic Model of Baryons and Mesons}.
+\newblock {\em Phys. Lett.}, 8:214--215, 1964.
+
 \bibitem{Gentit:2001ky}
 F.X. Gentit.
 \newblock {Litrani: A General purpose Monte Carlo program simulating light
@@ -274,6 +290,12 @@ F.X. Gentit.
 W.~Gordon.
 \newblock {Der Comptoneffekt nach der Schrodingerschen Theorie}.
 \newblock {\em Z. Phys.}, 40:117--133, 1926.
+
+\bibitem{Greenberg:1964pe}
+O.W. Greenberg.
+\newblock {Spin and Unitary Spin Independence in a Paraquark Model of Baryons
+  and Mesons}.
+\newblock {\em Phys. Rev. Lett.}, 13:598--602, 1964.
 
 \bibitem{Griffiths:qm}
 David Griffiths.
@@ -444,9 +466,20 @@ Eleftherios~Spyromitros Xioufis, William Groves, Grigorios Tsoumakas, and
 \newblock {M}ulti-label classification methods for multi-target regression.
 \newblock {\em CoRR}, abs/1211.6581, 2012.
 
+\bibitem{Yan:2015zoa}
+Tung-Mow Yan and Sidney~D. Drell.
+\newblock {\em {The Parton Model and Its Applications}}, pages 227--243.
+\newblock 2015.
+
 \bibitem{Zee:2003mt}
 A.~Zee.
 \newblock {\em {Quantum field theory in a nutshell}}.
 \newblock 11 2003.
+
+\bibitem{Zweig:1964jf}
+G.~Zweig.
+\newblock {\em {An SU(3) model for strong interaction symmetry and its
+  breaking. Version 2}}, pages 22--101.
+\newblock 2 1964.
 
 \end{thebibliography}
