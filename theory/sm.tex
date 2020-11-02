@@ -39,16 +39,89 @@ The resulting Lagrangian,
 \end{equation}
 is gauge invariant as the second term in Eqn.~\ref{eqn:ld_inv} cancels exactly with the additional term from the transformation to the field $A_\mu$ in Eqn.~\ref{eqn:local_phase_field}.
 
+Frequently this additional field is absorbed into the definition of a \emph{covariant derivative} 
+\begin{equation}
+    \mathcal D_\mu \equiv \partial_\mu + i q A_\mu
+\end{equation}
+which replaces the original definition of the derivative, and the resulting field equations are then invariant under local phase transformations, as desired.
+
 The vector field $A_\mu$ which has been added to the Lagrangian implies the existence of an associated spin-1 particle.
 In principle, we must also include a free term for the field $A_\mu$: it is natural to start with the Proca Lagrangian (Eqn.~\ref{eqn:proca_lagrangian}) which describes the dynamics of free spin-1 particles.
 It can be shown~\cite{Griffiths:2008zz} that the mass term in the Proca Lagrangian is not invariant under Eqn.~\ref{eqn:local_phase_field}: this can be interpreted as a requirement that this new vector field $A_\mu$ must be massless.
 The full Lagrangian becomes
-\begin{equation}
-    \mathcal L_{\text{QED}} = \bar{\psi}(i \gamma_\mu \partial_\mu - m) \psi - \frac{1}{4} F^{\mu\nu}F_{\mu\nu} + q (\bar{\psi}\gamma^\mu \psi)A_\mu,
-\end{equation}
-which can be identified as the Lagrangian for quantum electrodynamics.
+\begin{align}
+    \mathcal L_{\text{QED}} &= \bar{\psi}(i \gamma_\mu \partial_\mu - m) \psi - \frac{1}{4} F^{\mu\nu}F_{\mu\nu} + q (\bar{\psi}\gamma^\mu \psi)A_\mu, \\
+                            &= \bar{\psi}(i \gamma_\mu \mathcal D_\mu - m)\psi - \frac{1}{4} F^{\mu\nu}F_{\mu\nu}
+\end{align}
+with $F^{\mu\nu} = \partial^\mu A^\nu - partial^\nu A^\mu$, which can be identified as the Lagrangian for quantum electrodynamics.
+The field $A_\mu$ is associated with the photon, the constant $q$ with the charge of the electron, the tensor $F^{\mu\nu}$ with the electromagnetic field strength, and interactions between photons and electrons with the trilinear term $q (\bar{\psi}\gamma^\mu \psi)A_\mu$. 
 
 \subsection{Quantum Chromodynamics} \label{sec:theory_qcd}
+As Sec.~\ref{sec:pp_parton_model} details, inelastic scattering experiments in the 1960s gave strong evidence of the composite nature of protons.
+Zweig~\cite{Zweig:1964jf} and Gell-Mann~\cite{GellMann:1964nj} independently proposed a quark model to describe the composite nature, which initially implied that quarks violate the spin-statistics theorem.
+The remedy to this came in the proposal~\cite{Greenberg:1964pe} that each quark comes in three different \emph{colors}.
+More formally, this is the statement that quarks are assigned to the fundamental representation $SU(3)$, giving rise to a quantum number which has three states which we arbitrarily call \emph{red}, \emph{green}, and \emph{blue}.
+
+In attempting to construct the Lagrangian for quantum chromodynamics (QCD), which describes the strong interaction of quarks, we can again begin with the free Dirac Lagrangian for spin-1/2 particles (Eqn.~\ref{eqn:dirac_lagrangian}).
+Given that we have three distinct colors of each quark, the free Lagrangian for a particular flavor is actually a sum of three free Dirac Lagrangians.
+This is simplified with the notation
+\begin{equation}
+    \psi = \begin{bmatrix}
+        \psi_r \\
+        \psi_b \\
+        \psi_g \\
+    \end{bmatrix},
+    \quad\bar{\psi} = [\bar{\psi}_r ~\bar{\psi}_b ~\bar{\psi}_g]
+\end{equation}
+in which the spinor $\psi$ from the original Dirac Lagrangian has now been promoted to a three-component column vector.
+The single-particle Dirac Lagrangian is invariant under global phase transformations; in other words, it has $U(1)$ invariance.
+Similarly, the three-particle Dirac Lagrangian has $U(3)$ invariance:
+\begin{equation} \label{eqn:u3_global}
+    \psi \to U \psi, \quad \bar{\psi} \to \bar{\psi}U^\dagger
+\end{equation}
+with $U$ any unitary $3 \times 3$ matrix\footnote{A matrix $U$ is said to be \emph{unitary} if $U^\dagger U = 1$}.
+Whereas in the case of $U(1)$ symmetry, the invariance has the simple interpretation of a phase, the picture is more subtle for $U(3)$.
+It can be shown~\cite{Griffiths:2008zz} that any unitary matrix can be written in the form
+\begin{equation}
+    U  = e^{i \theta} e^{i \bf{\lambda} \cdot \bf{a}}
+\end{equation}
+with
+\begin{equation}
+    \bf{\lambda} \cdot \bf{a} = \sum_{i=1}^8 \lambda_i a_i
+\end{equation}
+and the matrices $a_i$ identified with the eight Gell-Mann matrices which are the generators of the group $SU(3)$.
+Following the development of the QED Lagrangian, we again impose the requirement that the Lagrangian not just be invariant under global transformations as described by Eqn.~\ref{eqn:u3_global}, but also local transformations.
+In other words, we want $\mathcal L$ to be invariant under local $SU(3)$ gauge transformations:
+\begin{equation}
+    \psi \to S \psi, \qquad S \equiv e^{-ig\bf{\lambda} \cdot \phi(x)} \text{ and } \phi \equiv - \frac{1}{g_s} \bf{a}
+\end{equation}
+As in the case of QED, this can be accomplished through the definition of a covariant derivative
+\begin{equation}
+    \mathcal D_\mu \equiv \partial_\mu + i g_s \bf{\lambda} \cdot \bf{a},
+\end{equation}
+resulting in the following Lagrangian which is now invariant under local gauge transformations:
+\begin{equation}
+    \mathcal L = \bar{\psi}(i \gamma_\mu \mathcal D_\mu - m) \psi.
+\end{equation}
+This time, we have introduced eight gauge fields $\bf{A}^\mu$, corresponding to the eight gluons.
+
+Finally, we must account for the free gluon field.
+As before, the mass terms are excluded because they violate local gauge invariance.
+However, the field strength tensor for QED, $F^{\mu\nu} = \partial^\mu A^\nu - partial^\nu A^\mu$, cannot be directly generalized to QCD due to the fact that transformations of $SU(3)$ are non-Abelian.
+An additional term is required to restore local gauge invariance, resulting in the QCD field strength tensor
+\begin{equation}
+    F_{\mu \nu}^a = \partial_\mu A_\nu^a - \partial_\nu A_\mu^a - g_s f^{abc} A_\mu^b A_\mu^c.
+\end{equation}
+The term $f^{abc}$ corresponds to the SU(3) structure constants and are defined by the commutation relation $[\lambda_a, \lambda_b] = i f^{abc} \lambda_c$.
+This has no analog in QED; it allows for self-interaction of gluons.
+The full QCD Lagrangian is then given by
+\begin{equation} \label{eqn:qcd_lagrangian}
+    \mathcal L_{\text{QCD}} = \bigg(\sum_f \bar{\psi}_f (i \gamma_\mu \mathcal D_\mu - m_f) \psi_f \bigg) - \frac{1}{4} F_{\mu \nu}^a F^{a \mu \nu},
+\end{equation}
+where the sum over $f$ corresponds to the different flavors of quarks, of which six have been experimentally observed.
+
+Unlike in QED, in which the magnitude of the force associated with the free photon field \emph{decreases} with distance, the magnitude of the strong force associated with the free gluon field \emph{increases} as a function of distance.
+As a result, particles possessing color charge cannot exist as free particles and are instead confined to bound states of multiple particles which must always be colorless.
 
 \subsection{Electroweak Interactions} \label{sec:theory_ewk}
 
