@@ -188,4 +188,75 @@ With a proper choice of gauge, we identify a real scalar field $\eta$ and a mass
 This process by which gauge bosons can acquire mass is known as the \emph{Higgs mechanism}~\cite{Higgs:1964pj,Englert:1964et} and the massive scalar is known as a Higgs boson.
 
 \subsection{Electroweak Interactions} \label{sec:theory_ewk}
+The weak and electromagnetic interactions can be unified in a single electroweak interaction, originally developed by Glashow, Weinberg, and Salam~\cite{Glashow:1959wxa,Weinberg:1967tq,Salam:1968rm}.
+The GWS theory of weak interactions begins with an $SU(2) \odot U(1)$ gauge symmetry.
+The symmetry is broken spontaneously through the introduction of a scalar field, leading to the generation of masses for the gauge bosons of the $SU(2)$ component and leaving the gauge boson of the $U(1)$ symmetry massless.
+The former will be identified as the massive vector gauge bosons, the $W^\pm$ and the $Z$, while the latter be identified as the massless photon.
+The particle associated with the scalar field responsible for the spontaneous symmetry breaking will be identified as the Higgs boson.
 
+As before, we demand that the Lagrangian be invariant under local gauge transformations, this time of the form $\phi \to e^{i \alpha^a \tau^a} e^{i \beta/2} \phi$ and define a covariant derivative for $\phi$:
+\begin{equation}
+    D_\mu \phi = (\partial_\mu - i g A^a_\mu \tau^a - \frac{i}{2} g' B_\mu) \phi, \qquad \tau^a = \sigma^a/2
+\end{equation}
+where $\sigma^a$ are the Pauli spin matrices, $A^a_\mu$ corresponds to the $SU(2)$ gauge bosons and $B_\mu$ corresponds to the $U(1)$ gauge boson.
+With a quartic potential for the scalar field $\phi$, as in the example of Sec.~\ref{sec:theory_ssbhm}, the field has a minimum defined by a circle in the $\phi_1, \phi_2$ plane (with $\phi = \phi_1 + i \phi_2$).
+The original $SO(2)$ symmetry of $\phi$ will be spontaneously broken when a particular ground state along this circle is chosen.
+Assuming a ground state of $\phi_1 = (1/\sqrt{2})v, \phi_2 = 0$, choosing the gauge $\alpha^1 = \alpha^2 = 0,~\alpha^3 = \beta$, and rewriting the Lagrangian about this field configuration leads to the generation of masses for the bosons of the $A^a_\mu$ field and leaves the boson of the $B_\mu$ field massless.
+Expressing the Lagrangian in terms of the ground state, rather than the original field $\phi$, we find that the following terms appear:
+\begin{equation}
+    \Delta \mathcal L = \frac{1}{2} \frac{v^2}{4} \bigg[ g^2 (A^1_\mu)^2 + g^2 (A^2_\mu)^2 + (g' B_\mu - g A^3_\mu)^2 \bigg].
+\end{equation}
+Again we see that rewriting the Lagrangian in a way such that it can be expanded about its spontaneously chosen ground state breaks the original symmetry and gives rise to mass terms for the $SU(2)$ gauge field. 
+
+The original fields can be expressed in terms of their mass eigenstates, which will make the physical interpretation of this theory more transparent.
+It can be shown~\cite{Peskin:1995ev} that these eigenstates are
+\begin{align}
+    W^\pm_\mu &= \frac{1}{\sqrt{2}} (A^1_\mu \mp i A^2_\mu) \\
+    Z^0_\mu &= \frac{1}{\sqrt{g^2 + g'^2}}(g A^3_\mu - g' B_\mu) \\
+    A_\mu &= \frac{1}{\sqrt{g^2 + g'^2}}(g'A_\mu^3 + g B_\mu)
+\end{align}
+
+The $W^\pm_\mu$ field has vector bosons of mass $m_W = gv/2$, the $Z^0_\mu$ field has a vector boson of mass $m_Z = \sqrt{g^2 + g'^2} v/2$, and the $A_\mu$ field remains massless.
+The covariant derivative can be rewritten in terms of the mass eigenstates and the \emph{weak mixing angle}, $\theta_w$, defined as
+\begin{equation}
+    \begin{pmatrix} Z^0 \\ A \end{pmatrix} =
+    \begin{pmatrix} \cos \theta_w & -\sin \theta_w \\ \sin \theta_w & \cos \theta_w \end{pmatrix} \begin{pmatrix} A^3 \\ B \end{pmatrix}.
+\end{equation}
+As the field $A_\mu$ will be identified as the electromagnetic vector potential, it is helpful to define $e$, which will be identified as the electron charge
+\begin{equation}
+    e = \frac{gg'}{\sqrt{g^2 + g'^2}}.
+\end{equation}
+In this notation the covariant derivative becomes
+\begin{equation}
+    D_\mu \phi = \bigg[ \partial_\mu - i \frac{g}{\sqrt{2}} (W^+_\mu T^+ + W_\mu^- T^-) - i \frac{g}{\cos \theta_w} Z_\mu (T^3 - \sin^2 \theta_w Q) - ieA_\mu Q \bigg] \phi.
+\end{equation}
+
+We can next couple the $SU(2) \odot U(1)$ gauge fields of the electroweak interaction to the leptons and quarks.
+As the W boson couples only to the left-handed helicity states of leptons and quarks, it is helpful to decompose the kinetic energy term for fermions into left- and right-handed components:
+\begin{equation}
+    \bar{\psi} i \gamma^\mu \partial_\mu \psi = \bar{\psi}_L i \gamma^\mu \partial_\mu \psi_L + \bar{\psi}_R i \gamma^\mu \partial_\mu \psi_R,
+\end{equation}
+so that $\psi_L$ and $\psi_R$ can couple differently to the gauge fields.
+
+The fact that the left- and right-handed components of fermion fields couple differently to the gauge fields, they have different quantum numbers and consequently simple mass terms are forbidden by gauge invariance.
+Experimentally, we know that the fermions are not massless, so this poses a problem.
+Again, spontaneous symmetry breaking can remedy this and allow for fermions to acquire mass.
+
+Assuming the scalar field $\phi$ undergoes spontaneous symmetry breaking (``acquires a vacuum expectation value''), we can add terms to the Lagrangian which describe interactions between $\phi$ and left- and right-handed components of fermions.
+For example, for the electrons:
+\begin{equation}
+\Delta \mathcal L_e = - \lambda_e \bar{E}_L \cdot \phi e_R + \text{ h.c.}, \qquad E_L = \begin{pmatrix} \nu_e \\ e^- \end{pmatrix} 
+\end{equation}
+Assuming the same ground state as before, $\phi = (0 \quad v/\sqrt{2})$, we obtain a mass term for the electron:
+\begin{equation}
+    \Delta \mathcal L_e = \frac{-1}{\sqrt{2}} \lambda_e v \bar{e}_L e_R + \text{ h.c.}.
+\end{equation}
+Mass terms for the other leptons and the quarks can be obtained in a similar fashion.
+
+One final subtlety of the electroweak interaction is that while the W boson couples to leptons only of the same generation, it can couple to quarks from different generations.
+This mixing is a result of the fact that the mass eigenstates of quarks are different from the weak isospin eigenstates.
+The mixing of these eigenstates is described by the Cabibbo-Kobayashi-Maskawa (CKM) matrix~\cite{Cabibbo:1963yz,Kobayashi:1973fv}:
+\begin{equation}
+V_{\text{CKM}} = \begin{pmatrix} V_{ud} & V_{us} & V_{ub} \\ V_{cd} & V_{cs} & V_{cb} \\ V_{td} & V_{ts} & V_{tb} \end{pmatrix}.
+\end{equation}
+The CKM matrix is experimentally observed to be nearly diagonal, which has the physical consequence that W-mediated interactions between quarks of different generations are much weaker than those between quarks of the same generation. 

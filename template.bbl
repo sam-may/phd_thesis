@@ -123,6 +123,11 @@ Jon Butterworth et~al.
 \newblock {PDF4LHC recommendations for LHC Run II}.
 \newblock {\em J. Phys. G}, 43:023001, 2016.
 
+\bibitem{Cabibbo:1963yz}
+Nicola Cabibbo.
+\newblock {Unitary Symmetry and Leptonic Decays}.
+\newblock {\em Phys. Rev. Lett.}, 10:531--533, 1963.
+
 \bibitem{Cacciari:2008gp}
 Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
 \newblock {The anti-$k_{\text{T}}$ jet clustering algorithm}.
@@ -286,6 +291,11 @@ F.X. Gentit.
   propagation in isotropic or anisotropic media}.
 \newblock {\em Nucl. Instrum. Meth. A}, 486:35--39, 2002.
 
+\bibitem{Glashow:1959wxa}
+Sheldon~L. Glashow.
+\newblock {The renormalizability of vector meson interactions}.
+\newblock {\em Nucl. Phys.}, 10:107--117, 1959.
+
 \bibitem{Goldstone:1962es}
 Jeffrey Goldstone, Abdus Salam, and Steven Weinberg.
 \newblock {Broken Symmetries}.
@@ -375,6 +385,11 @@ O.~Klein.
 \newblock {Quantentheorie und funfdimensionale Relativitatstheorie}.
 \newblock {\em Z. Phys.}, 37:895--906, 1926.
 
+\bibitem{Kobayashi:1973fv}
+Makoto Kobayashi and Toshihide Maskawa.
+\newblock {CP Violation in the Renormalizable Theory of Weak Interaction}.
+\newblock {\em Prog. Theor. Phys.}, 49:652--657, 1973.
+
 \bibitem{lecun_efficient_backprop}
 Yann LeCun, L{\'e}on Bottou, Genevieve~B. Orr, and Klaus-Robert M\"{u}ller.
 \newblock Efficient backprop.
@@ -392,6 +407,11 @@ Mark~Joseph Oreglia.
 Michael~E. Peskin and Daniel~V. Schroeder.
 \newblock {\em {An Introduction to quantum field theory}}.
 \newblock Addison-Wesley, Reading, USA, 1995.
+
+\bibitem{Salam:1968rm}
+Abdus Salam.
+\newblock {Weak and Electromagnetic Interactions}.
+\newblock {\em Conf. Proc. C}, 680519:367--377, 1968.
 
 \bibitem{Schwartz:2013pla}
 Matthew~D. Schwartz.
@@ -464,6 +484,11 @@ Thomas Taylor and Daniel Treille.
 \newblock {\em {The Large Electron Positron Collider (LEP): Probing the
   Standard Model}}, volume~27, pages 217--261.
 \newblock 2017.
+
+\bibitem{Weinberg:1967tq}
+Steven Weinberg.
+\newblock {A Model of Leptons}.
+\newblock {\em Phys. Rev. Lett.}, 19:1264--1266, 1967.
 
 \bibitem{DBLP:journals/corr/abs-1211-6581}
 Eleftherios~Spyromitros Xioufis, William Groves, Grigorios Tsoumakas, and
