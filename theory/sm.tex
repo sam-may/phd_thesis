@@ -133,5 +133,59 @@ Local gauge invariance can still be applied to the weak interaction, but it requ
 By doing so, we find that symmetries in the original Lagrangian are broken because of the fact that the ground state does not share the symmetry of the original Lagrangian.
 This allows for locally invariant massive gauge fields, and as a consequence, implies the presence of a massive scalar particle, which we will identify with the Higgs boson.
 
+Spontaneous symmetry breaking and the Higgs mechanism can be illustrated through a toy Lagrangian composed of a single complex field:
+\begin{equation} \label{eqn:spon_orig}
+    \mathcal L = \frac{1}{2} (\partial_\mu \phi)^*(\partial^\mu \phi) + \frac{1}{2} \mu^2 (\phi^* \phi) - \frac{1}{4} \lambda^2 (\phi^* \phi)^2, \qquad \phi \equiv \phi_1 + i \phi_2
+\end{equation}
+In this Lagrangian, the mass term $(1/2) \mu^2 (\phi^* \phi)$ appears to have the wrong sign: naively, a positive coefficient implies that the particle associated with the $\phi$ field has an imaginary mass.
+Physically, this does not make sense.
+The subtlety lies in the fact that the Feynman calculus is a perturbative procedure, and must be performed by expanding about a system's ground state.
+Interpreting $\frac{1}{2} \mu^2 (\phi^* \phi) - \frac{1}{4} \lambda^2 (\phi^* \phi)^2$ as the \emph{potential} term in the Lagrangian, we can expand about its minimum and apply the Feynman calculus.
+In contrast to previously considered fields, the minimum does not occur at $\phi_1 = \phi_2 = 0$, but rather is defined by the circle
+\begin{equation} \label{eqn:spon_gs}
+    \phi_{1_{\text{min}}}^2 + \phi_{2_{\text{min}}}^2 = \frac{\mu^2}{\lambda^2}.
+\end{equation}
+Choosing $\phi_{1_{\text{min}}} = \mu/\lambda$ and $\phi_{2_{\text{min}}} = 0$, let us next rewrite the Lagrangian in terms of fields which can be treated as fluctuations about the vacuum state, defining
+\begin{equation} \label{eqn:spon_gs}
+    \eta \equiv \phi_1 - \frac{\mu}{\lambda}, \qquad \xi \equiv \phi_2.
+\end{equation}
+In terms of these new fields, the Lagrangian becomes
+\begin{equation} \label{eqn:spon_transf}
+    \mathcal L = \frac{1}{2} (\partial_\mu \eta)(\partial^\mu \eta) - \mu^2 \eta^2 + \frac{1}{2} (\partial_\mu \xi)(\partial^\mu \xi) - \mu \lambda(\eta^3 + \eta \xi^2) - \frac{\lambda^2}{4}(\eta^4 + \xi^4 + 2 \eta^2 \xi^2) + \frac{\mu^4}{4 \lambda^2}.
+\end{equation}
+The original Lagrangian (Eqn.~\ref{eqn:spon_orig}) was invariant under rotations in $\phi_1, \phi_2$ space\footnote{More precisely, the original Lagrangian is invariant under SO(2)}; however, this rotational symmetry is no longer manifest in the $\eta, \xi$ space.
+The continuous SO(2) symmetry has been broken by the choice of a particular ground state.
+The particular ground state we chose, $\phi_{1_{\text{min}}} = \mu/\lambda$ and $\phi_{2_{\text{min}}} = 0$, is arbitrary: the system could just as easily choose any other ground state which satisfies Eqn.~\ref{eqn:spon_gs}.
+For this reason, we say that the symmetry has been \emph{spontaneously} broken.
+
+Examining Eqn.~\ref{eqn:spon_transf}, we can identify that the particle associated with the $\eta$ field has mass $m_\eta = \sqrt{2} \mu$ and that the particle associated with the $\xi$ field is massless.
+In fact, Goldstone's theorem~\cite{Goldstone:1962es} shows that the spontaneous breaking of a continuous global symmetry is associated with one or more massless scalar particles, referred to as \emph{Goldstone bosons}.
+
+Next, let us impose the condition of local gauge invariance on the original Lagrangian, Eqn.~\ref{eqn:spon_orig}, demanding that it be invariant under transformations of the form $\phi \to e^{i \theta(x)} \phi$.
+As before, we can introduce a massless gauge field $A^\mu$ and replace derivatives with covariant derivatives to satisfy local gauge invariance.
+The Lagrangian becomes
+\begin{multline} \label{eqn:spon_full}
+    \mathcal L = \frac{1}{2} (\partial_\mu \eta)(\partial^\mu \eta) - \mu^2 \eta^2 + \frac{1}{2} (\partial_\mu \xi)(\partial^\mu \xi) 
+    - \frac{1}{4} F^{\mu\nu} F_{\mu\nu} + \frac{1}{2} \bigg(\frac{q\mu}{\lambda}\bigg)^2 A_\mu A^\mu \\
+    + q \Big[ \eta(\partial_\mu \xi) - \xi (\partial_\mu \eta) \Big] A^\mu + q^2 \frac{\mu}{\lambda} \eta (A_\mu A^\mu)
+    + \frac{1}{2} q^2 (\xi^2 + \eta^2)(A_\mu A^\mu) \\
+    - \mu \lambda(\eta^3 + \eta \xi^2) - \frac{\lambda^2}{4}(\eta^4 + \xi^4 + 2 \eta^2 \xi^2) 
+    + \frac{\mu}{\lambda}q (\partial_\mu \xi) A^\mu
+    + \frac{\mu^4}{4 \lambda^2}.
+\end{multline}
+The gauge field $A^\mu$ that we introduced to impose local gauge invariance now has a quadratic term $(1/2) (q\mu)\lambda)^2 A_\mu A^\mu$, which we can associate with a \emph{massive} gauge boson.
+A mass term associated with the gauge field $A^\mu$ has appeared because of the fact that we have rewritten the Lagrangian in a form that allows us to expand about its ground state.
+In terms of the original $\phi_1$ and $\phi_2$ fields, no mass term for $A^\mu$ appears, but once a ground state has been selected (transforming to $\eta$ and $\xi$ fields) the gauge boson associated with $A^\mu$ acquires mass: spontaneous symmetry breaking generates masses for gauge bosons.
+
+The Lagrangian of Eqn.~\ref{eqn:spon_full} still presents some difficulties in its physical interpretation.
+There is a bilinear term proportional to $(\partial_\mu \xi)A^\mu$ which we would interpret as allowing for a $\xi$ particle to suddenly become an $A^\mu$ gauge boson.
+This implies that we have not yet fully cast the Lagrangian in a form that makes its physical interpretation apparent and can be solved by choosing a particular gauge.
+The Lagrangian of Eqn.~\ref{eqn:spon_orig} is invariant under global U(1) phase transformations $\phi \to e^{i\theta} \phi$.
+If we choose $\theta = - \tan^{-1}(\phi_2/\phi_1)$, the transformed field $\phi'$ is real ($\phi'_2 = 0$), implying that $\xi = 0$: the problematic bilinear term has been eliminated by the choice of gauge.
+
+We have shown that a gauge boson can acquire mass through the spontaneous breaking of a continuous global symmetry (the SO(2) symmetry of the complex scalar field $\phi$).
+With a proper choice of gauge, we identify a real scalar field $\eta$ and a massive scalar particle associated with this field.
+This process by which gauge bosons can acquire mass is known as the \emph{Higgs mechanism}~\cite{Higgs:1964pj,Englert:1964et} and the massive scalar is known as a Higgs boson.
+
 \subsection{Electroweak Interactions} \label{sec:theory_ewk}
 
