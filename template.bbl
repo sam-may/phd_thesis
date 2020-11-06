@@ -9,6 +9,10 @@
   13~\mathrm{TeV}$}.
 \newblock Technical Report CMS-PAS-LUM-17-004, CERN, Geneva, 2018.
 
+\bibitem{CMS:2019drq}
+{A measurement of the Higgs boson mass in the diphoton decay channel}.
+\newblock 10 2019.
+
 \bibitem{CMS-PAS-LUM-18-002}
 {CMS luminosity measurement for the 2018 data-taking period at $\sqrt{s} =
   13~\mathrm{TeV}$}.
@@ -25,6 +29,12 @@
   $\sqrt{s}$ = 13 TeV}.
 \newblock 7 2020.
 
+\bibitem{Aaboud:2018zhk}
+Morad Aaboud et~al.
+\newblock {Observation of $H \rightarrow b\bar{b}$ decays and $VH$ production
+  with the ATLAS detector}.
+\newblock {\em Phys. Lett. B}, 786:59--86, 2018.
+
 \bibitem{Aad:2008zzm}
 G.~Aad et~al.
 \newblock {The ATLAS Experiment at the CERN Large Hadron Collider}.
@@ -35,6 +45,20 @@ Georges Aad et~al.
 \newblock {Observation of a new particle in the search for the Standard Model
   Higgs boson with the detector at the LHC}.
 \newblock {\em Phys. Lett. B}, 716:1, 2012.
+
+\bibitem{Aad:2013wqa}
+Georges Aad et~al.
+\newblock {Measurements of Higgs boson production and couplings in diboson
+  final states with the ATLAS detector at the LHC}.
+\newblock {\em Phys. Lett. B}, 726:88--119, 2013.
+\newblock [Erratum: Phys.Lett.B 734, 406--406 (2014)].
+
+\bibitem{Khachatryan:2016vau}
+Georges Aad et~al.
+\newblock {Measurements of the Higgs boson production and decay rates and
+  constraints on its couplings from a combined ATLAS and CMS analysis of the
+  LHC pp collision data at $ \sqrt{s}=7 $ and 8 TeV}.
+\newblock {\em JHEP}, 08:045, 2016.
 
 \bibitem{Aad:2020ivc}
 Georges Aad et~al.
@@ -359,6 +383,11 @@ Shinya Kanemura, Shingo Kiyoura, Yasuhiro Okada, Eibun Senaha, and C.P. Yuan.
 \newblock {New physics effect on the Higgs self-coupling}.
 \newblock {\em Phys. Lett. B}, 558:157--164, 2003.
 
+\bibitem{Kanemura:2004mg}
+Shinya Kanemura, Yasuhiro Okada, Eibun Senaha, and C.-P. Yuan.
+\newblock {Higgs coupling constants as a probe of new physics}.
+\newblock {\em Phys. Rev. D}, 70:115002, 2004.
+
 \bibitem{Khachatryan_2017_jets}
 V.~Khachatryan et~al.
 \newblock Jet energy scale and resolution in the cms experiment in pp
@@ -370,6 +399,13 @@ Vardan Khachatryan et~al.
 \newblock {Performance of Photon Reconstruction and Identification with the CMS
   Detector in Proton-Proton Collisions at sqrt(s) = 8 TeV}.
 \newblock {\em JINST}, 10(08):P08010, 2015.
+
+\bibitem{Khachatryan:2014jba}
+Vardan Khachatryan et~al.
+\newblock {Precise determination of the mass of the Higgs boson and tests of
+  compatibility of its couplings with the standard model predictions using
+  proton collisions at 7 and 8 $\,\text {TeV}$}.
+\newblock {\em Eur. Phys. J. C}, 75(5):212, 2015.
 
 \bibitem{Khachatryan:2016bia}
 Vardan Khachatryan et~al.
@@ -396,6 +432,11 @@ Yann LeCun, L{\'e}on Bottou, Genevieve~B. Orr, and Klaus-Robert M\"{u}ller.
 \newblock In {\em Neural Networks: Tricks of the Trade, This Book is an
   Outgrowth of a 1996 NIPS Workshop}, pages 9--50, London, UK, 1998.
   Springer-Verlag.
+
+\bibitem{Martin:1997ns}
+Stephen~P. Martin.
+\newblock {A Supersymmetry primer}.
+\newblock {\em Adv. Ser. Direct. High Energy Phys.}, 21:1--153, 2010.
 
 \bibitem{CrystalBallRef}
 Mark~Joseph Oreglia.
