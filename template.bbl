@@ -82,10 +82,20 @@ T.~Adams et~al.
 K.~Agashe et~al.
 \newblock Snowmass 2013 top quark working group report, 2013.
 
+\bibitem{Altarelli:1977zs}
+Guido Altarelli and G.~Parisi.
+\newblock {Asymptotic Freedom in Parton Language}.
+\newblock {\em Nucl. Phys. B}, 126:298--318, 1977.
+
 \bibitem{Alves:2008zz}
 Jr. Alves, A.Augusto et~al.
 \newblock {The LHCb Detector at the LHC}.
 \newblock {\em JINST}, 3:S08005, 2008.
+
+\bibitem{Andersson:1983ia}
+Bo~Andersson, G.~Gustafson, G.~Ingelman, and T.~Sjostrand.
+\newblock {Parton Fragmentation and String Dynamics}.
+\newblock {\em Phys. Rept.}, 97:31--145, 1983.
 
 \bibitem{ball_pdf}
 Richard~D. Ball et~al.
@@ -168,6 +178,11 @@ Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
 \newblock {FastJet} user manual.
 \newblock {\em Eur. Phys. J. C}, 72:1896, 2012.
 
+\bibitem{Campbell:2006wx}
+John~M. Campbell, J.W. Huston, and W.J. Stirling.
+\newblock {Hard Interactions of Quarks and Gluons: A Primer for LHC Physics}.
+\newblock {\em Rept. Prog. Phys.}, 70:89, 2007.
+
 \bibitem{mc2hessian}
 Stefano Carrazza, Stefano Forte, Zahari Kassabov, Jose~Ignacio Latorre, and
   Juan Rojo.
@@ -230,6 +245,11 @@ Fran\c{c}ois Chollet et~al.
 CMS Collaboration.
 \newblock {\em CMS Luminosity -- Public Results}.
 
+\bibitem{Collins:1989gx}
+John~C. Collins, Davison~E. Soper, and George~F. Sterman.
+\newblock {Factorization of Hard Processes in QCD}.
+\newblock {\em Adv. Ser. Direct. High Energy Phys.}, 5:1--91, 1989.
+
 \bibitem{Contardo:2020886}
 D~Contardo, M~Klute, J~Mans, L~Silvestris, and J~Butler.
 \newblock {Technical Proposal for the Phase-II Upgrade of the CMS Detector}.
@@ -268,6 +288,11 @@ D.~de~Florian~et al.
 \newblock Handbook of lhc higgs cross sections: 4. deciphering the nature of
   the higgs sector.
 
+\bibitem{Deur:2016tte}
+Alexandre Deur, Stanley~J. Brodsky, and Guy~F. de~Teramond.
+\newblock {The QCD Running Coupling}.
+\newblock {\em Nucl. Phys.}, 90:1, 2016.
+
 \bibitem{DiVita:2017eyz}
 Stefano Di~Vita, Christophe Grojean, Giuliano Panico, Marc Riembau, and Thibaud
   Vantalon.
@@ -278,6 +303,12 @@ Stefano Di~Vita, Christophe Grojean, Giuliano Panico, Marc Riembau, and Thibaud
 Paul~A.M. Dirac.
 \newblock {The quantum theory of the electron}.
 \newblock {\em Proc. Roy. Soc. Lond. A}, 117:610--624, 1928.
+
+\bibitem{Dokshitzer:1977sg}
+Yuri~L. Dokshitzer.
+\newblock {Calculation of the Structure Functions for Deep Inelastic Scattering
+  and e+ e- Annihilation by Perturbation Theory in Quantum Chromodynamics.}
+\newblock {\em Sov. Phys. JETP}, 46:641--653, 1977.
 
 \bibitem{Englert:1964et}
 F.~Englert and R.~Brout.
@@ -346,6 +377,11 @@ O.W. Greenberg.
 \newblock {Spin and Unitary Spin Independence in a Paraquark Model of Baryons
   and Mesons}.
 \newblock {\em Phys. Rev. Lett.}, 13:598--602, 1964.
+
+\bibitem{Gribov:1972ri}
+V.N. Gribov and L.N. Lipatov.
+\newblock {Deep inelastic e p scattering in perturbation theory}.
+\newblock {\em Sov. J. Nucl. Phys.}, 15:438--450, 1972.
 
 \bibitem{Griffiths:qm}
 David Griffiths.
@@ -444,6 +480,11 @@ Yann LeCun, L{\'e}on Bottou, Genevieve~B. Orr, and Klaus-Robert M\"{u}ller.
   Outgrowth of a 1996 NIPS Workshop}, pages 9--50, London, UK, 1998.
   Springer-Verlag.
 
+\bibitem{Martin:2009iq}
+A.D. Martin, W.J. Stirling, R.S. Thorne, and G.~Watt.
+\newblock {Parton distributions for the LHC}.
+\newblock {\em Eur. Phys. J. C}, 63:189--285, 2009.
+
 \bibitem{Martin:1997ns}
 Stephen~P. Martin.
 \newblock {A Supersymmetry primer}.
@@ -526,6 +567,11 @@ Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan
   Salakhutdinov.
 \newblock Dropout: A simple way to prevent neural networks from overfitting.
 \newblock {\em Journal of Machine Learning Research}, 15:1929--1958, 2014.
+
+\bibitem{Sudakov:1954sw}
+V.V. Sudakov.
+\newblock {Vertex parts at very high-energies in quantum electrodynamics}.
+\newblock {\em Sov. Phys. JETP}, 3:65--71, 1956.
 
 \bibitem{tHooft:1971qjg}
 Gerard 't~Hooft.
