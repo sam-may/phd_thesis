@@ -31,7 +31,7 @@ In describing phenomena like parton showers and hadronization, energy scales of 
 
 A \emph{parton shower} refers to the process by which a high energy parton stemming from the hard interaction produce showers of ``soft'' particles at lower energies.
 Typically, this is either gluon splitting, in which a gluon converts into a quark-antiquark pair, or gluon radiation, in which a quark radiates a gluon.
-In practice, parton showers are modeled with Monte Carlo generators which utilize Sudakov form factors~\cite{Sudakov:1954sw} and splitting functions to simplify calculations~\cite{Hoche:2014rg}.
+In practice, parton showers are modeled with Monte Carlo generators which utilize Sudakov form factors~\cite{Sudakov:1954sw} and splitting functions to simplify calculations~\cite{Hoche:2014rga}.
 
 As discussed in Sec.~\ref{sec:theory_qcd}, quarks and gluons are confined to bound states which must be colorless.
 Moreover, the potential energy of a hadron increases as a function of the distance between the partons.
@@ -43,3 +43,21 @@ This cone of particles stemming from the hadronization of a quark or gluon is ca
 Hadronization cannot be adequately described through perturbative calculations alone, and instead phenomenological models like the Lund-String Model~\cite{Andersson:1983ia} are employed.
 
 \subsection{Underlying Event and Pileup}
+In a given bunch crossing, there is typically only one hard scattering interaction of interest from a physics point of view.
+In addition to this hard interaction, there are additional lower energy ``soft'' scattering interactions.
+The soft scattering may be due either to interactions between partons other than those involved in the hard scattering interaction or interactions between protons other than those involved in the hard scattering interaction.
+The former is called the \emph{underlying event}, while the latter interactions are called \emph{pileup} interactions.
+The modeling of underlying event and pileup is often performed through heuristic approaches which extrapolate directly from experimental collision data.
+
+Though soft scattering interactions from underlying event and pileup are typically not of interest, it is still imperative to understand and adequately model them in order to study physics processes of interest.
+A large portion of the hadronic activity in an event at the LHC stems from these soft interactions and will effect, for example, the jet multiplicity and missing transverse momentum calculation in that event.
+Physics analyses often use the jet multiplicity and missing transverse momentum to identify regions of high signal purity (for example, an analysis searching for supersymmetric particles will typically select for events with high missing transverse momentum) -- for these reasons, it is vital to understand the contribution of underlying event and pileup to these distributions in order to properly model the targeted signal process and accurately estimate the relevant SM background processes.
+
+Parton showers, hadronization, and underlying event are visually depicted for a hadron-hadron collision in Fig.~\ref{fig:pp_event_schematic}.
+
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{figures/physics_of_pp/pp_event_schematic.png}
+    \caption{Schematic of a hadron-hadron collision. The red blob indicates the hard scattering interaction and the subsequent tree-like structure depicts parton showers, while the purple blob indicates an underlying event scattering interaction. Light green blobs depict hadronization, dark green blobs depict subsequent decays of those hadrons, and yellow lines depict soft Bremsstrahlung radiation. Taken from~\cite{Hoche:2014rga}.}
+    \label{fig:pp_event_schematic}
+\end{figure}

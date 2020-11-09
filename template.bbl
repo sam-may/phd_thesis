@@ -410,6 +410,13 @@ Peter~W. Higgs.
 \newblock {Broken Symmetries and the Masses of Gauge Bosons}.
 \newblock {\em Phys. Rev. Lett.}, 13:508--509, 1964.
 
+\bibitem{Hoche:2014rga}
+Stefan H\"oche.
+\newblock {Introduction to parton-shower event generators}.
+\newblock In {\em {Theoretical Advanced Study Institute in Elementary Particle
+  Physics}: {Journeys Through the Precision Frontier: Amplitudes for
+  Colliders}}, pages 235--295, 2015.
+
 \bibitem{lstm}
 Sepp Hochreiter and J{\"u}rgen Schmidhuber.
 \newblock Long short-term memory.
