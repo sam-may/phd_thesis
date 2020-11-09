@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{CMS-PAS-LUM-17-001}
 {CMS Luminosity Measurements for the 2016 Data Taking Period}.
@@ -119,6 +119,12 @@ Fedor Bezrukov and Mikhail Shaposhnikov.
 \newblock {Why should we care about the top quark Yukawa coupling?}
 \newblock {\em J. Exp. Theor. Phys.}, 120:335--343, 2015.
 \newblock [Zh. Eksp. Teor. Fiz.147,389(2015)].
+
+\bibitem{Bjorken:1969ja}
+J.D. Bjorken and Emmanuel~A. Paschos.
+\newblock {Inelastic Electron Proton and gamma Proton Scattering, and the
+  Structure of the Nucleon}.
+\newblock {\em Phys. Rev.}, 185:1975--1982, 1969.
 
 \bibitem{Bloom:1969kc}
 Elliott~D. Bloom et~al.
@@ -298,6 +304,11 @@ A.~Fetter and J.~Walecka.
 \newblock {\em {Theoretical Mechanics of Particles and Continua}}.
 \newblock 2003.
 
+\bibitem{Feynman:1969ej}
+Richard~P. Feynman.
+\newblock {Very high-energy collisions of hadrons}.
+\newblock {\em Phys. Rev. Lett.}, 23:1415--1417, 1969.
+
 \bibitem{fisher_1922}
 R.~Fisher.
 \newblock On the interpretation of $\chi^2$ from contingency tables, and the
@@ -448,6 +459,12 @@ Mark~Joseph Oreglia.
 Michael~E. Peskin and Daniel~V. Schroeder.
 \newblock {\em {An Introduction to quantum field theory}}.
 \newblock Addison-Wesley, Reading, USA, 1995.
+
+\bibitem{Prentki:1968fha}
+J.~Prentki and J.~Steinberger, editors.
+\newblock {\em {Proceedings, 14th International Conference on High-Energy
+  Physics (ICHEP 68)}: {Vienna, Austria, 28 Aug-5 Sep, 1968}}, Geneva, 1968.
+  CERN.
 
 \bibitem{Salam:1968rm}
 Abdus Salam.
