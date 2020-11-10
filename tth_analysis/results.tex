@@ -105,3 +105,40 @@ The observed and expected results for the cross section, signal strength, and si
     \label{tab:tth_results}
 \end{table}
 
+\subsection{CP Measurement}
+In addition to measuring the cross section and signal strength of the \ttH (\Hgg) process, the CP structure of the tree-level top quark Yukawa (Htt) coupling can also be tested.
+The SM predicts that the Htt coupling is purely CP-even; any non-zero CP-odd component of the coupling would be an indication of new physics.
+
+A parametrization of the CP structure of the Htt amplitude can be given in terms of CP-even and CP-odd components~\cite{Gritsan:2016hjl}:\begin{equation}
+    A(\text{Htt}) = - \frac{m_t}{v} \bar{\psi}_t \Big (\kappa_t + i \tilde{\kappa}_t \gamma_5 \Big) \psi_t,
+\end{equation}
+where $\kappa_t$ and $\tilde{\kappa}_t$ represent the CP-even and CP-odd couplings, respectively, and $v$ represents the SM Higgs field VEV.
+As the SM predicts a purely CP-even Htt coupling, this implies the SM prediction of $\kappa_t = 1$ and $\tilde{\kappa}_t = 0$.
+The fractional CP-odd component is defined as
+\begin{equation}
+    f^{\text{Htt}}_{\text{CP}} = \frac{|\tilde{\kappa}_t|^2}{|\kappa_t|^2 + |\tilde{\kappa}_t|^2}~\text{sign}(\tilde{\kappa}_t/\kappa_t),
+\end{equation}
+and this is the physical observable constrained by the \ttH (\Hgg) analysis~\cite{tth_observation}.
+
+The CP measurement is performed by starting with signal categories defined by the BDT-bkg algorithm detailed in Sec.~\ref{sec:tth_mvas}.
+Next, BDTs, referred to as the $\mathcal D_{0-}$ discriminants, are trained to distinguish between CP-even and CP-odd scenarios for the Htt coupling.
+This is achieved by first simulating \ttH samples with anomalous couplings, including samples of pure CP-even (SM-like), pure CP-odd, and a mixture of the two.
+These samples are generated at leading order with the \textsc{JHUGen} 7.0.2 software package and reweighted with the MELA matrix element library~\cite{Gritsan:2016hjl,Gao:2010qx,Bolognesi:2012mm,Anderson:2013afp}.
+The $\mathcal D_{0-}$ BDTs are trained on the kinematic features described in Sec.~\ref{sec:tth_hlf}, with a separate BDT for the hadronic and the leptonic channels, just as for the BDT-bkg algorithm.
+In both the hadronic and leptonic channels, two signal categories are formed with requirements on the output of BDT-bkg, with the boundaries shown in Fig.~\ref{fig:tth_bdt-bkg}.
+Each of these signal categories is further divided into three signal regions, chosen to maximize the expected sensitivity to $f^{\text{Htt}}_{\text{CP}}$, giving 12 total signal categories for the CP measurement.
+
+As for the cross section and signal strength measurements, $f^{\text{Htt}}_{\text{CP}}$ is constrained with a simultaneous fit to the diphoton invariant mass spectrum in all 12 signal categories.
+Fig.~\ref{fig:tth_cp} shows the results of this fit, which are consistent with the SM prediction of $f^{\text{Htt}}_{\text{CP}} = 0$.
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[width=\linewidth]{figures/tth/Figure_003.png}
+    \caption{Distribution of events, weighted by S/(S+B), selected for the CP measurement of the Htt coupling. Events from both BDT-bkg categories in both the hadronic and leptonic channels are shown in each $\mathcal D_{0-}$ bin. The background contribution is subtracted from each bin. The likelihood scan for $f^{\text{Htt}}_{\text{CP}}$ is displayed in the inner panel. Taken from~\cite{tth_observation}.}
+    \label{fig:tth_cp}
+\end{figure}
+The observed (expected) constraint on the CP structure of the Htt coupling is $f^{\text{Htt}}_{\text{CP}} = 0.00 \pm 0.33 (0.00 \pm 0.49)$ at 68\% CL.
+The observed (expected) significance with which the pure CP-odd model is excluded is $3.2\sigma (2.6\sigma)$.
+An additional systematic uncertainty is introduced for the CP measurement to account for potential differences in kinematic distributions obtained through the \textsc{JHUGen} generator and the \textsc{MadGraph} generator used to model the SM processes, though the uncertainty in the measurement is still dominated by the statistical uncertainty.
+
+Thus, the measurement of the CP structure of the Htt coupling is found to be consistent with the SM value of $f^{\text{Htt}}_{\text{CP}} = 0$.
+

@@ -82,6 +82,11 @@ T.~Adams et~al.
 K.~Agashe et~al.
 \newblock Snowmass 2013 top quark working group report, 2013.
 
+\bibitem{Agostinelli:2002hh}
+S.~Agostinelli et~al.
+\newblock {GEANT4--a simulation toolkit}.
+\newblock {\em Nucl. Instrum. Meth. A}, 506:250--303, 2003.
+
 \bibitem{Altarelli:1977zs}
 Guido Altarelli and G.~Parisi.
 \newblock {Asymptotic Freedom in Parton Language}.
@@ -91,6 +96,20 @@ Guido Altarelli and G.~Parisi.
 Jr. Alves, A.Augusto et~al.
 \newblock {The LHCb Detector at the LHC}.
 \newblock {\em JINST}, 3:S08005, 2008.
+
+\bibitem{Alwall:2014hca}
+J.~Alwall, R.~Frederix, S.~Frixione, V.~Hirschi, F.~Maltoni, O.~Mattelaer,
+  H.~S. Shao, T.~Stelzer, P.~Torrielli, and M.~Zaro.
+\newblock {The automated computation of tree-level and next-to-leading order
+  differential cross sections, and their matching to parton shower
+  simulations}.
+\newblock {\em JHEP}, 07:079, 2014.
+
+\bibitem{Anderson:2013afp}
+Ian Anderson et~al.
+\newblock {Constraining Anomalous HVV Interactions at Proton and Lepton
+  Colliders}.
+\newblock {\em Phys. Rev. D}, 89(3):035007, 2014.
 
 \bibitem{Andersson:1983ia}
 Bo~Andersson, G.~Gustafson, G.~Ingelman, and T.~Sjostrand.
@@ -140,6 +159,12 @@ J.D. Bjorken and Emmanuel~A. Paschos.
 Elliott~D. Bloom et~al.
 \newblock {High-Energy Inelastic e p Scattering at 6-Degrees and 10-Degrees}.
 \newblock {\em Phys. Rev. Lett.}, 23:930--934, 1969.
+
+\bibitem{Bolognesi:2012mm}
+Sara Bolognesi, Yanyan Gao, Andrei~V. Gritsan, Kirill Melnikov, Markus Schulze,
+  Nhan~V. Tran, and Andrew Whitbeck.
+\newblock {On the spin and parity of a single-produced resonance at the LHC}.
+\newblock {\em Phys. Rev. D}, 86:095031, 2012.
 
 \bibitem{Botta:2285433}
 Valeria Botta.
@@ -346,6 +371,13 @@ R.~Fisher.
   calculation of p.
 \newblock {\em Journal of the Royal Statistical Society}, 85(1):87--94, 1922.
 
+\bibitem{Gao:2010qx}
+Yanyan Gao, Andrei~V. Gritsan, Zijin Guo, Kirill Melnikov, Markus Schulze, and
+  Nhan~V. Tran.
+\newblock {Spin Determination of Single-Produced Resonances at Hadron
+  Colliders}.
+\newblock {\em Phys. Rev. D}, 81:075022, 2010.
+
 \bibitem{GellMann:1964nj}
 Murray Gell-Mann.
 \newblock {A Schematic Model of Baryons and Mesons}.
@@ -392,6 +424,12 @@ David Griffiths.
 David Griffiths.
 \newblock {\em {Introduction to elementary particles}}.
 \newblock 2008.
+
+\bibitem{Gritsan:2016hjl}
+Andrei~V. Gritsan, Raoul R\"ontsch, Markus Schulze, and Meng Xiao.
+\newblock {Constraining anomalous Higgs boson couplings to the heavy flavor
+  fermions using matrix element techniques}.
+\newblock {\em Phys. Rev. D}, 94(5):055023, 2016.
 
 \bibitem{Guest_2016}
 Daniel Guest, Julian Collado, Pierre Baldi, Shih-Chieh Hsu, Gregor Urban, and

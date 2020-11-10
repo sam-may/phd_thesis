@@ -1,1 +1,20 @@
-mc
+Simulations of proton-proton collisions are useful for a wide variety of applications.
+First, many physics analyses search for signal processes which are either very rare in the SM or not predicted to occur at all in the SM. For such processes, simulation is necessary to predict the kinematics and event yields.
+Second, simulation can help creating a description of the relevant SM background processes.
+It is often preferable to use data-driven procedures for describing backgrounds; however, this is not feasible for many rare SM processes.
+Third, simulation can help instruct the development and event selection for a physics analysis.
+For example, simulation is used extensively within CMS in training and optimizing machine learning algorithms, which are used for tasks like jet flavor identification, discrimination between prompt and fake leptons or photons, and discrimination between signal and background processes.
+
+Monte Carlo (MC) simulation of a given physics process typically undergoes three steps.
+First, the hard-scattering interaction is simulated using a generator like \textsc{MadGraph}~\cite{Alwall:2014hca}.
+These calculations are done through the use of perturbative expansions in powers of couplings (e.g. $\alpha_s$ for processes mediated by the strong interaction).
+This is not strictly a perturbative calculation however, as these generators also use the parton distribution functions of the protons as inputs, which cannot be derived through perturbative approaches.
+Generators like that of~\cite{Alwall:2014hca} simulate processes to next-to-leading-order (NLO) precision.
+These predictions are generally precise enough for the needs of most physics analyses, but it must be emphasized that these simulations are known a priori to be an incomplete description of the full SM phenomena.
+
+As mentioned in Sec.~\ref{sec:pp_physics_jets}, a perturbative approach is suitable for the hard-scattering interaction, but soft-scattering interactions, like parton showers and hadronization, occur at too low of energies for the perturbative approach to provide accurate results.
+Therefore, the output of parton-level generators like \textsc{MadGraph} are usually then interfaced with software like \textsc{pythia}, which simulate the event all the way to the final state particles, including effects like parton showers, hadronization, and initial \& final state radiation.
+
+Finally, the event is framed not in terms of the final state particles and their properties, but rather in terms of the signatures they are expected to leave in a given detector.
+The detector for a given high energy physics experiment is, in general, very dynamic: detectors accrue radiation damage over time, components are subject to failure or faulty behavior, and upgrades may be implemented during periods in between data-taking.
+Given these considerations, a detailed model of the detector is created and implemented in software like \textsc{geant}~\cite{Agostinelli:2002hh}.
