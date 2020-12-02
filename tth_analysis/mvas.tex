@@ -14,6 +14,7 @@ Plots showing the distributions for both data and simulation for each input feat
 
 \begin{table}[h] \scriptsize
 \centering
+\caption{High level features used in training BDTs. The fourth jet kinematics are given as input features only to the BDT-bkg in the hadronic channel, while the lepton kinematics are given as input features only to the BDT-bkg in the leptonic channel.} 
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{|c| c c c|}
 \multicolumn{4}{c}{Input Features to BDTs} \\ \hline
@@ -32,7 +33,7 @@ Category & \multicolumn{3}{c|}{Features} \\ \hline
 Lepton Kinematics & lepton $p_T$ & lepton $\eta$ & $N_{\text{leptons (tight ID)}}$ \\ \hline
 \multirow{1}{*}{Event-level Kinematics} & $E_T^{\text{miss}}$ & & \\ \hline
 \end{tabular}
-\caption{High level features used in training BDTs. The fourth jet kinematics are given as input features only to the BDT-bkg in the hadronic channel, while the lepton kinematics are given as input features only to the BDT-bkg in the leptonic channel.} 
+%\caption{High level features used in training BDTs. The fourth jet kinematics are given as input features only to the BDT-bkg in the hadronic channel, while the lepton kinematics are given as input features only to the BDT-bkg in the leptonic channel.} 
 \label{tab:tth_hlf}
 \end{table}
 
@@ -106,6 +107,7 @@ Photons are not included in the list of physics objects to prevent the DNN from 
 In addition to the low-level object features, a set of high-level features, shown in Table~\ref{tab:tth_hlf_dnn}, is given as inputs to the DNN to allow it to learn correlations between the physics objects and the rest of the event, including the diphoton kinematics and missing transverse momentum.
 \begin{table}[h] \scriptsize
 	\centering
+	\caption{High level features used in training DNNs. The lepton kinematics features are only given as inputs to the leptonic channel DNN.} 
 	\renewcommand{\arraystretch}{1.5}
 	\begin{tabular}{c| c c c c}
 		\multicolumn{5}{c}{High-level features for DNNs} \\ \hline
@@ -119,7 +121,7 @@ In addition to the low-level object features, a set of high-level features, show
 		\multirow{1}{*}{Lepton Kinematics} & $N_{\text{leptons (tight ID)}}$ & & & \\ \hline
 		\multirow{1}{*}{Event-level Kinematics} & \met & $\met \phi$ & & \\ \hline
 	\end{tabular}
-	\caption{High level features used in training DNNs. The lepton kinematics features are only given as inputs to the leptonic channel DNN.} 
+	%\caption{High level features used in training DNNs. The lepton kinematics features are only given as inputs to the leptonic channel DNN.} 
 	\label{tab:tth_hlf_dnn}
 \end{table}
 
@@ -150,6 +152,7 @@ DNN hyperparameters are summarized in Table~\ref{tab:tth_dnn_hyperparams}.
 
 \begin{table} [h]
     \centering
+    \caption{Hyperparameters for the deep neural networks used in both the hadronic and leptonic channels.}
     \begin{tabular}{l l}
         Hyperparameter & Value(s) \\ \hline
         Number of nodes (fully connected layers) & 300, 200, 200, 200, 200 \\
@@ -162,7 +165,7 @@ DNN hyperparameters are summarized in Table~\ref{tab:tth_dnn_hyperparams}.
         Activation function (fully-connected layers) & exponential linear unit \\
         Activation function (output layer) & sigmoid \\
     \end{tabular}
-    \caption{Hyperparameters for the deep neural networks used in both the hadronic and leptonic channels.}
+    %\caption{Hyperparameters for the deep neural networks used in both the hadronic and leptonic channels.}
     \label{tab:tth_dnn_hyperparams}
 \end{table}
 
@@ -203,7 +206,7 @@ The improvement brought to each channel by the DNNs is shown in Fig.~\ref{fig:tt
         \includegraphics[width=0.48\linewidth]{figures/tth/za_comparison_data_Hadronic_DNN_2May2020.pdf} &
         \includegraphics[width=0.48\linewidth]{figures/tth/za_comparison_data_Leptonic_DNN_2May2020.pdf}
     \end{tabular}
-    \caption{Expected significance ($Z_A$) shown as a function of the number of \ttH events passing a given cut on BDT-bkg for versions of BDT-bkg trained with (red) and without (black) the DNN scores as training features. Shaded bands show the $\pm 1\sigma$ statistical uncertainty in $Z_A$. The background yield is estimated from events in data in the \mgg sidebands.}
+    \caption[Expected significance ($Z_A$) shown as a function of the number of \ttH events passing a given cut on BDT-bkg for versions of BDT-bkg trained with (red) and without (black) the DNN scores as training features.]{Expected significance ($Z_A$) shown as a function of the number of \ttH events passing a given cut on BDT-bkg for versions of BDT-bkg trained with (red) and without (black) the DNN scores as training features. Shaded bands show the $\pm 1\sigma$ statistical uncertainty in $Z_A$. The background yield is estimated from events in data in the \mgg sidebands.}
     \label{fig:tth_dnn_za}
 \end{figure}
 The improvement in expected sensitivity in the hadronic channel is about 10\%.
@@ -229,6 +232,7 @@ The truth matching enforces the following additional requirements:
 The training features are shown in Table \ref{tab:tth_top_tagger_features}.
 \begin{table}
 	\centering
+    \caption{Input features used in training the Top Tagger BDT.}
 	\begin{tabular}{c |c c c c} \hline \hline
 		Category & \multicolumn{4}{c}{Features} \\ \hline
 		\multirow{3}{*}{Single Jet Quantities} & $p_T$ & mass & & \\
@@ -237,7 +241,7 @@ The training features are shown in Table \ref{tab:tth_top_tagger_features}.
 		\multirow{1}{*}{Di-Jet Quantities} & $\Delta R(\text{j,j})$ & $m_{\text{jj}}$ & & \\
 		\multirow{1}{*}{Tri-Jet Quantities} & $\Delta R(\text{b,W})$ & $m_{\text{jjj}}$ & &  \\ \hline \hline
 	\end{tabular}
-    \caption{Input features used in training the Top Tagger BDT.}
+    %\caption{Input features used in training the Top Tagger BDT.}
     \label{tab:tth_top_tagger_features}
 \end{table}
 The training features are defined as follows:
@@ -259,7 +263,7 @@ The improvement in expected sensitivity gained by adding the top tagger to BDT-b
 \begin{figure} [htbp!]
     \centering
     \includegraphics[width=0.7\linewidth]{{figures/tth/za_comparison_data_Hadronic_TopTagger_2May2020}.pdf}
-    \caption{Expected significance ($Z_A$) shown as a function of the number of \ttH events passing a given cut on BDT-bkg for versions of BDT-bkg trained with (red) and without (black) the DNN scores as training features. Shaded bands show the $\pm 1\sigma$ statistical uncertainty in $Z_A$. The background yield is estimated from events in data in the \mgg sidebands.}
+    \caption[Expected significance ($Z_A$) shown as a function of the number of \ttH events passing a given cut on BDT-bkg for versions of BDT-bkg trained with (red) and without (black) the top tagger BDT scores as a training feature.]{Expected significance ($Z_A$) shown as a function of the number of \ttH events passing a given cut on BDT-bkg for versions of BDT-bkg trained with (red) and without (black) the top tagger BDT as a training feature. Shaded bands show the $\pm 1\sigma$ statistical uncertainty in $Z_A$. The background yield is estimated from events in data in the \mgg sidebands.}
     \label{fig:tth_top_tagger_za}
 \end{figure}
 
@@ -272,7 +276,7 @@ The outputs of the BDT-bkg algorithms are shown in Fig.~\ref{fig:tth_bdt-bkg}, w
         \includegraphics[width=0.48\linewidth]{figures/tth/Figure_001-a.pdf} &
         \includegraphics[width=0.48\linewidth]{figures/tth/Figure_001-b.pdf}
     \end{tabular}
-    \caption{Output of the BDT-bkg algorithm for the hadronic channel (left) and the leptonic channel (right). Events from the \mgg sidebands are shown for both data and simulation. The statistical (statistical $\oplus$ systematic) uncertainties in simulation are shown with black (red) shaded bands. The thinly dashed lines show the boundaries of each signal region used for the cross section measurement, while the thickly dashed lines show the boundaries of signal regions used for a measurement of the CP structure. Events in the gray shaded region are discarded.}
+    \caption[Output of the BDT-bkg algorithm for the hadronic channel (left) and the leptonic channel (right). Taken from~\cite{tth_observation}.]{Output of the BDT-bkg algorithm for the hadronic channel (left) and the leptonic channel (right). Events from the \mgg sidebands are shown for both data and simulation. The statistical (statistical $\oplus$ systematic) uncertainties in simulation are shown with black (red) shaded bands. The thinly dashed lines show the boundaries of each signal region used for the cross section measurement, while the thickly dashed lines show the boundaries of signal regions used for a measurement of the CP structure. Events in the gray shaded region are discarded. Taken from~\cite{tth_observation}.}
     \label{fig:tth_bdt-bkg}
 \end{figure}
 
@@ -305,7 +309,7 @@ Comparisons of BDT-bkg between data and simulation are shown for events entering
         \includegraphics[width=0.48\linewidth]{figures/tth/ttHHadronic_MVA_ttZ_12Jun2020.pdf}
         \includegraphics[width=0.48\linewidth]{figures/tth/ttHLeptonic_MVA_ttZ_12Jun2020.pdf}
     \end{tabular}
-    \caption{Output of the BDT-bkg algorithm for the hadronic channel (left) and the leptonic channel (right) in the \ttZ control region. The statistical (statistical $\oplus$ systematic) uncertainties in simulation are shown with black (red) shaded bands. Events in the gray shaded region are discarded.} 
+    \caption{Output of the BDT-bkg algorithm for the hadronic channel (left) and the leptonic channel (right) in the \ttZ control region. The statistical (statistical $\oplus$ systematic) uncertainties in simulation are shown with black (red) shaded bands. Events in the gray shaded region are discarded. Taken from ~\cite{tth_observation}.} 
     \label{fig:tth_bdt-bkg_ttz}
 \end{figure}
 
