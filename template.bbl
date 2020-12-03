@@ -254,6 +254,11 @@ Tianqi Chen and Carlos Guestrin.
   on Knowledge Discovery and Data Mining}, KDD '16, pages 785--794, New York,
   NY, USA, 2016. ACM.
 
+\bibitem{Chivukula:1999az}
+R.Sekhar Chivukula and Nick~J. Evans.
+\newblock {Triviality and the precision bound on the Higgs mass}.
+\newblock {\em Phys. Lett. B}, 464:244--248, 1999.
+
 \bibitem{keras}
 Fran\c{c}ois Chollet et~al.
 \newblock Keras.
@@ -324,6 +329,11 @@ Stefano Di~Vita, Christophe Grojean, Giuliano Panico, Marc Riembau, and Thibaud
 \newblock {A global view on the Higgs self-coupling}.
 \newblock {\em JHEP}, 09:069, 2017.
 
+\bibitem{Dine:2003ax}
+Michael Dine and Alexander Kusenko.
+\newblock {The Origin of the matter - antimatter asymmetry}.
+\newblock {\em Rev. Mod. Phys.}, 76:1, 2003.
+
 \bibitem{Dirac:1928hu}
 Paul~A.M. Dirac.
 \newblock {The quantum theory of the electron}.
@@ -393,6 +403,12 @@ F.X. Gentit.
 Sheldon~L. Glashow.
 \newblock {The renormalizability of vector meson interactions}.
 \newblock {\em Nucl. Phys.}, 10:107--117, 1959.
+
+\bibitem{Gockeler:1997dn}
+M.~Gockeler, R.~Horsley, V.~Linke, Paul~E.L. Rakow, G.~Schierholz, and
+  H.~Stuben.
+\newblock {Is there a Landau pole problem in QED?}
+\newblock {\em Phys. Rev. Lett.}, 80:4119--4122, 1998.
 
 \bibitem{Goldstone:1962es}
 Jeffrey Goldstone, Abdus Salam, and Steven Weinberg.
@@ -551,6 +567,12 @@ J.~Prentki and J.~Steinberger, editors.
 \newblock {\em {Proceedings, 14th International Conference on High-Energy
   Physics (ICHEP 68)}: {Vienna, Austria, 28 Aug-5 Sep, 1968}}, Geneva, 1968.
   CERN.
+
+\bibitem{Rubin:1980zd}
+V.C. Rubin, N.~Thonnard, and Jr. Ford, W.K.
+\newblock {Rotational properties of 21 SC galaxies with a large range of
+  luminosities and radii, from NGC 4605 /R = 4kpc/ to UGC 2885 /R = 122 kpc/}.
+\newblock {\em Astrophys. J.}, 238:471, 1980.
 
 \bibitem{Salam:1968rm}
 Abdus Salam.
