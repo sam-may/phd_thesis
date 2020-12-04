@@ -100,8 +100,8 @@ In total, for up to the leading eight (six) jets in each event and the leading z
     \item Lepton ID flag: 0 for muons, 1 for electrons
 \end{itemize}
 In the hadronic channel, there are no leptons and so the Lepton ID flag is omitted, resulting in 8 features per physics object.
-In the leptonic channel, jets (leptons) are assigned `dummy'' values for the lepton ID flag (DeepCSV scores) of -2.
-The "dummy" values are necessary as each physics object that is input to the DNN must have the same number of input features.
+In the leptonic channel, jets (leptons) are assigned ``dummy'' values for the lepton ID flag (DeepCSV scores) of -2.
+The ``dummy'' values are necessary as each physics object that is input to the DNN must have the same number of input features.
 Photons are not included in the list of physics objects to prevent the DNN from learning \mH.
 
 In addition to the low-level object features, a set of high-level features, shown in Table~\ref{tab:tth_hlf_dnn}, is given as inputs to the DNN to allow it to learn correlations between the physics objects and the rest of the event, including the diphoton kinematics and missing transverse momentum.
@@ -170,7 +170,7 @@ DNN hyperparameters are summarized in Table~\ref{tab:tth_dnn_hyperparams}.
 \end{table}
 
 A number of regularization methods are employed, which were found to improve performance and/or convergence speed during training.
-First, training features are preprocessed with a `Z-score'' normalization procedure, subtracting the mean and dividing by the standard deviation of each feature such that all features have zero mean and unit variance.
+First, training features are preprocessed with a ``Z-score'' normalization procedure, subtracting the mean and dividing by the standard deviation of each feature such that all features have zero mean and unit variance.
 In addition to the Z-score transformation, input features with units of GeV are given in terms of their logarithm, with the log taken before the Z-score transformation.
 The aim of preprocessing is to provide a uniform scale for all input features, as this results in faster convergence during training and even improved performance~\cite{lecun_efficient_backprop}.
 In the same spirit as feature preprocessing, batch normalization~\cite{ioffe2015batch} is applied between the fully-connected layers of the DNN, normalizing each layer's inputs.

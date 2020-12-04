@@ -4,8 +4,9 @@ As previously mentioned, the standard model of particle physics is a quantum fie
 In particular, the SM is a gauge field theory, meaning its Lagrangian is invariant under certain local transformations.
 Gauge fields are discussed in greater detail in Sec.~\ref{sec:theory_gauge}.
 In Sec.~\ref{sec:theory_qed}, we will see that imposing local gauge invariance on the Dirac Lagrangian gives rise to quantum electrodynamics.
-Sec.~\ref{sec:theory_qcd} describes the strong interaction and Sec.~\ref{sec:theory_ewk} describes the electroweak interaction, the unification of the electromagnetic and weak interactions.
-Finally, in Sec.~\ref{sec:theory_ssbhm} we will see how the Higgs mechanism allows for massive gauge fields and subsequently generates the masses of the gauge bosons and fermions.
+Sec.~\ref{sec:theory_qcd} describes the strong interaction and Sec.~\ref{sec:theory_ssbhm} illustrates how spontaneous symmetry breaking and the Higgs mechanism allow for massive gauge fields, enabling us to describe the weak interaction in Sec.~\ref{sec:theory_ewk}.
+%Sec.~\ref{sec:theory_qcd} describes the strong interaction and Sec.~\ref{sec:theory_ewk} describes the electroweak interaction, the unification of the electromagnetic and weak interactions.
+%Finally, in Sec.~\ref{sec:theory_ssbhm} we will see how the Higgs mechanism allows for massive gauge fields and subsequently generates the masses of the gauge bosons and fermions.
 
 \subsection{Gauge Fields} \label{sec:theory_gauge}
 For an arbitrary Lagrangian made of a single field variable $\psi$, suppose we impose that its resulting field equations be invariant under the local phase transformation
@@ -58,14 +59,18 @@ The full Lagrangian becomes
     \mathcal L_{\text{QED}} &= \bar{\psi}(i \gamma_\mu \partial_\mu - m) \psi - \frac{1}{4} F^{\mu\nu}F_{\mu\nu} + q (\bar{\psi}\gamma^\mu \psi)A_\mu, \\
                             &= \bar{\psi}(i \gamma_\mu \mathcal D_\mu - m)\psi - \frac{1}{4} F^{\mu\nu}F_{\mu\nu}
 \end{align}
-with $F^{\mu\nu} = \partial^\mu A^\nu - partial^\nu A^\mu$, which can be identified as the Lagrangian for quantum electrodynamics.
-The field $A_\mu$ is associated with the photon, the constant $q$ with the charge of the electron, the tensor $F^{\mu\nu}$ with the electromagnetic field strength, and interactions between photons and electrons with the trilinear term $q (\bar{\psi}\gamma^\mu \psi)A_\mu$. 
+with $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$, which can be identified as the Lagrangian for quantum electrodynamics.
+The field $A_\mu$ is associated with the photon, the constant $q$ with the charge of the electron, the tensor $F^{\mu\nu}$ with the electromagnetic field strength, and interactions between photons and electrons with the trilinear term $q (\bar{\psi}\gamma^\mu \psi)A_\mu$.
+
+It is instructive to reflect on the implications of demanding gauge invariance: we started with a spinor field characterized by the Dirac Lagrangian, as would be natural to do in attempting to describe the behavior of electrons.
+Next, by simply requiring that the equations of motion be invariant under changes in the coordinate system used to describe the field (i.e. demanding gauge invariance), we see that there must be an accompanying massless vector field which interacts with the spinor field, which we identify as the photon field.
+This is truly remarkable: we have inferred the existence of photons just by demanding that the behavior of electrons be independent of the choice of coordinate system used to describe their field.
 
 \subsection{Quantum Chromodynamics} \label{sec:theory_qcd}
 As Sec.~\ref{sec:pp_parton_model} details, inelastic scattering experiments in the 1960s gave strong evidence of the composite nature of protons.
 Zweig~\cite{Zweig:1964jf} and Gell-Mann~\cite{GellMann:1964nj} independently proposed a quark model to describe the composite nature, which initially implied that quarks violate the spin-statistics theorem.
 The remedy to this came in the proposal~\cite{Greenberg:1964pe} that each quark comes in three different \emph{colors}.
-More formally, this is the statement that quarks are assigned to the fundamental representation $SU(3)$, giving rise to a quantum number which has three states which we arbitrarily call \emph{red}, \emph{green}, and \emph{blue}.
+More formally, this is the statement that quarks are assigned to the fundamental representation $SU(3)$, giving rise to a quantum number which has three states which we (arbitrarily) call \emph{red}, \emph{green}, and \emph{blue}.
 
 In attempting to construct the Lagrangian for quantum chromodynamics (QCD), which describes the strong interaction of quarks, we can again begin with the free Dirac Lagrangian for spin-1/2 particles (Eqn.~\ref{eqn:dirac_lagrangian}).
 Given that we have three distinct colors of each quark, the free Lagrangian for a particular flavor is actually a sum of three free Dirac Lagrangians.
@@ -112,7 +117,7 @@ This time, we have introduced eight gauge fields $\bf{A}^\mu$, corresponding to 
 
 Finally, we must account for the free gluon field.
 As before, the mass terms are excluded because they violate local gauge invariance.
-However, the field strength tensor for QED, $F^{\mu\nu} = \partial^\mu A^\nu - partial^\nu A^\mu$, cannot be directly generalized to QCD due to the fact that transformations of $SU(3)$ are non-Abelian.
+However, the field strength tensor for QED, $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$, cannot be directly generalized to QCD due to the fact that transformations of $SU(3)$ are non-Abelian.
 An additional term is required to restore local gauge invariance, resulting in the QCD field strength tensor
 \begin{equation}
     F_{\mu \nu}^a = \partial_\mu A_\nu^a - \partial_\nu A_\mu^a - g_s f^{abc} A_\mu^b A_\mu^c.
@@ -194,7 +199,7 @@ This process by which gauge bosons can acquire mass is known as the \emph{Higgs 
 
 \subsection{Electroweak Interactions} \label{sec:theory_ewk}
 The weak and electromagnetic interactions can be unified in a single electroweak interaction, originally developed by Glashow, Weinberg, and Salam~\cite{Glashow:1959wxa,Weinberg:1967tq,Salam:1968rm}.
-The GWS theory of weak interactions begins with an $SU(2) \odot U(1)$ gauge symmetry.
+The GWS theory of weak interactions begins with an $SU(2) \otimes U(1)$ gauge symmetry.
 The symmetry is broken spontaneously through the introduction of a scalar field, leading to the generation of masses for the gauge bosons of the $SU(2)$ component and leaving the gauge boson of the $U(1)$ symmetry massless.
 The former will be identified as the massive vector gauge bosons, the $W^\pm$ and the $Z$, while the latter be identified as the massless photon.
 The particle associated with the scalar field responsible for the spontaneous symmetry breaking will be identified as the Higgs boson.
@@ -236,14 +241,14 @@ In this notation the covariant derivative becomes
     D_\mu \phi = \bigg[ \partial_\mu - i \frac{g}{\sqrt{2}} (W^+_\mu T^+ + W_\mu^- T^-) - i \frac{g}{\cos \theta_w} Z_\mu (T^3 - \sin^2 \theta_w Q) - ieA_\mu Q \bigg] \phi.
 \end{equation}
 
-We can next couple the $SU(2) \odot U(1)$ gauge fields of the electroweak interaction to the leptons and quarks.
+We can next couple the $SU(2) \otimes U(1)$ gauge fields of the electroweak interaction to the leptons and quarks.
 As the W boson couples only to the left-handed helicity states of leptons and quarks, it is helpful to decompose the kinetic energy term for fermions into left- and right-handed components:
 \begin{equation}
     \bar{\psi} i \gamma^\mu \partial_\mu \psi = \bar{\psi}_L i \gamma^\mu \partial_\mu \psi_L + \bar{\psi}_R i \gamma^\mu \partial_\mu \psi_R,
 \end{equation}
 so that $\psi_L$ and $\psi_R$ can couple differently to the gauge fields.
 
-The fact that the left- and right-handed components of fermion fields couple differently to the gauge fields, they have different quantum numbers and consequently simple mass terms are forbidden by gauge invariance.
+The left- and right-handed components of fermion fields couple differently to the gauge fields, they have different quantum numbers and consequently simple mass terms are forbidden by gauge invariance.
 Experimentally, we know that the fermions are not massless, so this poses a problem.
 Again, spontaneous symmetry breaking can remedy this and allow for fermions to acquire mass.
 
