@@ -9,68 +9,10 @@
   13~\mathrm{TeV}$}.
 \newblock Technical Report CMS-PAS-LUM-17-004, CERN, Geneva, 2018.
 
-\bibitem{CMS:2019drq}
-{A measurement of the Higgs boson mass in the diphoton decay channel}.
-\newblock 10 2019.
-
 \bibitem{CMS-PAS-LUM-18-002}
 {CMS luminosity measurement for the 2018 data-taking period at $\sqrt{s} =
   13~\mathrm{TeV}$}.
 \newblock Technical Report CMS-PAS-LUM-18-002, CERN, Geneva, 2019.
-
-\bibitem{CMS:2020qzr}
-{Measurement of the top quark Yukawa coupling from $\mathrm{t}\bar{\mathrm{t}}$
-  kinematic distributions in the dilepton final state at
-  $\sqrt{s}=13~\mathrm{TeV}$}.
-\newblock 5 2020.
-
-\bibitem{CMS:2020omd}
-{Measurements of Higgs boson properties in the diphoton decay channel at
-  $\sqrt{s}$ = 13 TeV}.
-\newblock 7 2020.
-
-\bibitem{Aaboud:2018zhk}
-Morad Aaboud et~al.
-\newblock {Observation of $H \rightarrow b\bar{b}$ decays and $VH$ production
-  with the ATLAS detector}.
-\newblock {\em Phys. Lett. B}, 786:59--86, 2018.
-
-\bibitem{Aad:2008zzm}
-G.~Aad et~al.
-\newblock {The ATLAS Experiment at the CERN Large Hadron Collider}.
-\newblock {\em JINST}, 3:S08003, 2008.
-
-\bibitem{Aad:2012tfa}
-Georges Aad et~al.
-\newblock {Observation of a new particle in the search for the Standard Model
-  Higgs boson with the detector at the LHC}.
-\newblock {\em Phys. Lett. B}, 716:1, 2012.
-
-\bibitem{Aad:2013wqa}
-Georges Aad et~al.
-\newblock {Measurements of Higgs boson production and couplings in diboson
-  final states with the ATLAS detector at the LHC}.
-\newblock {\em Phys. Lett. B}, 726:88--119, 2013.
-\newblock [Erratum: Phys.Lett.B 734, 406--406 (2014)].
-
-\bibitem{Khachatryan:2016vau}
-Georges Aad et~al.
-\newblock {Measurements of the Higgs boson production and decay rates and
-  constraints on its couplings from a combined ATLAS and CMS analysis of the
-  LHC pp collision data at $ \sqrt{s}=7 $ and 8 TeV}.
-\newblock {\em JHEP}, 08:045, 2016.
-
-\bibitem{Aad:2020ivc}
-Georges Aad et~al.
-\newblock {$CP$ Properties of Higgs Boson Interactions with Top Quarks in the
-  $t\bar{t}H$ and $tH$ Processes Using $H \rightarrow \gamma\gamma$ with the
-  ATLAS Detector}.
-\newblock {\em Phys. Rev. Lett.}, 125(6):061802, 2020.
-
-\bibitem{Aamodt:2008zz}
-K.~Aamodt et~al.
-\newblock {The ALICE experiment at the CERN LHC}.
-\newblock {\em JINST}, 3:S08002, 2008.
 
 \bibitem{Adams:2016viv}
 T.~Adams et~al.
@@ -78,24 +20,10 @@ T.~Adams et~al.
   from proton-damaged PbWO$_4$ crystals}.
 \newblock {\em JINST}, 11(04):P04012, 2016.
 
-\bibitem{agashe2013snowmass}
-K.~Agashe et~al.
-\newblock Snowmass 2013 top quark working group report, 2013.
-
-\bibitem{Agostinelli:2002hh}
-S.~Agostinelli et~al.
-\newblock {GEANT4--a simulation toolkit}.
-\newblock {\em Nucl. Instrum. Meth. A}, 506:250--303, 2003.
-
 \bibitem{Altarelli:1977zs}
 Guido Altarelli and G.~Parisi.
 \newblock {Asymptotic Freedom in Parton Language}.
 \newblock {\em Nucl. Phys. B}, 126:298--318, 1977.
-
-\bibitem{Alves:2008zz}
-Jr. Alves, A.Augusto et~al.
-\newblock {The LHCb Detector at the LHC}.
-\newblock {\em JINST}, 3:S08005, 2008.
 
 \bibitem{Alwall:2014hca}
 J.~Alwall, R.~Frederix, S.~Frixione, V.~Hirschi, F.~Maltoni, O.~Mattelaer,
@@ -105,27 +33,17 @@ J.~Alwall, R.~Frederix, S.~Frixione, V.~Hirschi, F.~Maltoni, O.~Mattelaer,
   simulations}.
 \newblock {\em JHEP}, 07:079, 2014.
 
-\bibitem{Anderson:2013afp}
-Ian Anderson et~al.
-\newblock {Constraining Anomalous HVV Interactions at Proton and Lepton
-  Colliders}.
-\newblock {\em Phys. Rev. D}, 89(3):035007, 2014.
-
 \bibitem{Andersson:1983ia}
 Bo~Andersson, G.~Gustafson, G.~Ingelman, and T.~Sjostrand.
 \newblock {Parton Fragmentation and String Dynamics}.
 \newblock {\em Phys. Rept.}, 97:31--145, 1983.
 
-\bibitem{ball_pdf}
-Richard~D. Ball et~al.
-\newblock {Parton distributions for the LHC Run II}.
-\newblock {\em JHEP}, 04:040, 2015.
-
-\bibitem{Bayatian:2006nff}
-G.~L. Bayatian et~al.
-\newblock {CMS Physics}: {Technical Design Report Volume 1: Detector
-  Performance and Software}.
-\newblock 2006.
+\bibitem{Khachatryan:2016vau}
+ATLAS and CMS Collaborations.
+\newblock {Measurements of the Higgs boson production and decay rates and
+  constraints on its couplings from a combined ATLAS and CMS analysis of the
+  LHC pp collision data at $ \sqrt{s}=7 $ and 8 TeV}.
+\newblock {\em JHEP}, 08:045, 2016.
 
 \bibitem{beaudette2014:Brient:2013hsa}
 Florian Beaudette.
@@ -155,11 +73,6 @@ J.D. Bjorken and Emmanuel~A. Paschos.
   Structure of the Nucleon}.
 \newblock {\em Phys. Rev.}, 185:1975--1982, 1969.
 
-\bibitem{Bloom:1969kc}
-Elliott~D. Bloom et~al.
-\newblock {High-Energy Inelastic e p Scattering at 6-Degrees and 10-Degrees}.
-\newblock {\em Phys. Rev. Lett.}, 23:930--934, 1969.
-
 \bibitem{Bolognesi:2012mm}
 Sara Bolognesi, Yanyan Gao, Andrei~V. Gritsan, Kirill Melnikov, Markus Schulze,
   Nhan~V. Tran, and Andrew Whitbeck.
@@ -182,11 +95,6 @@ Martin Breidenbach, Jerome~I. Friedman, Henry~W. Kendall, Elliott~D. Bloom,
 G.~Breit and E.~Wigner.
 \newblock {Capture of Slow Neutrons}.
 \newblock {\em Phys. Rev.}, 49:519--531, 1936.
-
-\bibitem{pdf4lhc}
-Jon Butterworth et~al.
-\newblock {PDF4LHC recommendations for LHC Run II}.
-\newblock {\em J. Phys. G}, 43:023001, 2016.
 
 \bibitem{Cabibbo:1963yz}
 Nicola Cabibbo.
@@ -214,39 +122,6 @@ Stefano Carrazza, Stefano Forte, Zahari Kassabov, Jose~Ignacio Latorre, and
 \newblock {An Unbiased Hessian Representation for Monte Carlo PDFs}.
 \newblock {\em Eur. Phys. J. C}, 75(8):369, 2015.
 
-\bibitem{Chatrchyan:2008aa}
-S.~Chatrchyan et~al.
-\newblock {The CMS Experiment at the CERN LHC}.
-\newblock {\em JINST}, 3:S08004, 2008.
-
-\bibitem{Chatrchyan:2012xdj}
-Serguei Chatrchyan et~al.
-\newblock {Observation of a new boson at a mass of 125 GeV with the CMS
-  experiment at the LHC}.
-\newblock {\em Phys. Lett. B}, 716:30, 2012.
-
-\bibitem{Chatrchyan:2013dga}
-Serguei Chatrchyan et~al.
-\newblock {Energy Calibration and Resolution of the CMS Electromagnetic
-  Calorimeter in $pp$ Collisions at $\sqrt{s} = 7$ TeV}.
-\newblock {\em JINST}, 8:P09009, 2013.
-\newblock [JINST8,9009(2013)].
-
-\bibitem{Chatrchyan:2013lba}
-Serguei Chatrchyan et~al.
-\newblock {Observation of a new boson with mass near 125 GeV in pp collisions
-  at $\sqrt{s}$ = 7 and 8 TeV}.
-\newblock {\em JHEP}, 06:081, 2013.
-
-\bibitem{Chatrchyan:1704291}
-Serguei Chatrchyan et~al.
-\newblock {Description and performance of track and primary-vertex
-  reconstruction with the CMS tracker}.
-\newblock {\em JINST}, 9(CMS-TRK-11-001. CERN-PH-EP-2014-070.
-  CMS-TRK-11-001):P10009. 80 p, May 2014.
-\newblock Comments: Replaced with published version. Added journal reference
-  and DOI.
-
 \bibitem{xgboost}
 Tianqi Chen and Carlos Guestrin.
 \newblock {XGBoost}: A scalable tree boosting system.
@@ -260,7 +135,7 @@ R.Sekhar Chivukula and Nick~J. Evans.
 \newblock {\em Phys. Lett. B}, 464:244--248, 1999.
 
 \bibitem{keras}
-Fran\c{c}ois Chollet et~al.
+Fran\c{c}ois Chollet.
 \newblock Keras.
 \newblock \url{https://keras.io}, 2015.
 
@@ -271,9 +146,193 @@ Fran\c{c}ois Chollet et~al.
   {T}e{V}.
 \newblock 2017.
 
+\bibitem{Aamodt:2008zz}
+ALICE Collaboration.
+\newblock {The ALICE experiment at the CERN LHC}.
+\newblock {\em JINST}, 3:S08002, 2008.
+
+\bibitem{Aad:2008zzm}
+ATLAS Collaboration.
+\newblock {The ATLAS Experiment at the CERN Large Hadron Collider}.
+\newblock {\em JINST}, 3:S08003, 2008.
+
+\bibitem{Aad:2012tfa}
+ATLAS Collaboration.
+\newblock {Observation of a new particle in the search for the Standard Model
+  Higgs boson with the detector at the LHC}.
+\newblock {\em Phys. Lett. B}, 716:1, 2012.
+
+\bibitem{Aad:2013wqa}
+ATLAS Collaboration.
+\newblock {Measurements of Higgs boson production and couplings in diboson
+  final states with the ATLAS detector at the LHC}.
+\newblock {\em Phys. Lett. B}, 726:88--119, 2013.
+\newblock [Erratum: Phys.Lett.B 734, 406--406 (2014)].
+
+\bibitem{Aaboud:2018zhk}
+ATLAS Collaboration.
+\newblock {Observation of $H \rightarrow b\bar{b}$ decays and $VH$ production
+  with the ATLAS detector}.
+\newblock {\em Phys. Lett. B}, 786:59--86, 2018.
+
+\bibitem{Aad:2020ivc}
+ATLAS Collaboration.
+\newblock {$CP$ Properties of Higgs Boson Interactions with Top Quarks in the
+  $t\bar{t}H$ and $tH$ Processes Using $H \rightarrow \gamma\gamma$ with the
+  ATLAS Detector}.
+\newblock {\em Phys. Rev. Lett.}, 125(6):061802, 2020.
+
 \bibitem{public_lumi}
 CMS Collaboration.
 \newblock {\em CMS Luminosity -- Public Results}.
+
+\bibitem{Bayatian:2006nff}
+CMS Collaboration.
+\newblock {CMS Physics}: {Technical Design Report Volume 1: Detector
+  Performance and Software}.
+\newblock {\em CERN-LHCC-2006-001, CMS-TDR-8-1}, 2006.
+
+\bibitem{Chatrchyan:2008aa}
+CMS Collaboration.
+\newblock {The CMS Experiment at the CERN LHC}.
+\newblock {\em JINST}, 3:S08004, 2008.
+
+\bibitem{Chatrchyan:2012xdj}
+CMS Collaboration.
+\newblock {Observation of a new boson at a mass of 125 GeV with the CMS
+  experiment at the LHC}.
+\newblock {\em Phys. Lett. B}, 716:30, 2012.
+
+\bibitem{Chatrchyan:2013dga}
+CMS Collaboration.
+\newblock {Energy Calibration and Resolution of the CMS Electromagnetic
+  Calorimeter in $pp$ Collisions at $\sqrt{s} = 7$ TeV}.
+\newblock {\em JINST}, 8:P09009, 2013.
+\newblock [JINST8,9009(2013)].
+
+\bibitem{Chatrchyan:2013lba}
+CMS Collaboration.
+\newblock {Observation of a new boson with mass near 125 GeV in pp collisions
+  at $\sqrt{s}$ = 7 and 8 TeV}.
+\newblock {\em JHEP}, 06:081, 2013.
+
+\bibitem{Chatrchyan:1704291}
+CMS Collaboration.
+\newblock {Description and performance of track and primary-vertex
+  reconstruction with the CMS tracker}.
+\newblock {\em JINST}, 9(CMS-TRK-11-001. CERN-PH-EP-2014-070.
+  CMS-TRK-11-001):P10009. 80 p, May 2014.
+\newblock Comments: Replaced with published version. Added journal reference
+  and DOI.
+
+\bibitem{Khachatryan:2015iwa}
+CMS Collaboration.
+\newblock {Performance of Photon Reconstruction and Identification with the CMS
+  Detector in Proton-Proton Collisions at sqrt(s) = 8 TeV}.
+\newblock {\em JINST}, 10(08):P08010, 2015.
+
+\bibitem{Khachatryan:2014jba}
+CMS Collaboration.
+\newblock {Precise determination of the mass of the Higgs boson and tests of
+  compatibility of its couplings with the standard model predictions using
+  proton collisions at 7 and 8 $\,\text {TeV}$}.
+\newblock {\em Eur. Phys. J. C}, 75(5):212, 2015.
+
+\bibitem{Khachatryan_2017_jets}
+CMS Collaboration.
+\newblock Jet energy scale and resolution in the cms experiment in pp
+  collisions at 8 tev.
+\newblock {\em Journal of Instrumentation}, 12(02):P02014–P02014, Feb 2017.
+
+\bibitem{particle_flow}
+CMS Collaboration.
+\newblock Particle-flow reconstruction and global event description with the
+  cms detector.
+\newblock {\em Journal of Instrumentation}, 12(10):P10003, Oct 2017.
+
+\bibitem{Sirunyan:2270046}
+CMS Collaboration.
+\newblock {Particle-flow reconstruction and global event description with the
+  CMS detector. Particle-flow reconstruction and global event description with
+  the CMS detector}.
+\newblock {\em JINST}, 12(CMS-PRF-14-001. CMS-PRF-14-001-004. 10):P10003. 82 p,
+  Jun 2017.
+\newblock Replaced with the published version. Added the journal reference and
+  DOI. All the figures and tables can be found at
+  http://cms-results.web.cern.ch/cms-results/public-results/publications/PRF-14-001
+  (CMS Public Pages).
+
+\bibitem{Khachatryan:2016bia}
+CMS Collaboration.
+\newblock {The CMS trigger system}.
+\newblock {\em JINST}, 12(01):P01020, 2017.
+
+\bibitem{Sirunyan_2018_deepcsv}
+CMS Collaboration.
+\newblock Identification of heavy-flavour jets with the cms detector in pp
+  collisions at 13 tev.
+\newblock {\em Journal of Instrumentation}, 13(05):P05011–P05011, May 2018.
+
+\bibitem{Hbb_obs}
+CMS Collaboration.
+\newblock {Observation of Higgs boson decay to bottom quarks}.
+\newblock {\em Phys. Rev. Lett.}, 121(12):121801, 2018.
+
+\bibitem{Sirunyan:2018hoz}
+CMS Collaboration.
+\newblock {Observation of $\mathrm{t\overline{t}}$H production}.
+\newblock {\em Phys. Rev. Lett.}, 120(23):231801, 2018.
+
+\bibitem{CMS:2019drq}
+CMS Collaboration.
+\newblock {A measurement of the Higgs boson mass in the diphoton decay
+  channel}.
+\newblock {\em CMS-PAS-HIG-19-004}, 10 2019.
+
+\bibitem{CMS:2020qzr}
+CMS Collaboration.
+\newblock {Measurement of the top quark Yukawa coupling from
+  $\mathrm{t}\bar{\mathrm{t}}$ kinematic distributions in the dilepton final
+  state at $\sqrt{s}=13~\mathrm{TeV}$}.
+\newblock {\em CMS-PAS-TOP-19-008}, 5 2020.
+
+\bibitem{CMS:2020omd}
+CMS Collaboration.
+\newblock {Measurements of Higgs boson properties in the diphoton decay channel
+  at $\sqrt{s}$ = 13 TeV}.
+\newblock {\em CMS-PAS-HIG-19-015}, 7 2020.
+
+\bibitem{tth_observation}
+CMS Collaboration.
+\newblock {Measurements of $\mathrm{t\bar{t}}H$ Production and the CP Structure
+  of the Yukawa Interaction between the Higgs Boson and Top Quark in the
+  Diphoton Decay Channel}.
+\newblock {\em Phys. Rev. Lett.}, 125(6):061801, 2020.
+
+\bibitem{Agostinelli:2002hh}
+GEANT4 Collaboration.
+\newblock {GEANT4--a simulation toolkit}.
+\newblock {\em Nucl. Instrum. Meth. A}, 506:250--303, 2003.
+
+\bibitem{Alves:2008zz}
+LHCb Collaboration.
+\newblock {The LHCb Detector at the LHC}.
+\newblock {\em JINST}, 3:S08005, 2008.
+
+\bibitem{ball_pdf}
+NNPDF Collaboration.
+\newblock {Parton distributions for the LHC Run II}.
+\newblock {\em JHEP}, 04:040, 2015.
+
+\bibitem{Tanabashi:2018oca}
+Particle Data~Group Collaboration.
+\newblock {Review of Particle Physics}.
+\newblock {\em Phys. Rev. D}, 98(3):030001, 2018.
+
+\bibitem{Zyla:2020zbs}
+Particle Data~Group Collaboration.
+\newblock {Review of Particle Physics}.
+\newblock {\em PTEP}, 2020(8):083C01, 2020.
 
 \bibitem{Collins:1989gx}
 John~C. Collins, Davison~E. Soper, and George~F. Sterman.
@@ -307,17 +366,6 @@ P.~D. Dauncey, M.~Kenzie, N.~Wardle, and G.~J. Davies.
   method.
 \newblock 2014.
 
-\bibitem{Dawson:2013bba}
-Sally Dawson et~al.
-\newblock {Working Group Report: Higgs Boson}.
-\newblock In {\em {Community Summer Study 2013}: {Snowmass on the
-  Mississippi}}, 10 2013.
-
-\bibitem{florian2016handbook}
-D.~de~Florian~et al.
-\newblock Handbook of lhc higgs cross sections: 4. deciphering the nature of
-  the higgs sector.
-
 \bibitem{Deur:2016tte}
 Alexandre Deur, Stanley~J. Brodsky, and Guy~F. de~Teramond.
 \newblock {The QCD Running Coupling}.
@@ -345,20 +393,18 @@ Yuri~L. Dokshitzer.
   and e+ e- Annihilation by Perturbation Theory in Quantum Chromodynamics.}
 \newblock {\em Sov. Phys. JETP}, 46:641--653, 1977.
 
+\bibitem{Bloom:1969kc}
+H.C. DeStaebler(SLAC) J. Drees(SLAC) Guthrie Miller(SLAC) Luke W. Mo(SLAC)
+  Richard E. Taylor(SLAC) Martin Breidenbach(MIT LNS) Jerome I. Friedman(MIT
+  LNS) George C. Hartmann(MIT LNS) Henry W. Kendall(MIT~LNS) Elliott
+  D.~Bloom(SLAC), D.H.~Coward(SLAC).
+\newblock {High-Energy Inelastic e p Scattering at 6-Degrees and 10-Degrees}.
+\newblock {\em Phys. Rev. Lett.}, 23:930--934, 1969.
+
 \bibitem{Englert:1964et}
 F.~Englert and R.~Brout.
 \newblock {Broken Symmetry and the Mass of Gauge Vector Mesons}.
 \newblock {\em Phys. Rev. Lett.}, 13:321--323, 1964.
-
-\bibitem{tensorflow}
-Mart\'{\i}n~Abadi et~al.
-\newblock {TensorFlow}: Large-scale machine learning on heterogeneous systems.
-\newblock Software available from tensorflow.org.
-
-\bibitem{higgs_handbook}
-S.~Heinemeyer et~al.
-\newblock Handbook of lhc higgs cross sections: 3. higgs properties.
-\newblock 2013.
 
 \bibitem{Evans_2008}
 Lyndon Evans and Philip Bryant.
@@ -447,6 +493,16 @@ Andrei~V. Gritsan, Raoul R\"ontsch, Markus Schulze, and Meng Xiao.
   fermions using matrix element techniques}.
 \newblock {\em Phys. Rev. D}, 94(5):055023, 2016.
 
+\bibitem{higgs_handbook}
+LHC Higgs Cross Section~Working Group.
+\newblock Handbook of lhc higgs cross sections: 3. higgs properties.
+\newblock 2013.
+
+\bibitem{florian2016handbook}
+LHC Higgs Cross Section~Working Group.
+\newblock Handbook of lhc higgs cross sections: 4. deciphering the nature of
+  the higgs sector, 2016.
+
 \bibitem{Guest_2016}
 Daniel Guest, Julian Collado, Pierre Baldi, Shih-Chieh Hsu, Gregor Urban, and
   Daniel Whiteson.
@@ -476,6 +532,14 @@ Sepp Hochreiter and J{\"u}rgen Schmidhuber.
 \newblock Long short-term memory.
 \newblock {\em Neural computation}, 9(8):1735--1780, 1997.
 
+\bibitem{Anderson:2013afp}
+Fabrizio Caola Yanyan Gao Andrei V. Gritsan Christopher B. Martin Kirill
+  Melnikov Markus Schulze Nhan V. Tran Andrew Whitbeck Yaofu~Zhou Ian~Anderson,
+  Sara~Bolognesi.
+\newblock {Constraining Anomalous HVV Interactions at Proton and Lepton
+  Colliders}.
+\newblock {\em Phys. Rev. D}, 89(3):035007, 2014.
+
 \bibitem{ioffe2015batch}
 Sergey Ioffe and Christian Szegedy.
 \newblock Batch normalization: Accelerating deep network training by reducing
@@ -486,6 +550,14 @@ John~David Jackson.
 \newblock {\em {Classical electrodynamics; 2nd ed.}}
 \newblock Wiley, New York, NY, 1975.
 
+\bibitem{pdf4lhc}
+Amanda Cooper-Sarkar Albert De Roeck Joel Feltesse Stefano Forte Jun Gao Sasha
+  Glazov Joey Huston Zahari Kassabov Ronan McNulty Andreas Morsch Pavel
+  Nadolsky Voica Radescu Juan Rojo Robert~Thorne Jon~Butterworth,
+  Stefano~Carrazza.
+\newblock {PDF4LHC recommendations for LHC Run II}.
+\newblock {\em J. Phys. G}, 43:023001, 2016.
+
 \bibitem{Kanemura:2002vm}
 Shinya Kanemura, Shingo Kiyoura, Yasuhiro Okada, Eibun Senaha, and C.P. Yuan.
 \newblock {New physics effect on the Higgs self-coupling}.
@@ -495,30 +567,6 @@ Shinya Kanemura, Shingo Kiyoura, Yasuhiro Okada, Eibun Senaha, and C.P. Yuan.
 Shinya Kanemura, Yasuhiro Okada, Eibun Senaha, and C.-P. Yuan.
 \newblock {Higgs coupling constants as a probe of new physics}.
 \newblock {\em Phys. Rev. D}, 70:115002, 2004.
-
-\bibitem{Khachatryan_2017_jets}
-V.~Khachatryan et~al.
-\newblock Jet energy scale and resolution in the cms experiment in pp
-  collisions at 8 tev.
-\newblock {\em Journal of Instrumentation}, 12(02).
-
-\bibitem{Khachatryan:2015iwa}
-Vardan Khachatryan et~al.
-\newblock {Performance of Photon Reconstruction and Identification with the CMS
-  Detector in Proton-Proton Collisions at sqrt(s) = 8 TeV}.
-\newblock {\em JINST}, 10(08):P08010, 2015.
-
-\bibitem{Khachatryan:2014jba}
-Vardan Khachatryan et~al.
-\newblock {Precise determination of the mass of the Higgs boson and tests of
-  compatibility of its couplings with the standard model predictions using
-  proton collisions at 7 and 8 $\,\text {TeV}$}.
-\newblock {\em Eur. Phys. J. C}, 75(5):212, 2015.
-
-\bibitem{Khachatryan:2016bia}
-Vardan Khachatryan et~al.
-\newblock {The CMS trigger system}.
-\newblock {\em JINST}, 12(01):P01020, 2017.
 
 \bibitem{adam}
 Diederik~P. Kingma and Jimmy Ba.
@@ -551,6 +599,19 @@ Stephen~P. Martin.
 \newblock {A Supersymmetry primer}.
 \newblock {\em Adv. Ser. Direct. High Energy Phys.}, 21:1--153, 2010.
 
+\bibitem{tensorflow}
+Paul Barham-Eugene Brevdo Zhifeng Chen Craig Citro Greg S. Corrado Andy Davis
+  Jeffrey Dean Matthieu Devin Sanjay Ghemawat Ian Goodfellow Andrew Harp
+  Geoffrey Irving Michael Isard Yangqing Jia Rafal Jozefowicz Lukasz Kaiser
+  Manjunath Kudlur Josh Levenberg Dan Mane Rajat Monga Sherry Moore Derek
+  Murray Chris Olah Mike Schuster Jonathon Shlens Benoit Steiner Ilya Sutskever
+  Kunal Talwar Paul Tucker Vincent Vanhoucke Vijay Vasudevan Fernanda Viegas
+  Oriol Vinyals Pete Warden Martin Wattenberg Martin Wicke Yuan Yu
+  Xiaoqiang~Zheng Martin~Abadi, Ashish~Agarwal.
+\newblock {TensorFlow}: Large-scale machine learning on heterogeneous systems,
+  2015.
+\newblock Software available from tensorflow.org.
+
 \bibitem{CrystalBallRef}
 Mark~Joseph Oreglia.
 \newblock {\em A study of the reactions $\psi^\prime \to \gamma \gamma \psi$}.
@@ -568,6 +629,10 @@ J.~Prentki and J.~Steinberger, editors.
   Physics (ICHEP 68)}: {Vienna, Austria, 28 Aug-5 Sep, 1968}}, Geneva, 1968.
   CERN.
 
+\bibitem{agashe2013snowmass}
+Snowmass 2013~Top quark~working group.
+\newblock Snowmass 2013 top quark working group report, 2013.
+
 \bibitem{Rubin:1980zd}
 V.C. Rubin, N.~Thonnard, and Jr. Ford, W.K.
 \newblock {Rotational properties of 21 SC galaxies with a large range of
@@ -583,47 +648,6 @@ Abdus Salam.
 Matthew~D. Schwartz.
 \newblock {\em {Quantum Field Theory and the Standard Model}}.
 \newblock Cambridge University Press, 3 2014.
-
-\bibitem{Hbb_obs}
-A.~M. Sirunyan et~al.
-\newblock {Observation of Higgs boson decay to bottom quarks}.
-\newblock {\em Phys. Rev. Lett.}, 121(12):121801, 2018.
-
-\bibitem{Sirunyan:2018hoz}
-Albert~M Sirunyan et~al.
-\newblock {Observation of $\mathrm{t\overline{t}}$H production}.
-\newblock {\em Phys. Rev. Lett.}, 120(23):231801, 2018.
-
-\bibitem{tth_observation}
-Albert~M Sirunyan et~al.
-\newblock {Measurements of $\mathrm{t\bar{t}}H$ Production and the CP Structure
-  of the Yukawa Interaction between the Higgs Boson and Top Quark in the
-  Diphoton Decay Channel}.
-\newblock {\em Phys. Rev. Lett.}, 125(6):061801, 2020.
-
-\bibitem{particle_flow}
-A.M. Sirunyan et~al.
-\newblock Particle-flow reconstruction and global event description with the
-  cms detector.
-\newblock {\em Journal of Instrumentation}, 12(10):P10003, Oct 2017.
-
-\bibitem{Sirunyan:2270046}
-A.M. Sirunyan et~al.
-\newblock {Particle-flow reconstruction and global event description with the
-  CMS detector. Particle-flow reconstruction and global event description with
-  the CMS detector}.
-\newblock {\em JINST}, 12(CMS-PRF-14-001. CMS-PRF-14-001-004. 10):P10003. 82 p,
-  Jun 2017.
-\newblock Replaced with the published version. Added the journal reference and
-  DOI. All the figures and tables can be found at
-  http://cms-results.web.cern.ch/cms-results/public-results/publications/PRF-14-001
-  (CMS Public Pages).
-
-\bibitem{Sirunyan_2018_deepcsv}
-A.M. Sirunyan et~al.
-\newblock Identification of heavy-flavour jets with the cms detector in pp
-  collisions at 13 tev.
-\newblock {\em Journal of Instrumentation}, 13(05):P05011–P05011, May 2018.
 
 \bibitem{increase_batch}
 Samuel~L. Smith, Pieter-Jan Kindermans, Chris Ying, and Quoc~V. Le.
@@ -645,11 +669,6 @@ Gerard 't~Hooft.
 \newblock {Renormalizable Lagrangians for Massive Yang-Mills Fields}.
 \newblock {\em Nucl. Phys. B}, 35:167--188, 1971.
 
-\bibitem{Tanabashi:2018oca}
-M.~Tanabashi et~al.
-\newblock {Review of Particle Physics}.
-\newblock {\em Phys. Rev. D}, 98(3):030001, 2018.
-
 \bibitem{Taylor:2017edx}
 Thomas Taylor and Daniel Treille.
 \newblock {\em {The Large Electron Positron Collider (LEP): Probing the
@@ -660,6 +679,12 @@ Thomas Taylor and Daniel Treille.
 Steven Weinberg.
 \newblock {A Model of Leptons}.
 \newblock {\em Phys. Rev. Lett.}, 19:1264--1266, 1967.
+
+\bibitem{Dawson:2013bba}
+Energy Frontier Higgs~Boson working group.
+\newblock {Working Group Report: Higgs Boson}.
+\newblock In {\em {Community Summer Study 2013}: {Snowmass on the
+  Mississippi}}, 10 2013.
 
 \bibitem{DBLP:journals/corr/abs-1211-6581}
 Eleftherios~Spyromitros Xioufis, William Groves, Grigorios Tsoumakas, and
@@ -682,10 +707,5 @@ G.~Zweig.
 \newblock {\em {An SU(3) model for strong interaction symmetry and its
   breaking. Version 2}}, pages 22--101.
 \newblock 2 1964.
-
-\bibitem{Zyla:2020zbs}
-P.A. Zyla et~al.
-\newblock {Review of Particle Physics}.
-\newblock {\em PTEP}, 2020(8):083C01, 2020.
 
 \end{thebibliography}
