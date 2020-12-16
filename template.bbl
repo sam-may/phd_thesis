@@ -182,10 +182,6 @@ ATLAS Collaboration.
   ATLAS Detector}.
 \newblock {\em Phys. Rev. Lett.}, 125(6):061802, 2020.
 
-\bibitem{public_lumi}
-CMS Collaboration.
-\newblock {\em CMS Luminosity -- Public Results}.
-
 \bibitem{Bayatian:2006nff}
 CMS Collaboration.
 \newblock {CMS Physics}: {Technical Design Report Volume 1: Detector
@@ -308,6 +304,11 @@ CMS Collaboration.
   of the Yukawa Interaction between the Higgs Boson and Top Quark in the
   Diphoton Decay Channel}.
 \newblock {\em Phys. Rev. Lett.}, 125(6):061801, 2020.
+
+\bibitem{public_lumi}
+CMS Collaboration.
+\newblock {\em CMS Luminosity -- Public Results}, 2020 (accessed September 9,
+  2020).
 
 \bibitem{Agostinelli:2002hh}
 GEANT4 Collaboration.
